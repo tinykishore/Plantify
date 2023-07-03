@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {createEventDispatcher} from "svelte";
     import category_flower from "$lib/assets/icons/category_flower.svg";
     import category_fruit from "$lib/assets/icons/category_fruit.svg";

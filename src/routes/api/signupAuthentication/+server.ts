@@ -19,10 +19,10 @@ export const POST = async ({request}) => {
         const query = {email: email, password: password, confirmPassword: confirmPassword, firstName: firstName, lastName: lastName};
         const user = await usersCollection.insertOne(query);
         if (user) {
-            ConsolePrintOK("LoginAuthentication API RESPONSE: status 200")
+            ConsolePrintOK("SignUpAuthentication API RESPONSE: status 200")
             return new Response(JSON.stringify(auth), {status: 200})
         } else {
-            ConsolePrintWarn("LoginAuthentication API RESPONSE: status 401")
+            ConsolePrintWarn("SignUpAuthentication API RESPONSE: status 401")
             return new Response(JSON.stringify(null), {status: 401})
         }
     } catch (error) {

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import plant_not_found from '$lib/assets/plant_not_found.svg';
     import Navbar from "$components/Navbar.svelte";
 </script>

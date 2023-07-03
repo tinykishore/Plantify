@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {createEventDispatcher} from 'svelte';
     import logo from "$lib/assets/plantify.svg"
     import logo_sm from "$lib/assets/plantify-sm.svg"

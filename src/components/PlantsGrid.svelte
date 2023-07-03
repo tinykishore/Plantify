@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let plantList;
     import plant_not_found from '$lib/assets/plant_not_found.svg';
 </script>

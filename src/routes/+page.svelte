@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
     import Navbar from "$components/Navbar.svelte";
     import Footer from "$components/Footer.svelte";
@@ -23,7 +23,8 @@
     const handleCategory = () => {
         if (category !== "") {
             filteredPlantList = plantList.filter((flower) => {
-                return flower.category.toLowerCase().startsWith(category.toLowerCase());
+                // FIXME: Previously: flower.category.toLowerCase().startsWith(category.toLowerCase());
+                return flower["category"].toLowerCase().startsWith(category.toLowerCase());
             });
         } else {
             filteredPlantList = plantList;
@@ -35,7 +36,7 @@
         plantList = await fetch('/api/PlantsCollection').then((response) => {
             if (response.ok) return response.json();
 
-        }).catch((error) => {
+        }).catch(() => {
             status = 500;
         });
         if (plantList) {

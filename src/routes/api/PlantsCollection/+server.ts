@@ -30,7 +30,6 @@ export const POST = async ({request}) => {
         const database = await connectToMongo();
         const flowersCollection = database.collection('plants');
         const query = {name: flower.name};
-
         const flowerExists = await flowersCollection.findOne(query);
 
         if (flowerExists) {

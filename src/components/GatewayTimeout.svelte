@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import gateway_timeout from '$lib/assets/gateway_timeout.svg';
 </script>
 

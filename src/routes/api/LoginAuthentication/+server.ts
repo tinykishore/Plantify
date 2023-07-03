@@ -4,21 +4,19 @@ import ConsolePrintWarn, {ConsolePrintError, ConsolePrintOK} from "$lib/server/C
 
 // @ts-ignore
 export const POST = async ({request}) => {
-    const auth = await request.json();
-    const username = auth.username;
-    const password = auth.password;
+    const credentials = await request.json();
+    const email = credentials['email'];
+    const password = credentials['password'];
 
     try {
         const database = await connectToMongo();
         const usersCollection = database.collection('users');
-        const query = {username: username, password: password};
+        const query = {email: email, password: password};
         const user = await usersCollection.findOne(query);
-        // simulate a delay
-        await new Promise(resolve => setTimeout(resolve, 1000));
 
         if (user) {
             ConsolePrintOK("LoginAuthentication API RESPONSE: status 200")
-            return new Response(JSON.stringify(auth), {status: 200})
+            return new Response(JSON.stringify(credentials), {status: 200})
         } else {
             ConsolePrintWarn("LoginAuthentication API RESPONSE: status 401")
             return new Response(JSON.stringify(null), {status: 401})

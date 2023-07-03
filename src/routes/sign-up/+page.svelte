@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+    import {goto} from "$app/navigation";
+    import {onMount} from "svelte";
+
     let email_address = '';
     let password = '';
     let confirm_password = '';
@@ -32,9 +35,12 @@
             });
 
             if (response.ok) {
-                // Redirect to the dashboard
-                // Code here ...
-                alert('profile created successful')
+                // store the token in local storage
+
+
+
+
+                await goto('/login')
             } else {
                 alert('profile creation failed')
             }
@@ -45,6 +51,10 @@
 
 
     };
+
+    onMount( () => {
+       document.title = 'Sign Up | Plantify';
+    });
 </script>
 
 <main class="container mx-auto px-24 md:px-36 py-8">
