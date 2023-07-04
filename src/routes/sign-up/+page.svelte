@@ -1,109 +1,190 @@
 <script lang="ts">
     import {goto} from "$app/navigation";
     import {onMount} from "svelte";
+    import logo from '$lib/assets/plantify.svg';
+    import sign_up_card from '$lib/assets/sign_up_card.svg';
 
-    let email_address = '';
+    let email_error_message = 'Please enter a valid email address';
+
+    const userProperties: UserProperties = {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+    };
+
     let password = '';
     let confirm_password = '';
-    let first_name = '';
-    let last_name = '';
-
-    function handlePasswordMatch(event) {
-        confirm_password = event.target.value;
-    }
 
     const handleSubmit = async () => {
-        const request = {
-            email_address,
-            password,
-            confirm_password,
-            first_name,
-            last_name
-        };
-
         if (password !== confirm_password) {
             alert('passwords do not match');
             return;
         }
         try {
-            const response = await fetch('/api/signupAuthentication', {
+            userProperties.password = password;
+            const response = await fetch('/api/SignUpAPI', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(request)
+                body: JSON.stringify(userProperties)
             });
 
             if (response.ok) {
-                // store the token in local storage
-
-
-
-
-                await goto('/login')
+                await goto('/login');
             } else {
                 alert('profile creation failed')
             }
         } catch (error) {
-            // Handle network or server error
             console.error('Error:', error);
         }
-
-
     };
 
-    onMount( () => {
-       document.title = 'Sign Up | Plantify';
+    onMount(() => {
+        document.title = 'Sign Up | Plantify';
     });
+
+    const validateEmail = async (event) => {
+        const email = event.target.value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email) && email !== '') {
+            event.target.classList.add('border-red-400');
+            event.target.nextElementSibling.classList.remove('invisible');
+        } else {
+            let emailExists = await fetch('/api/AccountExists', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({email: email})
+            });
+
+            if (emailExists.ok) {
+                event.target.classList.add('border-red-400');
+                event.target.nextElementSibling.classList.remove('invisible');
+                email_error_message = 'This email is already in use';
+            } else {
+                email_error_message = 'Please enter a valid email address';
+                event.target.classList.remove('border-red-400');
+                event.target.nextElementSibling.classList.add('invisible');
+            }
+        }
+    };
+
+    const handlePasswordMatch = (event) => {
+        if (event.target.value !== password && event.target.value !== '') {
+            document.getElementById('password').classList.add('border-red-400');
+            event.target.classList.add('border-red-400');
+            document.getElementById('password_mismatch').classList.remove('invisible');
+        } else {
+            document.getElementById('password').classList.remove('border-red-400');
+            event.target.classList.remove('border-red-400');
+            document.getElementById('password_mismatch').classList.add('invisible');
+        }
+    }
+
 </script>
 
-<main class="container mx-auto px-24 md:px-36 py-8">
-    <form on:submit|preventDefault="{handleSubmit}">
-        <div class="relative z-0 w-full mb-6 group">
-            <input type="email" name="floating_email" id="floating_email" bind:value="{email_address}"
-                   class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                   placeholder=" " required/>
-            <label for="floating_email"
-                   class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                address</label>
+<main class="flex items-center justify-center h-screen" id="body">
+    <div class="mx-auto w-fit grid grid-cols-1 justify-between rounded-2xl xl:grid-cols-2
+    bg-opacity-60 backdrop-blur-md shadow-2xl overflow-y-auto">
+        <div class="p-12 bg-white flex flex-col align-middle justify-center bg-opacity-70 place-self-center w-full h-full">
+            <a href="/" class="w-fit mb-5 place-self-center xl:hidden"><img src="{logo}" alt="" class="w-32"></a>
+            <h1 class="text-3xl font-bold text-teal-800 text-center mb-4">
+                Hi there! <br> Welcome to Plantify!
+            </h1>
+
+
+            <h1 class="text-teal-800 text-sm font-thin text-center mb-4">
+                Fill in the form below to create your account
+            </h1>
+
+
+            <form on:submit|preventDefault={handleSubmit} class="mt-3 align-middle flex flex-col">
+                <div class="grid-cols-2 grid gap-x-4 mb-4">
+                    <div id="first_name_container">
+                        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 ">First Name</label>
+                        <input required bind:value={userProperties.firstName}
+                               type="text" id="first_name"
+                               class="bg-gray-50 border font-mono border-gray-300 text-gray-900 text-sm rounded-full outline-none
+                               focus:shadow-md block w-full p-2.5 text-center transition-all duration-300 antialiased">
+                    </div>
+
+                    <div id="last_name_container">
+                        <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 ">Last Name</label>
+                        <input required bind:value={userProperties.lastName}
+                               type="text" id="last_name"
+                               class="bg-gray-50 border font-mono border-gray-300 text-center text-gray-900 text-sm rounded-full outline-none
+                               focus:shadow-md w-full p-2.5 transition-all duration-300 antialiased">
+                    </div>
+                </div>
+
+                <label for="email" class="block  mb-2 text-sm font-medium text-gray-900 ">Your Email</label>
+                <input required bind:value={userProperties.email} on:input={validateEmail} type="text" id="email"
+                       class="bg-gray-50 border font-mono border-gray-300 text-gray-900 text-sm rounded-full outline-none
+                       focus:shadow-md block w-full p-2.5 transition-all duration-300 antialiased px-4"
+                       placeholder="your_email@example.com">
+                <h1 class="my-2 invisible w-full text-center text-xs font-semibold text-red-400">
+                    {email_error_message}
+                </h1>
+                <div class="grid-cols-2 grid gap-x-4 mb-4">
+                    <div class="h-fit">
+                        <label for="password" class="flex mb-2 text-sm  font-medium text-gray-900">
+                            Create a password
+                        </label>
+                        <input required bind:value={password}
+                               type="password" id="password"
+                               class="font-mono bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full outline-none
+                       focus:shadow-md block w-full p-2.5 transition-all duration-300 antialiased px-4">
+                    </div>
+
+                    <div>
+                        <label for="confirm_password" class="flex  pb-2 text-sm font-medium text-gray-900">
+                            Confirm password
+                        </label>
+                        <input required bind:value={confirm_password} on:input={handlePasswordMatch}
+                               type="password" id="confirm_password"
+                               class="font-mono bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full outline-none
+                       focus:shadow-md block w-full p-2.5 transition-all duration-300 antialiased px-4 ">
+
+                    </div>
+                    <h1 id="password_mismatch"
+                        class="mt-2 col-span-full invisible w-full text-center text-xs font-semibold text-red-400">
+                        Passwords do not match
+                    </h1>
+                </div>
+
+                <div class="flex justify-between align-middle items-center">
+                    <a href="/login" class=" w-fit font-bold text-teal-800 text-end">
+                        Sign in instead
+                    </a>
+                    <button type="submit" id="submit"
+                            class="place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
+                            rounded-full w-fit text-sm px-10 py-3 transition-all duration-300 antialiased">
+                        Create Account
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="relative z-0 w-full mb-6 group">
-            <input type="password" name="floating_password" id="floating_password" bind:value="{password}"
-                   class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                   placeholder=" " required/>
-            <label for="floating_password"
-                   class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+
+        <div id="right_side_card" class="flex-col w-full p-12 gap-4 hidden xl:flex">
+            <a href="/" class="w-fit place-self-end"><img src="{logo}" alt="" class="w-32"></a>
+            <p class=" text-end select-none text-base font-bold bg-gradient-to-l from-0% from-teal-600 to-green-600 bg-clip-text text-transparent">
+                Create an account and start planting today, for a better tomorrow
+            </p>
+            <img src={sign_up_card} alt="logo" class="w-[70%] place-self-center">
+            <p class="text-xs font-light text-teal-800 text-start">
+                2023 &copy; Plantify. All rights reserved.
+            </p>
         </div>
-        <div class="relative z-0 w-full mb-6 group">
-            <input type="password" name="repeat_password" id="floating_repeat_password" bind:value="{confirm_password}"
-                   on:input={handlePasswordMatch}
-                   class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                   placeholder=" " required/>
-            <label for="floating_repeat_password"
-                   class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm
-                password</label>
-        </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="text" name="floating_first_name" id="floating_first_name" bind:value="{first_name}"
-                       class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                       placeholder=" " required/>
-                <label for="floating_first_name"
-                       class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                    name</label>
-            </div>
-            <div class="relative z-0 w-full mb-6 group">
-                <input type="text" name="floating_last_name" id="floating_last_name" bind:value="{last_name}"
-                       class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                       placeholder=" " required/>
-                <label for="floating_last_name"
-                       class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                    name</label>
-            </div>
-        </div>
-        <button type="submit"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Submit
-        </button>
-    </form>
+    </div>
 </main>
+
+<style>
+    main {
+        background-image: url('/src/lib/assets/sign_up_background.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+</style>

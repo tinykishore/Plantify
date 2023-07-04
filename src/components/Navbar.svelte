@@ -14,7 +14,8 @@
 </script>
 
 <nav class="top-0 sticky grid grid-cols-2 md:grid-cols-3 mx-auto gap-x-6 py-5 px-20 border-b border-b-zinc-100 z-50
-justify-between sm:justify-between align-middle items-center font-semibold text-teal-800 shadow-sm bg-white">
+justify-between sm:justify-between align-middle items-center font-semibold text-teal-800 shadow-sm bg-white bg-gradient-to-bl
+to-emerald-100 from-green-50">
     <a href="/">
         <img class="h-8 hidden sm:flex md:hidden" alt="The project logo" src={logo_sm}/>
         <img class="h-8 hidden md:flex" alt="The project logo" src={logo}/>

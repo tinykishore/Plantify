@@ -7,7 +7,7 @@
     <div class="flex flex-col md:grid md:grid-cols-2 gap-6 lg:grid-cols-4 mt-4">
         {#if plantList.length === 0}
             <div class="flex flex-col justify-center align-middle items-center col-span-full row-span-full w-full mx-auto h-full">
-                <img class=" h-[30rem] object-contain" src="{plant_not_found}" alt=""/>
+                <img class=" h-[28rem] object-contain" src="{plant_not_found}" alt=""/>
             </div>
         {:else}
             {#each plantList as flower}

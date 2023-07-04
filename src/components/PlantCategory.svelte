@@ -26,7 +26,8 @@
 </script>
 
 
-<main class="flex no-scroll overflow-x-scroll bg-white shadow-sm gap-x-8 w-full justify-evenly align-middle items-center py-2 px-24 sticky top-20 z-50">
+<main class="flex no-scroll overflow-x-scroll shadow-sm gap-x-8 w-full justify-evenly align-middle items-center py-2 px-24 sticky top-20 z-50
+bg-gradient-to-tr from-teal-50 to bg-green-50">
 
     <input class="hidden peer/all" id="all" type="radio" bind:group={selectedValue} name="scoops" value=""
            on:input={handleCategoryKeyChange}/>

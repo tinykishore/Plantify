@@ -1,6 +1,6 @@
 <footer class="hidden fixed bottom-0 w-full md:flex mx-auto gap-x-10 py-2 px-20 border-t border-t-zinc-200 z-50
 justify-between sm:justify-between align-middle items-center text-sm text-zinc-600 shadow-sm bg-white
-rounded-t">
+rounded-t bg-gradient-to-l from-emerald-100 to-green-50">
     <div id="left-side" class="flex flex-row gap-2 gap-x-6 flex-wrap">
         <p class="select-none">&copy; 2023 Plantify, Inc.</p>
         <a href="/terms" class="hover:text-teal-500 hover:underline">Terms</a>
