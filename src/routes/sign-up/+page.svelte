@@ -13,6 +13,14 @@
         password: '',
     };
 
+    let isFirstNameValid = false;
+    let isLastNameValid = false;
+    let isEmailValid = false;
+    let isPasswordValid = false;
+
+    $: isFirstNameValid = userProperties.firstName !== '';
+    $: isLastNameValid = userProperties.lastName !== '';
+
     let password = '';
     let confirm_password = '';
 
@@ -51,6 +59,7 @@
         if (!emailRegex.test(email) && email !== '') {
             event.target.classList.add('border-red-400');
             event.target.nextElementSibling.classList.remove('invisible');
+            isEmailValid = false;
         } else {
             let emailExists = await fetch('/api/AccountExists', {
                 method: 'POST',
@@ -64,10 +73,12 @@
                 event.target.classList.add('border-red-400');
                 event.target.nextElementSibling.classList.remove('invisible');
                 email_error_message = 'This email is already in use';
+                isEmailValid = false;
             } else {
                 email_error_message = 'Please enter a valid email address';
                 event.target.classList.remove('border-red-400');
                 event.target.nextElementSibling.classList.add('invisible');
+                isEmailValid = true;
             }
         }
     };
@@ -77,10 +88,12 @@
             document.getElementById('password').classList.add('border-red-400');
             event.target.classList.add('border-red-400');
             document.getElementById('password_mismatch').classList.remove('invisible');
+            isPasswordValid = false;
         } else {
             document.getElementById('password').classList.remove('border-red-400');
             event.target.classList.remove('border-red-400');
             document.getElementById('password_mismatch').classList.add('invisible');
+            isPasswordValid = true;
         }
     }
 
@@ -90,7 +103,7 @@
     <div class="mx-auto w-fit grid grid-cols-1 justify-between rounded-2xl xl:grid-cols-2
     bg-opacity-60 backdrop-blur-md shadow-2xl overflow-y-auto">
         <div class="p-12 bg-white flex flex-col align-middle justify-center bg-opacity-70 place-self-center w-full h-full">
-            <a href="/" class="w-fit mb-5 place-self-center xl:hidden"><img src="{logo}" alt="" class="w-32"></a>
+            <a href="/" class="w-fit mb-5 place-self-center xl:hidden outline-none"><img src="{logo}" alt="" class="w-32 outline-none"></a>
             <h1 class="text-3xl font-bold text-teal-800 text-center mb-4">
                 Hi there! <br> Welcome to Plantify!
             </h1>
@@ -156,14 +169,22 @@
                 </div>
 
                 <div class="flex justify-between align-middle items-center">
-                    <a href="/login" class=" w-fit font-bold text-teal-800 text-end">
+                    <a href="/login" class=" w-fit font-bold text-teal-800 text-end outline-none">
                         Sign in instead
                     </a>
+                    {#if (isPasswordValid && isEmailValid && isFirstNameValid && isLastNameValid) }
                     <button type="submit" id="submit"
-                            class="place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
+                            class="place-self-center bg-emerald-600 border-2 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
                             rounded-full w-fit text-sm px-10 py-3 transition-all duration-300 antialiased">
                         Create Account
                     </button>
+                    {:else }
+                    <button disabled type="submit"
+                            class="place-self-center disabled:shadow-none font-black outline-none border-2 text-zinc-600
+                            rounded-full w-fit text-sm px-10 py-3 transition-all duration-300 antialiased">
+                        Fill in the form correctly
+                    </button>
+                    {/if}
                 </div>
             </form>
         </div>

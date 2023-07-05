@@ -5,7 +5,6 @@ export const POST = async ({request}:any) => {
     const data = await request.json();
     const email = data.email;
 
-
     try {
         const database = await connectToMongo();
         const usersCollection = database.collection('users');
