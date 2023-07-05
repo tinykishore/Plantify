@@ -8,7 +8,8 @@ let status = -1;
 
 export const GET = async ({url}: any) => {
     ConsolePrintOK("Redirected to Server GET API");
-    const redirectURL = 'http://localhost:5173/api/oauth';
+    // const redirectURL = 'http://localhost:5173/api/oauth';
+    const redirectURL = 'https://plantify-six.vercel.app/api/oauth';
     const code = url.searchParams.get('code');
 
     try {
