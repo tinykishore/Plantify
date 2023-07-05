@@ -36,7 +36,7 @@ Plantify is built using the following technologies:
 
 Plantify welcomes contributions from the community. If you would like to contribute to the project, please follow the guidelines below:
 
-1. Fork the repository and create your branch from the `main` branch.
+1. Fork the repository and create your branch from the `master` branch.
 2. Make the necessary changes and improvements.
 3. Ensure that your code follows the project's coding conventions and standards.
 4. Write clear and concise commit messages.
