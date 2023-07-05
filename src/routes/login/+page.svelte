@@ -12,6 +12,11 @@
         password: ''
     };
 
+    let validEmail = false;
+    let validPassword = false;
+
+    $: validPassword = credentials.password !== '';
+
     const handleSubmit = async () => {
         try {
             const response = await fetch('/api/LoginAPI', {
@@ -38,6 +43,16 @@
                 document.getElementById('email').classList.add('border-red-400');
                 document.getElementById('password').classList.add('border-red-400');
                 document.getElementById('password').nextElementSibling.classList.remove('invisible');
+                document.getElementById('submit').innerHTML = 'Log in';
+                document.getElementById('submit').classList.add('text-white');
+                document.getElementById('submit').classList.remove(
+                    'bg-transparent',
+                    'border',
+                    'text-teal-800',
+                    'hover:bg-transparent',
+                    'hover:shadow-none'
+                );
+                document.getElementById('loader_icon').classList.add('hidden');
             }
         } catch (error) {
             console.error('Error:', error);
@@ -54,9 +69,11 @@
         if (!emailRegex.test(email) && email !== '') {
             event.target.classList.add('border-red-400');
             event.target.nextElementSibling.classList.remove('invisible');
+            validEmail = false;
         } else {
             event.target.classList.remove('border-red-400');
             event.target.nextElementSibling.classList.add('invisible');
+            validEmail = true;
         }
     };
 
@@ -65,6 +82,17 @@
         event.target.nextElementSibling.classList.add('invisible');
     }
 
+    const onLoginButtonClick = () => {
+        document.getElementById('submit').innerHTML = 'Logging in...';
+        document.getElementById('submit').classList.remove('text-white');
+        document.getElementById('submit').classList.add(
+            'bg-transparent',
+            'border',
+            'text-teal-800',
+            'hover:bg-transparent',
+            'hover:shadow-none'
+        );
+    }
 </script>
 
 <main class="flex items-center justify-center h-screen" id="body">
@@ -86,23 +114,28 @@
             <h1 class="text-3xl font-bold text-teal-800 text-center">Sign in to your account</h1>
 
             <div id="loginWithAPIs" class="flex gap-4 my-8 justify-center">
-                <button class="bg-white text-zinc-900 font-black hover:bg-gray-300 hover:shadow-md outline-none
+                <form method="post" action="?/OAuth2">
+                    <button type="submit" class="bg-white text-zinc-900 font-black hover:bg-gray-300 hover:shadow-md outline-none
                         rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
                     <span class="flex justify-center align-middle items-center gap-4">
                         <img src={google_logo} alt="apple_logo" class="w-4 ">
                         Sign in with Google
                     </span>
-                </button>
-                <button class="bg-zinc-800 text-white font-black hover:bg-zinc-900 hover:shadow-md outline-none
+                    </button>
+                </form>
+
+                <form method="post" action="?/appleAuth">
+                    <button class="bg-zinc-800 text-white font-black hover:bg-zinc-900 hover:shadow-md outline-none
                         rounded-full w-fit text-sm px-10 py-3  transition-all duration-300 antialiased">
                     <span class="flex justify-center align-middle items-center gap-4">
                         <img src={apple_logo} alt="apple_logo" class="w-4 ">
                         Sign in with Apple
                     </span>
-                </button>
+                    </button>
+                </form>
             </div>
             <h1 class="text-xs text-zinc-400 text-center">OR</h1>
-            <form on:submit|preventDefault="{handleSubmit}" class="mt-3 align-middle flex flex-col" >
+            <form on:submit|preventDefault="{handleSubmit}" class="mt-3 align-middle flex flex-col">
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your Email</label>
                 <input required bind:value={credentials['email']} on:input={validateEmail}
                        type="text" id="email" placeholder="your_email@example.com"
@@ -125,19 +158,32 @@
                 </h1>
 
                 <div class="flex justify-between align-middle items-center">
-                    <a href="/forgot-password" class=" w-fit text-sm font-bold text-teal-800 text-end">Forgot your
-                        password?
+                    <a href="/forgot-password" class=" w-fit text-sm font-bold text-teal-800 text-end outline-none">
+                        Forgot your password?
                     </a>
-                    <button type="submit" id="submit"
-                            class="place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
-                            rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
-                        Submit
-                    </button>
+
+                    {#if (validEmail && validPassword)}
+                        <div id="loader_icon">
+                            Loader
+                        </div>
+                        <button type="submit" id="submit"
+                                on:click={onLoginButtonClick}
+                                class="border place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md
+                                outline-none rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
+                            Log in
+                        </button>
+                    {:else}
+                        <button disabled type="submit"
+                                class="place-self-center border bg-gray-300 text-white font-black outline-none
+                                rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
+                            Submit
+                        </button>
+                    {/if}
                 </div>
 
                 <div class="pt-8 flex flex-col gap-1 justify-center align-middle">
                     <h1 class="">Don't have an account?</h1>
-                    <a href="/sign-up" class="w-fit text-base font-semibold text-teal-800 hover:underline">
+                    <a href="/sign-up" class="w-fit text-base font-semibold text-teal-800 hover:underline outline-none">
                         Register here
                     </a>
                 </div>
