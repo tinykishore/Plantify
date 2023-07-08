@@ -6,6 +6,7 @@
     import apple_logo from "$lib/assets/icons/apple_logo.svg";
     import google_logo from "$lib/assets/icons/google_logo.svg";
     import {loginSession} from "../../stores";
+    import Loader from "./Loader.svelte";
 
     const credentials: Credentials = {
         email: '',
@@ -79,7 +80,6 @@
 
     const onPasswordInput = (event) => {
         event.target.classList.remove('border-red-400');
-        event.target.nextElementSibling.classList.add('invisible');
     }
 
     const onLoginButtonClick = () => {
@@ -92,6 +92,7 @@
             'hover:bg-transparent',
             'hover:shadow-none'
         );
+        document.getElementById('loader_icon').classList.remove('hidden');
     }
 </script>
 
@@ -163,20 +164,22 @@
                     </a>
 
                     {#if (validEmail && validPassword)}
-                        <div id="loader_icon">
-                            Loader
-                        </div>
-                        <button type="submit" id="submit"
-                                on:click={onLoginButtonClick}
-                                class="border place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md
+                        <div class="flex justify-end items-center align-middle gap-2">
+                            <div class="hidden w-fit h-fit" id="loader_icon">
+                                <Loader/>
+                            </div>
+                            <button type="submit" id="submit"
+                                    on:click={onLoginButtonClick}
+                                    class="place-self-center bg-emerald-600 text-white font-black hover:bg-emerald-800 hover:shadow-md
                                 outline-none rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
-                            Log in
-                        </button>
+                                Sign In
+                            </button>
+                        </div>
                     {:else}
                         <button disabled type="submit"
-                                class="place-self-center border bg-gray-300 text-white font-black outline-none
+                                class="place-self-center  bg-gray-300 text-white font-black outline-none
                                 rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
-                            Submit
+                            Sign In
                         </button>
                     {/if}
                 </div>

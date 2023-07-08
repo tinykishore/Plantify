@@ -24,9 +24,7 @@ export const GET = async ({url}: any) => {
 
         ConsolePrintOK("User access token fetched [" + user.access_token + "]");
         const response = await fetch(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${user.access_token}`);
-        console.log(response);
         const data = await response.json();
-        console.log(data);
         ConsolePrintOK("User details fetched... {" + data.email + ", " + data.given_name + ", " + data.family_name + "}");
 
         // Check if the user already exist
