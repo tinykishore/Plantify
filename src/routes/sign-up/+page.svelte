@@ -13,8 +13,8 @@
         password: '',
     };
 
-    let isFirstNameValid = false;
-    let isLastNameValid = false;
+    let isFirstNameValid;
+    let isLastNameValid;
     let isEmailValid = false;
     let isPasswordValid = false;
 
@@ -61,25 +61,9 @@
             event.target.nextElementSibling.classList.remove('invisible');
             isEmailValid = false;
         } else {
-            let emailExists = await fetch('/api/AccountExists', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({email: email})
-            });
-
-            if (emailExists.ok) {
-                event.target.classList.add('border-red-400');
-                event.target.nextElementSibling.classList.remove('invisible');
-                email_error_message = 'This email is already in use';
-                isEmailValid = false;
-            } else {
-                email_error_message = 'Please enter a valid email address';
-                event.target.classList.remove('border-red-400');
-                event.target.nextElementSibling.classList.add('invisible');
-                isEmailValid = true;
-            }
+            event.target.classList.remove('border-red-400');
+            event.target.nextElementSibling.classList.add('invisible');
+            isEmailValid = true;
         }
     };
 
@@ -97,13 +81,64 @@
         }
     }
 
+    const checkEmailExists = async (event) => {
+        const email = event.target.value;
+        console.log('checking email');
+        event.target.classList.add('border-amber-600');
+        event.target.classList.add('animate-pulse');
+        event.target.nextElementSibling.classList.add('text-amber-600');
+        event.target.nextElementSibling.classList.add('animate-pulse');
+        event.target.nextElementSibling.classList.remove('invisible');
+        email_error_message = 'Checking Email...';
+        document.getElementById('email').setAttribute('disabled', 'true');
+        await fetch('/api/AccountExists', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({email: email})
+        }).then((response) => {
+            event.target.classList.remove('border-amber-600');
+            if (response.ok) {
+                event.target.nextElementSibling.classList.remove('text-amber-600');
+                event.target.classList.remove('animate-pulse');
+                event.target.nextElementSibling.classList.remove('animate-pulse');
+
+                event.target.classList.add('border-red-400');
+                event.target.nextElementSibling.classList.remove('invisible');
+                email_error_message = 'This email is already in use';
+                isEmailValid = false;
+            } else {
+                event.target.nextElementSibling.classList.remove('text-amber-600');
+                event.target.classList.remove('animate-pulse');
+                event.target.nextElementSibling.classList.remove('animate-pulse');
+
+                email_error_message = 'Please enter a valid email address';
+                event.target.classList.remove('border-red-400');
+                event.target.nextElementSibling.classList.add('invisible');
+                isEmailValid = true;
+            }
+            document.getElementById('email').removeAttribute('disabled');
+        }).catch(() => {
+            event.target.nextElementSibling.classList.remove('text-amber-600');
+            event.target.classList.remove('animate-pulse');
+            event.target.classList.remove('amber-red-600');
+            console.log('error');
+            event.target.nextElementSibling.classList.remove('animate-pulse');
+
+            document.getElementById('email').removeAttribute('disabled');
+        });
+
+    }
+
 </script>
 
 <main class="flex items-center justify-center h-screen" id="body">
     <div class="mx-auto w-fit grid grid-cols-1 justify-between rounded-2xl xl:grid-cols-2
     bg-opacity-60 backdrop-blur-md shadow-2xl overflow-y-auto">
         <div class="p-12 bg-white flex flex-col align-middle justify-center bg-opacity-70 place-self-center w-full h-full">
-            <a href="/" class="w-fit mb-5 place-self-center xl:hidden outline-none"><img src="{logo}" alt="" class="w-32 outline-none"></a>
+            <a href="/" class="w-fit mb-5 place-self-center xl:hidden outline-none"><img src="{logo}" alt=""
+                                                                                         class="w-32 outline-none"></a>
             <h1 class="text-3xl font-bold text-teal-800 text-center mb-4">
                 Hi there! <br> Welcome to Plantify!
             </h1>
@@ -134,7 +169,8 @@
                 </div>
 
                 <label for="email" class="block  mb-2 text-sm font-medium text-gray-900 ">Your Email</label>
-                <input required bind:value={userProperties.email} on:input={validateEmail} type="text" id="email"
+                <input required bind:value={userProperties.email} on:input={validateEmail} on:blur={checkEmailExists}
+                       type="text" id="email"
                        class="bg-gray-50 border font-mono border-gray-300 text-gray-900 text-sm rounded-full outline-none
                        focus:shadow-md block w-full p-2.5 transition-all duration-300 antialiased px-4"
                        placeholder="your_email@example.com">
@@ -173,17 +209,17 @@
                         Sign in instead
                     </a>
                     {#if (isPasswordValid && isEmailValid && isFirstNameValid && isLastNameValid) }
-                    <button type="submit" id="submit"
-                            class="place-self-center bg-emerald-600 border-2 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
+                        <button type="submit" id="submit"
+                                class="place-self-center bg-emerald-600 border-2 text-white font-black hover:bg-emerald-800 hover:shadow-md outline-none
                             rounded-full w-fit text-sm px-10 py-3 transition-all duration-300 antialiased">
-                        Create Account
-                    </button>
+                            Create Account
+                        </button>
                     {:else }
-                    <button disabled type="submit"
-                            class="place-self-center disabled:shadow-none font-black outline-none border-2 text-zinc-600
+                        <button disabled type="submit"
+                                class="place-self-center disabled:shadow-none font-black outline-none border-2 text-zinc-600
                             rounded-full w-fit text-sm px-10 py-3 transition-all duration-300 antialiased">
-                        Fill in the form correctly
-                    </button>
+                            Fill in the form correctly
+                        </button>
                     {/if}
                 </div>
             </form>
