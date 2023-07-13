@@ -58,7 +58,7 @@ export const GET = async ({url}: any) => {
 
 }
 
-async function userExist(email: String) {
+async function userExist(email: string) {
     const database = await connectToMongo();
     const usersCollection = database.collection('users');
     const query = {

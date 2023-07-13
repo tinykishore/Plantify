@@ -1,5 +1,4 @@
-// @ts-expect-error
-export const load = async ({fetch, params}) => {
+export const load = async ({fetch, params}:any) => {
     let plant = params.plant;
     const response = await fetch('/api/PlantsCollection', {
         method: 'POST',

@@ -23,8 +23,7 @@ export const GET = async () => {
     }
 };
 
-// @ts-expect-error
-export const POST = async ({request}) => {
+export const POST = async ({request}:any) => {
     const flower = await request.json();
     try {
         const database = await connectToMongo();

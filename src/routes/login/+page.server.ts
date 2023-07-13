@@ -4,7 +4,7 @@ import {redirect} from "@sveltejs/kit";
 import {ConsolePrintOK} from "$lib/server/ConsolePrint";
 
 export const actions = {
-    OAuth2: async ({}) => {
+    OAuth2: async () => {
         ConsolePrintOK('Attempting to Sign in with Google using OAuth2.0');
         // const redirectURL = 'http://localhost:5173/api/oauth';
         const redirectURL = 'https://plantify-six.vercel.app/api/oauth';
@@ -22,7 +22,7 @@ export const actions = {
         throw redirect(302, authorizeURL);
     },
 
-    appleAuth: async ({}) => {
+    appleAuth: async () => {
         // implement apple auth
         console.log('Apple Auth');
     }
