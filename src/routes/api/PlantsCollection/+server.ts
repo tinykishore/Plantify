@@ -23,7 +23,7 @@ export const GET = async () => {
     }
 };
 
-// @ts-ignore
+// @ts-expect-error
 export const POST = async ({request}) => {
     const flower = await request.json();
     try {

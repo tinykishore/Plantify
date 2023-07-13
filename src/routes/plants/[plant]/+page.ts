@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 export const load = async ({fetch, params}) => {
     let plant = params.plant;
     const response = await fetch('/api/PlantsCollection', {
