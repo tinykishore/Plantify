@@ -15,7 +15,7 @@ export const connectToMongo = async () => {
     }
 };
 
-// @ts-ignore
+// @ts-expect-error
 export const closeMongoConnection = async () => {
     await client.close();
     ConsolePrintOK("DATABASE LOG: MongoDB Server connection closed");
