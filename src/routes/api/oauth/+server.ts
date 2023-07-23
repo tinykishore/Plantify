@@ -22,15 +22,15 @@ export const GET = async ({url}: any) => {
         oAuth2Client.setCredentials(token.tokens);
         const user = oAuth2Client.credentials;
 
-        ConsolePrintOK("User access token fetched [" + user.access_token + "]");
+        ConsolePrintOK(`User access token fetched [ ${user.access_token} ]`);
         const response = await fetch(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${user.access_token}`);
         const data = await response.json();
-        ConsolePrintOK("User details fetched... {" + data.email + ", " + data.given_name + ", " + data.family_name + "}");
+        ConsolePrintOK(`User details fetched... { ${data.email}, ${data.given_name}, ${data.family_name} }`);
 
         // Check if the user already exist
         if (await userExist(data.email)) {
             // Just log in
-            console.log("Logged in as " + data.email);
+            console.log(`Logged in as ${data.email}`);
             status = 0;
 
         } else {
@@ -42,13 +42,12 @@ export const GET = async ({url}: any) => {
                 password: ''
             }
             await createUser(userProperties);
-            console.log("New user Created with email " + data.email);
+            console.log(`New user Created with email ${data.email}`);
             status = 1
         }
 
     } catch (e) {
         console.error(e);
-
     }
     if (status === 0) {
         throw redirect(302, "/login");

@@ -17,7 +17,7 @@ export const POST = async ({request}: any) => {
 
         if (success) {
             ConsolePrintOK("LoginAPI API RESPONSE: status 200")
-            let token = generateToken(
+            const token = generateToken(
                 {email: credentials.email},
                 JWT_SECRET,
                 '12h'
@@ -29,7 +29,7 @@ export const POST = async ({request}: any) => {
             return new Response(null, {status: 401})
         }
     } catch (error) {
-        ConsolePrintError("DATABASE LOG: Error connecting to MongoDB: " + error);
+        ConsolePrintError(`DATABASE LOG: Error connecting to MongoDB: ${error}`);
         return new Response(JSON.stringify({error: 'Internal Server Error'}), {status: 500})
     } finally {
         await closeMongoConnection();
