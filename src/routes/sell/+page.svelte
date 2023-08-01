@@ -34,7 +34,7 @@
 
     onMount(async () => {
         document.title = "Plantify";
-        plantList = await fetch('/api/PlantsCollection').then((response) => {
+        plantList = await fetch('/api/SellCollection').then((response) => {
             if (response.ok) return response.json();
 
         }).catch(() => {

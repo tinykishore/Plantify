@@ -14,7 +14,7 @@
             {#each sellList as item}
                 <a class="rounded-xl hover:drop-shadow-xl group w-full transition-all duration-300 ease-in-out"
                    href="/plants/{item.name}">
-                    <img class="rounded-xl h-44 object-cover w-full" src="{item.imageURL}" alt=""/>
+<!--                    <img class="rounded-xl h-44 object-cover w-full" alt=""/>-->
                     <div class="px-4 py-2">
                         <h1 class="custom-transition font-black text-xl text-center group-hover:text-teal-700">{item.name}</h1>
                         <h1 class="font-thin text-xs text-zinc-400 group-hover:text-zinc-600">{item.price}</h1>
