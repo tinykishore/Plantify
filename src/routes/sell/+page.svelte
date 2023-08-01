@@ -56,7 +56,7 @@
     {#if status === 401}
         <Loader/>
     {:else if status === 200}
-        <SellGrid bind:plantList={filteredPlantList}/>
+        <SellGrid bind:sellList={filteredPlantList}/>
     {:else}
         <GatewayTimeout/>
     {/if}
