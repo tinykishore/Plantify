@@ -1,9 +1,9 @@
 <script lang="ts">
     import {onMount} from "svelte";
-    import Navbar from "../../../PhpstormProjects/Plantify/src/components/Navbar.svelte";
-    import Footer from "../../../PhpstormProjects/Plantify/src/components/Footer.svelte";
+    import Navbar from "$components/Navbar.svelte";
+    import Footer from "$components/Footer.svelte";
     import PlantsGrid from "$components/PlantsGrid.svelte";
-    import PlantCategory from "../components/PlantCategory.svelte";
+    import PlantCategory from "$components/PlantCategory.svelte";
     import Loader from "$components/Loader.svelte";
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
 
@@ -59,6 +59,7 @@
         <PlantsGrid bind:plantList={filteredPlantList}/>
     {:else}
         <GatewayTimeout/>
+
     {/if}
 
     <Footer/>
