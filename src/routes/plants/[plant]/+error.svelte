@@ -1,6 +1,6 @@
 <script lang="ts">
     import plant_not_found from '$lib/assets/plant_not_found.svg';
-    import Navbar from "$components/Navbar.svelte";
+    import Navbar from "../../../../../PhpstormProjects/Plantify/src/components/Navbar.svelte";
 </script>
 <main>
     <Navbar />

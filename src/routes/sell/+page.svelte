@@ -6,6 +6,7 @@
     import PlantCategory from "../components/PlantCategory.svelte";
     import Loader from "$components/Loader.svelte";
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
+    import SellCatagory from "$components/SellCatagory.svelte";
 
     let key = "";
     let category = "";
@@ -50,12 +51,11 @@
 
 <main>
     <Navbar bind:searchKey={key} on:searchKeyChange={handleSearch}/>
-    <PlantCategory bind:selectedValue={category} on:categoryKeyChange={handleCategory}/>
+    <SellCatagory bind:selectedValue = {category} on:categoryKeyChange={handleCategory}/>
 
     {#if status === 401}
         <Loader/>
     {:else if status === 200}
-        <a href="/sell" class="btn btn-primary">Add Plant</a>
         <PlantsGrid bind:plantList={filteredPlantList}/>
     {:else}
         <GatewayTimeout/>

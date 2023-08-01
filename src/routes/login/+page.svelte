@@ -36,9 +36,11 @@
                 document.getElementById('email').classList.add('border-green-200');
                 document.getElementById('password').classList.add('bg-green-200');
                 document.getElementById('password').classList.add('border-green-200');
+
                 const {token} = await response.json();
                 loginSession.set({token});
                 document.cookie = `token=${token}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+
                 await goto('/');
             } else {
                 document.getElementById('email').classList.add('border-red-400');
