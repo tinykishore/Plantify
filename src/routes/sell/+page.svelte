@@ -6,14 +6,21 @@
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
     import SellCatagory from "./SellCatagory.svelte";
     import SellGrid from "./SellGrid.svelte";
+    import {cartArray} from "../../stores";
 
+    let count = 0;
+    let cartList = [];
     let key = "";
     let category = "";
+    let localCartArray = [];
 
     let plantList;
     let filteredPlantList;
     let status = 401;
 
+    cartArray.subscribe((value) => {
+        localCartArray = value;
+    });
     const handleSearch = () => {
         console.log(key);
         filteredPlantList = plantList.filter((i) => {
@@ -31,6 +38,16 @@
             filteredPlantList = plantList;
         }
     };
+
+    const incrementCount = () => {
+        //add cartList into cartArray
+        cartArray.update((value) => {
+            value.push(cartList);
+            return value;
+        });
+        // console.log(localCartArray);
+        count++;
+    }
 
     onMount(async () => {
         document.title = "Plantify";
@@ -52,12 +69,12 @@
 <main>
     <Navbar bind:searchKey={key} on:searchKeyChange={handleSearch}/>
 
-    <SellCatagory bind:selectedValue = {category} on:categoryKeyChange={handleCategory}/>
+    <SellCatagory count = {count} bind:selectedValue = {category} on:categoryKeyChange={handleCategory}/>
 
     {#if status === 401}
         <Loader/>
     {:else if status === 200}
-        <SellGrid bind:sellList={filteredPlantList}/>
+        <SellGrid on:incrementCount={incrementCount} bind:sellList={filteredPlantList} bind:cartList={cartList}/>
     {:else}
         <GatewayTimeout/>
     {/if}

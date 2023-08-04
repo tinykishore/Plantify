@@ -5,6 +5,7 @@ export const toast = writable({
     body: '',
     isOpen: false,
 });
+export const cartArray = writable([]);
 
 export const loginSession = <Writable<Cookie>> writable(undefined);
 

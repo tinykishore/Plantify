@@ -1,5 +1,16 @@
 <script lang="ts">
+    import {createEventDispatcher} from "svelte";
+
     export let sellList;
+    export let cartList;
+
+    const dispatch = createEventDispatcher();
+
+    const onAddToCart = (event) => {
+        cartList = {name: event.target.id, price: event.target.name};
+
+        dispatch('incrementCount',cartList);
+    };
     // import plant_not_found from '$lib/assets/plant_not_found.svg';
 </script>
 
@@ -19,7 +30,7 @@
                         <h1 class="font-thin text-xs text-zinc-400 group-hover:text-zinc-600">{item.manufacturer}</h1>
                         <h1 class="font-thin text-xs text-zinc-400 group-hover:text-zinc-600">{item.rating}</h1>
                         <h1 class="font-thin text-xs text-zinc-400 group-hover:text-zinc-600">{item.price}</h1>
-                        <button class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full w-full mt-2">
+                        <button name={item.price} id={item.product_name} on:click={onAddToCart} class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full w-full mt-2">
                             Add to Cart
                         </button>
                     </div>

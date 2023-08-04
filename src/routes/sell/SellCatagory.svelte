@@ -7,7 +7,7 @@
     import category_filter from "$lib/assets/icons/category_filter.svg";
 
     import logo_sm from "$lib/assets/plantify-sm.svg";
-
+    export let count = 0;
 
     export let selectedValue = "";
 
@@ -95,12 +95,12 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </div>
     </button>
 
-    <button class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
+    <a href="/sell/viewCart" class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
         <div class="flex justify-center items-center gap-x-2">
             <img class="w-4" alt="The project logo" src={category_filter}/>
-            <div class="hidden lg:block text-xs font-semibold">Confirm Items</div>
+            <div class="hidden lg:block text-xs font-semibold">View Cart {count}</div>
         </div>
-    </button>
+    </a>
 
 
 </main>
