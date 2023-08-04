@@ -7,14 +7,12 @@
     <div class="flex flex-col md:grid md:grid-cols-2 gap-6 lg:grid-cols-4 mt-4">
         {#if sellList.length === 0}
             <div class="flex flex-col justify-center align-middle items-center col-span-full row-span-full w-full mx-auto h-full">
-<!--                <img class=" h-[28rem] object-contain" src="{plant_not_found}" alt=""/>-->
                 <h1 class="text-2xl font-black text-center">No Items found</h1>
             </div>
         {:else}
             {#each sellList as item}
-                <a class="rounded-xl hover:drop-shadow-xl group w-full transition-all duration-300 ease-in-out"
-                   href="/plants/{item.name}">
-                    <img class="rounded-xl h-44 object-cover w-full" alt="" src="{item.imageURL}"/>
+                <div class="rounded-xl hover:drop-shadow-xl group w-full transition-all duration-300 ease-in-out flex flex-col items-center align-middle justify-between">
+                    <img class=" rounded-xl h-[23rem] w-64" alt="" src="{item.imageURL}"/>
                     <div class="px-4 py-2">
                         <h1 class="custom-transition font-black text-xl text-center group-hover:text-teal-700">{item.product_name}</h1>
                         <h1 class="font-thin text-xs text-zinc-400 group-hover:text-zinc-600">{item.description}</h1>
@@ -25,7 +23,7 @@
                             Add to Cart
                         </button>
                     </div>
-                </a>
+                </div>
             {/each}
         {/if}
     </div>
