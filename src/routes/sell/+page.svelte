@@ -2,11 +2,10 @@
     import {onMount} from "svelte";
     import Navbar from "$components/Navbar.svelte";
     import Footer from "$components/Footer.svelte";
-    import PlantsGrid from "$components/PlantsGrid.svelte";
-    import Loader from "$components/Loader.svelte";
+    import Loader from "../Loader.svelte";
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
-    import SellCatagory from "$components/SellCatagory.svelte";
-    import SellGrid from "$components/SellGrid.svelte";
+    import SellCatagory from "./SellCatagory.svelte";
+    import SellGrid from "./SellGrid.svelte";
 
     let key = "";
     let category = "";
@@ -16,8 +15,9 @@
     let status = 401;
 
     const handleSearch = () => {
-        filteredPlantList = plantList.filter((flower) => {
-            return flower.name.toLowerCase().startsWith(key.toLowerCase());
+        console.log(key);
+        filteredPlantList = plantList.filter((i) => {
+            return i.product_name.toLowerCase().startsWith(key.toLowerCase()) || i.category.toLowerCase().includes(key.toLowerCase())
         });
     }
 
@@ -51,6 +51,7 @@
 
 <main>
     <Navbar bind:searchKey={key} on:searchKeyChange={handleSearch}/>
+
     <SellCatagory bind:selectedValue = {category} on:categoryKeyChange={handleCategory}/>
 
     {#if status === 401}

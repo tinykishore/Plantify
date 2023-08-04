@@ -4,13 +4,7 @@
     import category_fruit from "$lib/assets/icons/category_fruit.svg";
     import category_vegetable from "$lib/assets/icons/category_vegetable.svg";
     import category_herbal from "$lib/assets/icons/category_herbal.svg";
-    import category_tree from "$lib/assets/icons/category_tree.svg";
-    import category_shrub from "$lib/assets/icons/category_shrub.svg";
-    import category_succulent from "$lib/assets/icons/category_ succulent.svg";
-    import category_vine from "$lib/assets/icons/category_vine.svg";
-    import category_aquatic from "$lib/assets/icons/category_aquatic.svg";
     import category_filter from "$lib/assets/icons/category_filter.svg";
-    import category_fern from "$lib/assets/icons/category_fern.svg";
 
     import logo_sm from "$lib/assets/plantify-sm.svg";
 
@@ -23,6 +17,7 @@
         selectedValue = event.target.value;
         dispatch('categoryKeyChange', selectedValue);
     };
+
 </script>
 
 
@@ -41,7 +36,7 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </div>
     </label>
 
-    <input class="hidden peer/flowers" id="flowers" type="radio" bind:group={selectedValue} name="scoops" value="Flowers"
+    <input class="hidden peer/flowers" id="flowers" type="radio" bind:group={selectedValue} name="scoops" value="Seeds"
            on:input={handleCategoryKeyChange}/>
     <label for="flowers"
            class=" transition-all duration-300 ease-in-out inline-flex items-center justify-between p-2 text-zinc-500 drop-shadow-none
@@ -68,7 +63,7 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
 
 
     <input class="hidden peer/vegetables" id="vegetables" type="radio" bind:group={selectedValue} name="scoops"
-           value="Vegetables"
+           value="Gardening Tools"
            on:input={handleCategoryKeyChange}/>
     <label for="vegetables"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -80,7 +75,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </div>
     </label>
 
-    <input class="hidden peer/herbs" id="herbs" type="radio" bind:group={selectedValue} name="scoops" value="Herbs"
+    <input class="hidden peer/herbs" id="herbs" type="radio" bind:group={selectedValue} name="scoops"
+           value="Fertilizers"
            on:input={handleCategoryKeyChange}/>
     <label for="herbs"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -96,6 +92,13 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         <div class="flex justify-center items-center gap-x-2">
             <img class="w-4" alt="The project logo" src={category_filter}/>
             <div class="hidden lg:block text-xs font-semibold">More Filter</div>
+        </div>
+    </button>
+
+    <button class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
+        <div class="flex justify-center items-center gap-x-2">
+            <img class="w-4" alt="The project logo" src={category_filter}/>
+            <div class="hidden lg:block text-xs font-semibold">Confirm Items</div>
         </div>
     </button>
 

@@ -2,9 +2,9 @@
     import {onMount} from "svelte";
     import Navbar from "$components/Navbar.svelte";
     import Footer from "$components/Footer.svelte";
-    import PlantsGrid from "$components/PlantsGrid.svelte";
-    import PlantCategory from "$components/PlantCategory.svelte";
-    import Loader from "$components/Loader.svelte";
+    import PlantsGrid from "./PlantsGrid.svelte";
+    import PlantCategory from "./PlantCategory.svelte";
+    import Loader from "./Loader.svelte";
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
 
     let key = "";
@@ -15,6 +15,7 @@
     let status = 401;
 
     const handleSearch = () => {
+        console.log(key);
         filteredPlantList = plantList.filter((flower) => {
             return flower.name.toLowerCase().startsWith(key.toLowerCase());
         });
@@ -50,6 +51,7 @@
 
 <main>
     <Navbar bind:searchKey={key} on:searchKeyChange={handleSearch}/>
+
     <PlantCategory bind:selectedValue={category} on:categoryKeyChange={handleCategory}/>
 
     {#if status === 401}
