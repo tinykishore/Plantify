@@ -2,6 +2,7 @@
     import {createEventDispatcher} from 'svelte';
     import logo from "$lib/assets/plantify.svg"
     import logo_sm from "$lib/assets/plantify-sm.svg"
+    import {authenticatedUser} from "../stores";
 
     export let searchKey = "";
     const dispatch = createEventDispatcher();
@@ -10,6 +11,18 @@
         searchKey = event.target.value;
         dispatch('searchKeyChange', searchKey);
     };
+
+    const session: UserSession = {
+        email: "",
+        token: "",
+        name: "",
+    }
+
+    authenticatedUser.subscribe((user) => {
+        session.email = user.email;
+        session.token = user.token;
+        session.name = user.name;
+    })
 
 </script>
 
@@ -30,10 +43,16 @@ to-emerald-100 from-green-50">
         />
     </form>
 
-
-    <div class="flex gap-4 place-self-end">
-        <a class="mx-4 my-2" href="/login">Login</a>
-        <a class="px-4 py-2 text-white bg-teal-700 rounded-full" href="/sign-up">Get Started</a>
-    </div>
+    {#if (session.email || session.token)}
+        <div class="flex gap-4 place-self-end">
+            <a class="mx-4 my-2" href="/dashboard">{session.name}</a>
+            <a class="mx-4 my-2" href="/logout">Logout</a>
+        </div>
+    {:else}
+        <div class="flex gap-4 place-self-end">
+            <a class="mx-4 my-2" href="/login">Login</a>
+            <a class="px-4 py-2 text-white bg-teal-700 rounded-full" href="/sign-up">Get Started</a>
+        </div>
+    {/if}
 
 </nav>

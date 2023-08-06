@@ -15,13 +15,7 @@ interface UserProperties {
 }
 
 interface UserSession {
-    id: string,
-    user: User
-}
-
-interface SessionCookie {
+    name: string,
+    email: string,
     token: string
 }
-
-type User = UserProperties | undefined | null
-type Cookie = SessionCookie | undefined | null

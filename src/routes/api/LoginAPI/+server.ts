@@ -15,6 +15,8 @@ export const POST = async ({request}: any) => {
         };
         const success = await usersCollection.findOne(query);
 
+        console.log(success);
+
         if (success) {
             ConsolePrintOK("LoginAPI API RESPONSE: status 200")
             const token = generateToken(
@@ -22,8 +24,8 @@ export const POST = async ({request}: any) => {
                 JWT_SECRET,
                 '12h'
             );
-            console.log(token);
-            return new Response(JSON.stringify({token: token}), {status: 200})
+            const name = success.firstName + " " + success.lastName;
+            return new Response(JSON.stringify({token: token, name: name}), {status: 200})
         } else {
             ConsolePrintWarn("LoginAPI API RESPONSE: status 401")
             return new Response(null, {status: 401})

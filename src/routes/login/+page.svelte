@@ -5,8 +5,8 @@
     import logo from "$lib/assets/plantify.svg";
     import apple_logo from "$lib/assets/icons/apple_logo.svg";
     import google_logo from "$lib/assets/icons/google_logo.svg";
-    import {loginSession} from "../../stores";
     import Loader from "./Loader.svelte";
+    import {authenticatedUser} from "../../stores";
 
     const credentials: Credentials = {
         email: '',
@@ -37,9 +37,26 @@
                 document.getElementById('password').classList.add('bg-green-200');
                 document.getElementById('password').classList.add('border-green-200');
 
-                const {token} = await response.json();
-                loginSession.set({token});
+                // extract token and name from response
+                const {token, name} = await response.json();
+
                 document.cookie = `token=${token}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+
+                const session:UserSession = {
+                    email: credentials.email,
+                    token: token,
+                    name: name,
+                }
+
+                authenticatedUser.subscribe((value) => {
+                    console.log(value);
+                });
+
+                authenticatedUser.update((value) => {
+                    return session;
+                });
+
+
 
                 await goto('/');
             } else {

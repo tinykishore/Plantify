@@ -6,6 +6,22 @@
     import PlantCategory from "./PlantCategory.svelte";
     import Loader from "./Loader.svelte";
     import GatewayTimeout from "$components/GatewayTimeout.svelte";
+    import {authenticatedUser} from "../stores";
+    import {useTokenCookie} from "../hooks.client";
+
+    const session:UserSession = {
+        email: "null",
+        token: "null",
+        name: "null",
+    }
+
+    authenticatedUser.subscribe((value) => {
+        session.email = value.email;
+        session.token = value.token;
+        session.name = value.name;
+    });
+
+    console.log(session);
 
     let key = "";
     let category = "";
@@ -44,7 +60,6 @@
             status = 200;
             filteredPlantList = plantList;
         } else status = 404;
-
     });
 
 </script>
@@ -66,3 +81,6 @@
 
     <Footer/>
 </main>
+
+{useTokenCookie()}
+
