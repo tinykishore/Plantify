@@ -52,7 +52,7 @@
                     console.log(value);
                 });
 
-                authenticatedUser.update((value) => {
+                authenticatedUser.update(() => {
                     return session;
                 });
 
@@ -83,7 +83,7 @@
         document.title = "Login | Plantify";
     });
 
-    const validateEmail = (event) => {
+    const validateEmail = (event:any) => {
         const email = event.target.value;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email) && email !== '') {
