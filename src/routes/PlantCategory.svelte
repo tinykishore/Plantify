@@ -19,10 +19,10 @@
 
     const dispatch = createEventDispatcher();
 
-    const handleCategoryKeyChange = (event) => {
+    const handleCategoryKeyChange = (event:any) => {
         selectedValue = event.target.value;
         dispatch('categoryKeyChange', selectedValue);
-    };
+    };0.
 </script>
 
 
@@ -35,10 +35,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class="transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/all:border-green-600
                   peer-checked/all:text-green-800 hover:text-green-600 peer-checked/all:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={logo_sm}/>
-            <div class="text-xs font-semibold">All</div>
-        </div>
+            <span class="text-xs font-semibold">All</span>
+        </span>
     </label>
 
     <input class="hidden peer/flowers" id="flowers" type="radio" bind:group={selectedValue} name="scoops" value="Flowers"
@@ -47,10 +47,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out inline-flex items-center justify-between p-2 text-zinc-500 drop-shadow-none
            border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/flowers:border-green-600
            peer-checked/flowers:text-green-800 hover:text-green-600 peer-checked/flowers:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_flower}/>
-            <div class="text-xs font-semibold">Flowers</div>
-        </div>
+            <span class="text-xs font-semibold">Flowers</span>
+        </span>
     </label>
 
 
@@ -60,10 +60,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
            border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/fruits:border-green-600
            peer-checked/fruits:text-green-800 hover:text-green-600 peer-checked/fruits:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_fruit}/>
-            <div class="text-xs font-semibold">Fruits</div>
-        </div>
+            <span class="text-xs font-semibold">Fruits</span>
+        </span>
     </label>
 
 
@@ -74,10 +74,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
               border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/vegetables:border-green-600
               peer-checked/vegetables:text-green-800 hover:text-green-600 peer-checked/vegetables:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_vegetable}/>
-            <div class="text-xs font-semibold">Vegetables</div>
-        </div>
+            <span class="text-xs font-semibold">Vegetables</span>
+        </span>
     </label>
 
     <input class="hidden peer/herbs" id="herbs" type="radio" bind:group={selectedValue} name="scoops" value="Herbs"
@@ -86,10 +86,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/herbs:border-green-600
                   peer-checked/herbs:text-green-800 hover:text-green-600 peer-checked/herbs:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_herbal}/>
-            <div class="text-xs font-semibold">Herbs</div>
-        </div>
+            <span class="text-xs font-semibold">Herbs</span>
+        </span>
     </label>
 
     <input class="hidden peer/trees" id="trees" type="radio" bind:group={selectedValue} name="scoops" value="Trees"
@@ -98,10 +98,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/trees:border-green-600
                   peer-checked/trees:text-green-800 hover:text-green-600 peer-checked/trees:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_tree}/>
-            <div class="text-xs font-semibold">Trees</div>
-        </div>
+            <span class="text-xs font-semibold">Trees</span>
+        </span>
     </label>
 
     <input class="hidden peer/shrubs" id="shrubs" type="radio" bind:group={selectedValue} name="scoops" value="Shrubs"
@@ -110,10 +110,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/shrubs:border-green-600
                   peer-checked/shrubs:text-green-800 hover:text-green-600 peer-checked/shrubs:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_shrub}/>
-            <div class="text-xs font-semibold">Shrubs</div>
-        </div>
+            <span class="text-xs font-semibold">Shrubs</span>
+        </span>
     </label>
 
     <input class="hidden peer/succulents" id="succulents" type="radio" bind:group={selectedValue} name="scoops"
@@ -123,10 +123,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/succulents:border-green-600
                   peer-checked/succulents:text-green-800 hover:text-green-600 peer-checked/succulents:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_succulent}/>
-            <div class="text-xs font-semibold">Succulents</div>
-        </div>
+            <span class="text-xs font-semibold">Succulents</span>
+        </span>
     </label>
 
     <input class="hidden peer/ferns" id="ferns" type="radio" bind:group={selectedValue} name="scoops" value="Ferns"
@@ -135,10 +135,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/ferns:border-green-600
                   peer-checked/ferns:text-green-800 hover:text-green-600 peer-checked/ferns:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_fern}/>
-            <div class="text-xs font-semibold">Ferns</div>
-        </div>
+            <span class="text-xs font-semibold">Ferns</span>
+        </span>
     </label>
 
     <input class="hidden peer/vines" id="vines" type="radio" bind:group={selectedValue} name="scoops" value="Vines"
@@ -147,10 +147,10 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/vines:border-green-600
                   peer-checked/vines:text-green-800 hover:text-green-600 peer-checked/vines:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_vine}/>
-            <div class="text-xs font-semibold">Vines</div>
-        </div>
+            <span class="text-xs font-semibold">Vines</span>
+        </span>
     </label>
 
     <input class="hidden peer/aquatic" id="aquatic" type="radio" bind:group={selectedValue} name="scoops" value="Aquatic"
@@ -159,17 +159,17 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
                   border-b-2 border-transparent rounded-sm cursor-pointer peer-checked/aquatic:border-green-600
                   peer-checked/aquatic:text-green-800 hover:text-green-600 peer-checked/aquatic:drop-shadow-lg hover:drop-shadow-lg">
-        <div class="flex flex-col justify-center items-center gap-y-2">
+        <span class="flex flex-col justify-center items-center gap-y-2">
             <img class="w-6" alt="The project logo" src={category_aquatic}/>
-            <div class="text-xs font-semibold">Aquatic</div>
-        </div>
+            <span class="text-xs font-semibold">Aquatic</span>
+        </span>
     </label>
 
     <button class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
-        <div class="flex justify-center items-center gap-x-2">
+        <span class="flex justify-center items-center gap-x-2">
             <img class="w-4" alt="The project logo" src={category_filter}/>
-            <div class="hidden lg:block text-xs font-semibold">More Filter</div>
-        </div>
+            <span class="hidden lg:block text-xs font-semibold">More Filter</span>
+        </span>
     </button>
 
 
