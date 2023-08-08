@@ -1,5 +1,3 @@
-import jwt from 'jsonwebtoken';
-import {JWT_SECRET} from "$env/static/private";
 import {closeMongoConnection, connectToMongo} from "$lib/server/mongoDatabase/database";
 import ConsolePrintWarn, {ConsolePrintError, ConsolePrintOK} from "$lib/server/ConsolePrint";
 
@@ -11,22 +9,14 @@ export const POST = async ({request}: any) => {
         const usersCollection = database.collection('users');
         const query = {
             email: credentials.email,
-            password: credentials.password
         };
         const success = await usersCollection.findOne(query);
 
-        console.log(success);
-
         if (success) {
             ConsolePrintOK("LoginAPI API RESPONSE: status 200")
-            const token = generateToken(
-                {email: credentials.email},
-                JWT_SECRET,
-                '12h'
-            );
-            const name = success.firstName + " " + success.lastName;
-            await usersCollection.updateOne(query, {$set: {token: token}})
-            return new Response(JSON.stringify({token: token, name: name}), {status: 200})
+
+            await usersCollection.updateOne(query, {$set: {token: null}})
+            return new Response(JSON.stringify({}), {status: 200})
         } else {
             ConsolePrintWarn("LoginAPI API RESPONSE: status 401")
             return new Response(null, {status: 401})
@@ -37,8 +27,4 @@ export const POST = async ({request}: any) => {
     } finally {
         await closeMongoConnection();
     }
-}
-
-function generateToken(payload: any, secret: string, expiresIn: string): string {
-    return jwt.sign(payload, secret, {expiresIn});
 }
