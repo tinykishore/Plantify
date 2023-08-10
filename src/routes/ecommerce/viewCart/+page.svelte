@@ -1,5 +1,5 @@
 <script>
-    import {cartArray} from "../../../stores.ts";
+    import {cartArray} from "../../../stores";
     let localCartArray = [];
 
 

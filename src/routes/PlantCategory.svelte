@@ -22,7 +22,7 @@
     const handleCategoryKeyChange = (event:any) => {
         selectedValue = event.target.value;
         dispatch('categoryKeyChange', selectedValue);
-    };0.
+    };
 </script>
 
 

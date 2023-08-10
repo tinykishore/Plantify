@@ -41,6 +41,7 @@
                 const {token, name} = await response.json();
 
                 document.cookie = `token=${token}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+                document.cookie = `email=${credentials.email}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
 
                 const session:UserSession = {
                     email: credentials.email,
@@ -56,9 +57,8 @@
                     return session;
                 });
 
+                await goto('/dashboard');
 
-
-                await goto('/');
             } else {
                 document.getElementById('email').classList.add('border-red-400');
                 document.getElementById('password').classList.add('border-red-400');

@@ -23,8 +23,8 @@
     });
 
     // Search key and category key
-    let searchKey:string = "";
-    let category:string = "";
+    let searchKey: string = "";
+    let category: string = "";
 
     // Plant list
     // Initial plant list is the list of plants fetched from the server
@@ -35,10 +35,31 @@
     let finalPlantList: any;
 
     // Status code for loading and error
-    let status:number = 401;
+    let status: number = 401;
 
     // Fetch the list of plants from the server (GET request)
     onMount(async () => {
+        const token = document.cookie.split("=")[1];
+        const loggedIn = await fetch('/api/test', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({token: token}),
+        }).then((response) => {
+            if (response.ok) return response.json();
+        }).catch(() => {
+            status = 500;
+        });
+        if(loggedIn){
+            const name = loggedIn.firstName + " " + loggedIn.lastName;
+            authenticatedUser.set({
+                email: loggedIn.email,
+                token: loggedIn.token,
+                name: name,
+            });
+        }
+
         // Set the title of the page
         document.title = "Plantify";
 
@@ -96,7 +117,7 @@
     {#if status === 401}
         <Loader/>
     {:else if status === 200}
-        <a href="/sell" class="btn btn-primary">Add Plant</a>
+        <a href="/ecommerce" class="btn btn-primary">Add Plant</a>
         <PlantsGrid bind:plantList={finalPlantList}/>
     {:else}
         <GatewayTimeout/>
