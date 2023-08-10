@@ -7,7 +7,7 @@
     export let searchKey = "";
     const dispatch = createEventDispatcher();
 
-    const handleSearchKeyChange = (event:any) => {
+    const handleSearchKeyChange = (event) => {
         searchKey = event.target.value;
         dispatch('searchKeyChange', searchKey);
     };
@@ -23,19 +23,6 @@
         session.token = user.token;
         session.name = user.name;
     })
-    const onLogOutButton = async () => {
-        const response = await fetch('/api/LogOutApi', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({email: session.email})
-        });
-        if(response.ok){
-            authenticatedUser.set({email: "", token: "", name: ""});
-            window.location.href = "/";
-        }
-    }
 
 </script>
 
@@ -59,7 +46,7 @@ to-emerald-100 from-green-50">
     {#if (session.email || session.token)}
         <div class="flex gap-4 place-self-end">
             <a class="mx-4 my-2" href="/dashboard">{session.name}</a>
-            <button class="mx-4 my-2" on:click={onLogOutButton}>Logout</button>
+            <a class="mx-4 my-2" href="/logout">Logout</a>
         </div>
     {:else}
         <div class="flex gap-4 place-self-end">
