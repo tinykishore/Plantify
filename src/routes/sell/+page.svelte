@@ -8,11 +8,11 @@
     import SellGrid from "./SellGrid.svelte";
     import {cartArray} from "../../stores";
 
-    let count = 0;
-    let cartList = [];
-    let key = "";
-    let category = "";
-    let localCartArray = [];
+    let count:number = 0;
+    let cartList:any = [];
+    let key:string = "";
+    let category:string = "";
+    let localCartArray:any = [];
 
     let plantList;
     let filteredPlantList;

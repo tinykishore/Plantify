@@ -7,7 +7,9 @@
     import google_logo from "$lib/assets/icons/google_logo.svg";
     import Loader from "./Loader.svelte";
     import {authenticatedUser} from "../../stores";
+    import {redirect} from "@sveltejs/kit";
 
+    // Credentials Object
     const credentials: Credentials = {
         email: '',
         password: ''
@@ -18,8 +20,11 @@
 
     $: validPassword = credentials.password !== '';
 
+    // Handle form submission
     const handleSubmit = async () => {
         try {
+            // Send credentials to server and await response
+            // Server response : {token: token, name: name, email: email}
             const response = await fetch('/api/LoginAPI', {
                 method: 'POST',
                 body: JSON.stringify(credentials),
@@ -28,8 +33,11 @@
                 }
             });
 
-
+            // If response is ok, update UI, extract token, name and email from response
+            // and store them in cookies as well as in session store
             if (response.ok) {
+
+                // Update UI
                 document.getElementById('email').classList.remove('border-red-400');
                 document.getElementById('password').classList.remove('border-red-400');
                 document.getElementById('email').classList.add('bg-green-200');
@@ -38,28 +46,30 @@
                 document.getElementById('password').classList.add('border-green-200');
 
                 // extract token and name from response
-                const {token, name} = await response.json();
+                const {token, name, email} = await response.json();
 
+                // Storing token, name and email in cookies
                 document.cookie = `token=${token}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `email=${credentials.email}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+                document.cookie = `email=${email}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+                document.cookie = `name=${name}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
 
+                // Storing token, name and email in session store
                 const session:UserSession = {
                     email: credentials.email,
                     token: token,
                     name: name,
                 }
-
-                authenticatedUser.subscribe((value) => {
-                    console.log(value);
-                });
-
                 authenticatedUser.update(() => {
                     return session;
                 });
 
+                // Redirect to dashboard
                 await goto('/dashboard');
 
-            } else {
+            }
+            // If response is not ok, update UI with error UI
+            else {
+                // Update UI
                 document.getElementById('email').classList.add('border-red-400');
                 document.getElementById('password').classList.add('border-red-400');
                 document.getElementById('password').nextElementSibling.classList.remove('invisible');
@@ -81,6 +91,12 @@
 
     onMount(() => {
         document.title = "Login | Plantify";
+
+        // Check if user is already logged in
+        const token = document.cookie.split('; ').find(row => row.startsWith('token='));
+        if (token) {
+            redirect(301, '/')
+        }
     });
 
     const validateEmail = (event:any) => {

@@ -15,7 +15,7 @@ interface UserProperties {
 }
 
 interface UserSession {
-    name: string,
-    email: string,
-    token: string
+    name: string | null,
+    email: string | null,
+    token: string | null
 }

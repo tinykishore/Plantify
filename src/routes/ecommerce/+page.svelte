@@ -1,6 +1,6 @@
-<script>
-    import {cartArray} from "../../../stores";
-    let localCartArray = [];
+<script lang="ts">
+    import {cartArray} from "../../stores.js";
+    let localCartArray:any = [];
 
 
     cartArray.subscribe((value) => {
