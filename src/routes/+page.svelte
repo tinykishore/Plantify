@@ -8,6 +8,7 @@
     import PlantsGrid from "./PlantsGrid.svelte";
     import PlantCategory from "./PlantCategory.svelte";
     import Loader from "./Loader.svelte";
+    import {Session} from "./Session";
 
     // Search key and category key
     let searchKey: string = "";
@@ -26,6 +27,9 @@
 
     // Fetch the list of plants from the server (GET request)
     onMount(async () => {
+
+        console.log("Token: ", Session.getToken());
+
         // Set the title of the page
         document.title = "Plantify";
 

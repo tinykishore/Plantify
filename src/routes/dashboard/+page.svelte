@@ -8,5 +8,8 @@ import Footer from "$lib/components/Footer.svelte";
 <main>
     <Navbar />
     <h1>Welcome name, dashboard</h1>
+    <a href="/sell">Buy plant</a>
+    <a href="/plantation-journey">Plantation Journey</a>
+
     <Footer/>
 </main>

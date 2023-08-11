@@ -2,6 +2,7 @@
     import {createEventDispatcher, onMount} from 'svelte';
     import logo from "$lib/assets/plantify.svg"
     import logo_sm from "$lib/assets/plantify-sm.svg"
+    import {Session} from "../../routes/Session";
 
     // Variable `searchKey` is exported to be used in other components
     export let searchKey = "";
@@ -13,21 +14,30 @@
         dispatch('searchKeyChange', searchKey);
     };
 
-    let session: UserSession | undefined = undefined;
+    // let session: UserSession | undefined = undefined;
+    let isAuthenticated:boolean = false;
 
     onMount(() => {
-        session = JSON.parse(sessionStorage.getItem('session') || '{}');
+        const token = Session.getToken();
+        if (token !== undefined) {
+            isAuthenticated = true;
+        }
     });
 
     const logoutButtonAction = async () => {
-        if(session?.token === undefined) return;
+        // if already logged out, do nothing
+        if(!isAuthenticated) return;
+
+        // remove database token
         const response = await fetch('/api/SignOut', {
             method: 'POST',
-            body: JSON.stringify({email: session.email, token: session.token}),
+            body: JSON.stringify({email: Session.getEmail(), token: Session.getToken()}),
             headers: {
                 'Content-Type': 'application/json'
             }
         });
+
+        // if response is ok, remove session token
         if (response.ok) {
             sessionStorage.removeItem('session');
             window.location.href = '/';
@@ -55,9 +65,9 @@ to-emerald-100 from-green-50">
         />
     </form>
 
-    {#if (session?.token !== undefined)}
+    {#if (isAuthenticated)}
         <div class="flex gap-4 place-self-end">
-            <a class="mx-4 my-2" href="/dashboard">{session.name}</a>
+            <a class="mx-4 my-2" href="/dashboard">{Session.getName()}</a>
             <button class="mx-4 my-2" on:click={logoutButtonAction}>Logout</button>
         </div>
     {:else}

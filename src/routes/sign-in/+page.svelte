@@ -55,7 +55,7 @@
 
                 // Store session in session store
                 sessionStorage.setItem('session', JSON.stringify(session));
-                console.log(sessionStorage.getItem('session'));
+                // console.log(sessionStorage.getItem('session'));
 
                 // Redirect to dashboard
                 await goto('/dashboard');
