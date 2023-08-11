@@ -20,9 +20,10 @@ interface UserSession {
 }
 
 interface Experience {
+    _id: string;
     name: string | undefined | null;
     email: string | undefined | null;
-    experience: string;
+    body: string;
     likes: number
 }
 

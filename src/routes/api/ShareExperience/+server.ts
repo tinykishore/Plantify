@@ -1,5 +1,5 @@
 import {closeMongoConnection, connectToMongo} from "$lib/server/mongoDatabase/database";
-import {ConsolePrintWarn, ConsolePrintError, ConsolePrintOK} from "$lib/server/ConsolePrint";
+import {ConsolePrintError, ConsolePrintOK, ConsolePrintWarn} from "$lib/server/ConsolePrint";
 
 export const POST = async ({request}: any) => {
     const experience: Experience = await request.json();
@@ -11,7 +11,7 @@ export const POST = async ({request}: any) => {
         const query = {
             name: experience.name,
             email: experience.email,
-            experience: experience.experience,
+            body: experience.body,
             likes: 0
         };
 
@@ -33,18 +33,17 @@ export const POST = async ({request}: any) => {
 }
 
 
-
-
 export const GET = async () => {
 
     try {
         const database = await connectToMongo();
         const experienceCollection = database.collection('shareExperience');
-       //fetch all the documents from shareExperience collection
-        const success = await experienceCollection.find({}).toArray();
+        //fetch all the documents from shareExperience collection
+        const success = await experienceCollection.find().toArray();
 
         if (success) {
             ConsolePrintOK("SignUpAuthentication API RESPONSE: status 200")
+            console.log(success)
             return new Response(JSON.stringify(success), {status: 200})
         } else {
             ConsolePrintWarn("SignUpAuthentication API RESPONSE: status 401")
