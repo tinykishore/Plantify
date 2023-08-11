@@ -1,26 +1,13 @@
 <script lang="ts">
     import {onMount} from "svelte";
-    import {authenticatedUser} from "../stores";
 
-    import Navbar from "$components/Navbar.svelte";
-    import Footer from "$components/Footer.svelte";
-    import GatewayTimeout from "$components/GatewayTimeout.svelte";
+    import Navbar from "$lib/components/Navbar.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+    import GatewayTimeout from "$lib/components/GatewayTimeout.svelte";
 
     import PlantsGrid from "./PlantsGrid.svelte";
     import PlantCategory from "./PlantCategory.svelte";
     import Loader from "./Loader.svelte";
-
-    const session: UserSession = {
-        email: "null",
-        token: "null",
-        name: "null",
-    }
-
-    authenticatedUser.subscribe((value) => {
-        session.email = value.email;
-        session.token = value.token;
-        session.name = value.name;
-    });
 
     // Search key and category key
     let searchKey: string = "";
@@ -30,36 +17,15 @@
     // Initial plant list is the list of plants fetched from the server
     // Filtered plant list is the list of plants filtered by category
     // Final plant list is the list of plants filtered by category and search key
-    let initialPlantList: any;
-    let filteredPlantList: any;
-    let finalPlantList: any;
+    let initialPlantList: Array<Plant>;
+    let filteredPlantList: Array<Plant>;
+    let finalPlantList: Array<Plant>;
 
     // Status code for loading and error
     let status: number = 401;
 
     // Fetch the list of plants from the server (GET request)
     onMount(async () => {
-        const token = document.cookie.split("=")[1];
-        const loggedIn = await fetch('/api/test', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({token: token}),
-        }).then((response) => {
-            if (response.ok) return response.json();
-        }).catch(() => {
-            status = 500;
-        });
-        if(loggedIn){
-            const name = loggedIn.firstName + " " + loggedIn.lastName;
-            authenticatedUser.set({
-                email: loggedIn.email,
-                token: loggedIn.token,
-                name: name,
-            });
-        }
-
         // Set the title of the page
         document.title = "Plantify";
 
@@ -117,7 +83,6 @@
     {#if status === 401}
         <Loader/>
     {:else if status === 200}
-        <a href="/ecommerce" class="btn btn-primary">Add Plant</a>
         <PlantsGrid bind:plantList={finalPlantList}/>
     {:else}
         <GatewayTimeout/>

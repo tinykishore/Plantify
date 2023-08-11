@@ -28,7 +28,7 @@ export const POST = async ({request}: any) => {
                 '12h'
             );
             // Get the user's name
-            const name: string = success.firstName + " " + success.lastName;
+            const name: string = success.name;
             // Get the user's email
             const email: string = success.email;
 
@@ -36,7 +36,9 @@ export const POST = async ({request}: any) => {
             await usersCollection.updateOne(query, {$set: {token: token}})
 
             // Return the token, name and email to the client
-            return new Response(JSON.stringify({token: token, name: name, email: email}), {status: 200})
+            return new Response(JSON.stringify({
+                name: name, email: email, token: token
+            }), {status: 200})
         } else {
             ConsolePrintWarn("LoginAPI API RESPONSE: status 401")
 

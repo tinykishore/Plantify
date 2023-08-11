@@ -1,5 +1,8 @@
 <script lang="ts">
+    // Import the Dispatcher function
     import {createEventDispatcher} from "svelte";
+
+    // Import the icons
     import category_flower from "$lib/assets/icons/category_flower.svg";
     import category_fruit from "$lib/assets/icons/category_fruit.svg";
     import category_vegetable from "$lib/assets/icons/category_vegetable.svg";
@@ -11,25 +14,30 @@
     import category_aquatic from "$lib/assets/icons/category_aquatic.svg";
     import category_filter from "$lib/assets/icons/category_filter.svg";
     import category_fern from "$lib/assets/icons/category_fern.svg";
-
     import logo_sm from "$lib/assets/plantify-sm.svg";
 
 
+    // Create `selectedValue` variable, export it to the parent component
     export let selectedValue = "";
 
+    // Create the dispatcher function
     const dispatch = createEventDispatcher();
 
-    const handleCategoryKeyChange = (event:any) => {
+    // Create the function to handle the change event.
+    // When the value of the radio button changes, the `selectedValue` variable will be updated.
+    // And the `handleCategoryKeyChange` event will be dispatched to the parent component.
+    const handleCategoryKeyChange = (event: any) => {
         selectedValue = event.target.value;
         dispatch('categoryKeyChange', selectedValue);
     };
 </script>
 
 
+<!-- Front End -->
 <main class="flex no-scroll overflow-x-scroll shadow-sm gap-x-8 w-full justify-evenly align-middle items-center py-2 px-24 sticky top-20 z-50
 bg-gradient-to-tr from-teal-50 to bg-green-50">
 
-    <input class="hidden peer/all" id="all" type="radio" bind:group={selectedValue} name="scoops" value=""
+    <input class="hidden peer/all" id="all" type="radio" bind:group={selectedValue} name="filter_category" value=""
            on:input={handleCategoryKeyChange}/>
     <label for="all"
            class="transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -41,7 +49,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/flowers" id="flowers" type="radio" bind:group={selectedValue} name="scoops" value="Flowers"
+    <input class="hidden peer/flowers" id="flowers" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Flowers"
            on:input={handleCategoryKeyChange}/>
     <label for="flowers"
            class=" transition-all duration-300 ease-in-out inline-flex items-center justify-between p-2 text-zinc-500 drop-shadow-none
@@ -54,7 +63,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
     </label>
 
 
-    <input class="hidden peer/fruits" id="fruits" type="radio" bind:group={selectedValue} name="scoops" value="Fruits"
+    <input class="hidden peer/fruits" id="fruits" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Fruits"
            on:input={handleCategoryKeyChange}/>
     <label for="fruits"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -67,7 +77,7 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
     </label>
 
 
-    <input class="hidden peer/vegetables" id="vegetables" type="radio" bind:group={selectedValue} name="scoops"
+    <input class="hidden peer/vegetables" id="vegetables" type="radio" bind:group={selectedValue} name="filter_category"
            value="Vegetables"
            on:input={handleCategoryKeyChange}/>
     <label for="vegetables"
@@ -80,7 +90,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/herbs" id="herbs" type="radio" bind:group={selectedValue} name="scoops" value="Herbs"
+    <input class="hidden peer/herbs" id="herbs" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Herbs"
            on:input={handleCategoryKeyChange}/>
     <label for="herbs"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -92,7 +103,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/trees" id="trees" type="radio" bind:group={selectedValue} name="scoops" value="Trees"
+    <input class="hidden peer/trees" id="trees" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Trees"
            on:input={handleCategoryKeyChange}/>
     <label for="trees"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -104,7 +116,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/shrubs" id="shrubs" type="radio" bind:group={selectedValue} name="scoops" value="Shrubs"
+    <input class="hidden peer/shrubs" id="shrubs" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Shrubs"
            on:input={handleCategoryKeyChange}/>
     <label for="shrubs"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -116,7 +129,7 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/succulents" id="succulents" type="radio" bind:group={selectedValue} name="scoops"
+    <input class="hidden peer/succulents" id="succulents" type="radio" bind:group={selectedValue} name="filter_category"
            value="Succulents"
            on:input={handleCategoryKeyChange}/>
     <label for="succulents"
@@ -129,7 +142,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/ferns" id="ferns" type="radio" bind:group={selectedValue} name="scoops" value="Ferns"
+    <input class="hidden peer/ferns" id="ferns" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Ferns"
            on:input={handleCategoryKeyChange}/>
     <label for="ferns"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -141,7 +155,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/vines" id="vines" type="radio" bind:group={selectedValue} name="scoops" value="Vines"
+    <input class="hidden peer/vines" id="vines" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Vines"
            on:input={handleCategoryKeyChange}/>
     <label for="vines"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none
@@ -153,7 +168,8 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </span>
     </label>
 
-    <input class="hidden peer/aquatic" id="aquatic" type="radio" bind:group={selectedValue} name="scoops" value="Aquatic"
+    <input class="hidden peer/aquatic" id="aquatic" type="radio" bind:group={selectedValue} name="filter_category"
+           value="Aquatic"
            on:input={handleCategoryKeyChange}/>
     <label for="aquatic"
            class=" transition-all duration-300 ease-in-out flex items-center justify-middle p-2 text-zinc-500 drop-shadow-none

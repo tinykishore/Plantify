@@ -6,7 +6,6 @@
     import apple_logo from "$lib/assets/icons/apple_logo.svg";
     import google_logo from "$lib/assets/icons/google_logo.svg";
     import Loader from "./Loader.svelte";
-    import {authenticatedUser} from "../../stores";
     import {redirect} from "@sveltejs/kit";
 
     // Credentials Object
@@ -25,7 +24,7 @@
         try {
             // Send credentials to server and await response
             // Server response : {token: token, name: name, email: email}
-            const response = await fetch('/api/LoginAPI', {
+            const response = await fetch('/api/SignIn', {
                 method: 'POST',
                 body: JSON.stringify(credentials),
                 headers: {
@@ -38,30 +37,25 @@
             if (response.ok) {
 
                 // Update UI
-                document.getElementById('email').classList.remove('border-red-400');
-                document.getElementById('password').classList.remove('border-red-400');
-                document.getElementById('email').classList.add('bg-green-200');
-                document.getElementById('email').classList.add('border-green-200');
-                document.getElementById('password').classList.add('bg-green-200');
-                document.getElementById('password').classList.add('border-green-200');
+                document.getElementById('email')!.classList.remove('border-red-400');
+                document.getElementById('password')!.classList.remove('border-red-400');
+                document.getElementById('email')!.classList.add('bg-green-200');
+                document.getElementById('email')!.classList.add('border-green-200');
+                document.getElementById('password')!.classList.add('bg-green-200');
+                document.getElementById('password')!.classList.add('border-green-200');
 
-                // extract token and name from response
+                // Extract token, name and email from response
                 const {token, name, email} = await response.json();
 
-                // Storing token, name and email in cookies
-                document.cookie = `token=${token}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `email=${email}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `name=${name}; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-
-                // Storing token, name and email in session store
                 const session:UserSession = {
-                    email: credentials.email,
-                    token: token,
                     name: name,
-                }
-                authenticatedUser.update(() => {
-                    return session;
-                });
+                    email: email,
+                    token: token
+                };
+
+                // Store session in session store
+                sessionStorage.setItem('session', JSON.stringify(session));
+                console.log(sessionStorage.getItem('session'));
 
                 // Redirect to dashboard
                 await goto('/dashboard');
@@ -70,19 +64,19 @@
             // If response is not ok, update UI with error UI
             else {
                 // Update UI
-                document.getElementById('email').classList.add('border-red-400');
-                document.getElementById('password').classList.add('border-red-400');
-                document.getElementById('password').nextElementSibling.classList.remove('invisible');
-                document.getElementById('submit').innerHTML = 'Log in';
-                document.getElementById('submit').classList.add('text-white');
-                document.getElementById('submit').classList.remove(
+                document.getElementById('email')!.classList.add('border-red-400');
+                document.getElementById('password')!.classList.add('border-red-400');
+                document.getElementById('password')!.nextElementSibling!.classList.remove('invisible');
+                document.getElementById('submit')!.innerHTML = 'Log in';
+                document.getElementById('submit')!.classList.add('text-white');
+                document.getElementById('submit')!.classList.remove(
                     'bg-transparent',
                     'border',
                     'text-teal-800',
                     'hover:bg-transparent',
                     'hover:shadow-none'
                 );
-                document.getElementById('loader_icon').classList.add('hidden');
+                document.getElementById('loader_icon')!.classList.add('hidden');
             }
         } catch (error) {
             console.error('Error:', error);
@@ -113,21 +107,21 @@
         }
     };
 
-    const onPasswordInput = (event) => {
+    const onPasswordInput = (event:any) => {
         event.target.classList.remove('border-red-400');
     }
 
     const onLoginButtonClick = () => {
-        document.getElementById('submit').innerHTML = 'Logging in...';
-        document.getElementById('submit').classList.remove('text-white');
-        document.getElementById('submit').classList.add(
+        document.getElementById('submit')!.innerHTML = 'Logging in...';
+        document.getElementById('submit')!.classList.remove('text-white');
+        document.getElementById('submit')!.classList.add(
             'bg-transparent',
             'border',
             'text-teal-800',
             'hover:bg-transparent',
             'hover:shadow-none'
         );
-        document.getElementById('loader_icon').classList.remove('hidden');
+        document.getElementById('loader_icon')!.classList.remove('hidden');
     }
 </script>
 
@@ -211,7 +205,7 @@
                             </button>
                         </div>
                     {:else}
-                        <button disabled type="submit"
+                        <button disabled
                                 class="place-self-center  bg-gray-300 text-white font-black outline-none
                                 rounded-full w-fit text-sm px-10 py-3 text-center transition-all duration-300 antialiased">
                             Sign In
