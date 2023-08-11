@@ -19,6 +19,12 @@ interface UserSession {
     token: string | null | undefined
 }
 
+interface Experience {
+    name: string | undefined | null;
+    email: string | undefined | null;
+    experience: string;
+    likes: number
+}
 
 interface Plant {
     _id: {
