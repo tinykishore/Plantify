@@ -61,7 +61,7 @@
 
 <main>
     <Navbar/>
-    <div class="container mx-auto px-8 md:px-64 pb-20 pt-12">
+    <div class="container mx-auto px-8 md:px-64  pt-12">
         <div class="flex-col flex gap-6 mt-10 justify-end items-end">
             <h1 class="w-full text-center font-extrabold text-3xl">Share your experiences and innovative ideas</h1>
             <textarea rows="5" class="bg-zinc-100 shadow-xl rounded-2xl w-full p-4" placeholder="Write your story here"
