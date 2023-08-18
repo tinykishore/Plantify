@@ -1,5 +1,3 @@
-import type {ObjectId} from "mongodb";
-
 export const load = async ({fetch, params}:any) => {
     let questionID:string = params.id;
 

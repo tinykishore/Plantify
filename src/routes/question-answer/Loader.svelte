@@ -1,5 +1,5 @@
 <main class="container mx-auto px-8 md:px-12 pb-20 pt-12 animate-pulse select-none">
-    <div class="flex flex-col md:grid md:grid-cols-2 gap-6 lg:grid-cols-2 mt-4 select-none">
+    <div class="flex flex-col md:grid md:grid-cols-3 gap-6 lg:grid-cols-3 mt-4 select-none">
         {#each Array(20) as _, i}
             <li class="hidden">{i + 1}</li>
             <div class="rounded-xl select-none w-full">
