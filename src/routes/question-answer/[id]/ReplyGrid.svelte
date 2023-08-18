@@ -1,6 +1,6 @@
 <script lang="ts">
     // Variable plantList holds all the plant data
-    import {Session} from "../Session";
+    import {Session} from "../../Session";
 
     export let experiences: Array<Experience>;
 
