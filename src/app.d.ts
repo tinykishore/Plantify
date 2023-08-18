@@ -27,6 +27,21 @@ interface Experience {
     likes: number
 }
 
+interface Question {
+    _id: string;
+    name: string | undefined | null;
+    email: string | undefined | null;
+    body: string;
+}
+
+interface Answer {
+    _id: string;
+    parentQuestionId: string;
+    name: string | undefined | null;
+    email: string | undefined | null;
+    body: string;
+}
+
 interface Plant {
     _id: {
         $oid: string;

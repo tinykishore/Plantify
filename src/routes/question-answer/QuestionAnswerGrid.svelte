@@ -1,0 +1,78 @@
+<script lang="ts">
+    // Variable plantList holds all the plant data
+    import {Session} from "../Session";
+
+    export let experiences: Array<Experience>;
+
+    let answer: string = "";
+
+    function generateRandomNumber(): number {
+        return Math.floor(Math.random() * 100);
+    }
+
+    const replyHandler = async (event: any) => {
+        // get the id of an element by name
+        const id = event.target.id;
+
+
+        const answerObj:Answer = {
+            _id: "",
+            parentQuestionId: id,
+            name: Session.getName(),
+            email: Session.getEmail(),
+            body: answer
+        }
+
+        const res = await fetch('/api/QuestionAnswer/ReplyQuestion', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(answerObj)
+        });
+
+        location.reload();
+    }
+</script>
+
+<main class="container mx-auto px-8 md:px-12 pb-20 pt-12">
+    <h1 class="font-black text-3xl w-full text-center mb-8 text-zinc-500">Experiences shared by others</h1>
+    <div class="flex flex-col md:grid md:grid-cols-1 gap-6 lg:grid-cols-1 mt-4">
+        {#if experiences.length === 0}
+            <div class="flex flex-col justify-center align-middle items-center col-span-full row-span-full w-full mx-auto h-full">
+                No experiences found
+            </div>
+        {:else}
+            {#each experiences as experience}
+
+                <a class="flex flex-col gap-4 rounded-xl bg-zinc-100 p-6 hover:drop-shadow-xl group w-96 transition-all duration-300 ease-in-out"
+                   href="/question-answer/{experience._id}/">
+                    <div class="flex flex-row gap-4 align-middle items-center justify-between">
+                        <div class="flex flex-row gap-4 align-middle items-center">
+                            <img class='w-12 h-12 mr-2 rounded-full'
+                                 src='https://api.dicebear.com/6.x/avataaars/svg?seed={generateRandomNumber()}%20Hill&backgroundColor=b6e3f4,c0aede,d1d4f9'
+                                 height='48px' width='48px' alt="">
+                            <div class="flex flex-col gap-1">
+                                <h1 class="font-bold text-xl">{experience.name}</h1>
+                                <h1 class="text-zinc-500 font-bold">{experience.email}</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h1 class="select-none">{experience.body}</h1>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button id={experience._id} name="ReplyButton" class="bg-zinc-800 text-white p-4 rounded-b-2xl" on:click={replyHandler}>
+                            Reply
+                        </button>
+
+                        <textarea class="bg-zinc-800 text-white p-4 rounded-b-2xl" bind:value={answer} placeholder="Reply to this experience"></textarea>
+                    </div>
+                </a>
+            {/each}
+        {/if}
+    </div>
+</main>
