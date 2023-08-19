@@ -10,29 +10,6 @@
         return Math.floor(Math.random() * 100);
     }
 
-    const replyHandler = async (event: any) => {
-        // get the id of an element by name
-        const id = event.target.id;
-
-
-        const answerObj:Answer = {
-            _id: "",
-            parentQuestionId: id,
-            name: Session.getName(),
-            email: Session.getEmail(),
-            body: answer
-        }
-
-        const res = await fetch('/api/QuestionAnswer/ReplyQuestion', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(answerObj)
-        });
-
-        location.reload();
-    }
 </script>
 
 <main class="container mx-auto px-8 md:px-12 pb-20 pt-12">
@@ -45,8 +22,7 @@
         {:else}
             {#each experiences as experience}
 
-                <a class="flex flex-col gap-4 rounded-xl bg-zinc-100 p-6 hover:drop-shadow-xl group w-96 transition-all duration-300 ease-in-out"
-                   href="/question-answer/{experience._id}/">
+                <div class="flex flex-col gap-4 rounded-xl bg-zinc-100 p-6 hover:drop-shadow-xl group w-96 transition-all duration-300 ease-in-out">
                     <div class="flex flex-row gap-4 align-middle items-center justify-between">
                         <div class="flex flex-row gap-4 align-middle items-center">
                             <img class='w-12 h-12 mr-2 rounded-full'
@@ -63,7 +39,7 @@
                     <div>
                         <h1 class="select-none">{experience.body}</h1>
                     </div>
-                </a>
+                </div>
             {/each}
         {/if}
     </div>

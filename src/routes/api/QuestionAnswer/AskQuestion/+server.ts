@@ -10,6 +10,7 @@ export const POST = async ({request}: any) => {
 
         const query = {
             name: question.name,
+            parentQuestionID: null,
             email: question.email,
             body: question.body,
         };

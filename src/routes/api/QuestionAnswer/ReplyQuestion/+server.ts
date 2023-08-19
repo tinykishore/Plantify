@@ -9,7 +9,7 @@ export const POST = async ({request}: any) => {
         const questionAnswerCollection = database.collection('questionAnswer');
 
         const query = {
-            parentQuestionId: answer.parentQuestionId,
+            parentQuestionID: answer.parentQuestionId,
             name: answer.name,
             email: answer.email,
             body: answer.body,

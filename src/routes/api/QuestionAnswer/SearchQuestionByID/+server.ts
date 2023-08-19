@@ -3,7 +3,7 @@ import {ConsolePrintError, ConsolePrintOK, ConsolePrintWarn} from "$lib/server/C
 import {ObjectId} from "mongodb";
 
 export const POST = async ({request}: any) => {
-        const questionID = await request.json();
+    const questionID = await request.json();
 
     // extract the value of the _id property from the request body
     const {_id} = questionID;
@@ -17,7 +17,6 @@ export const POST = async ({request}: any) => {
         const database = await connectToMongo();
         const questionAnswerCollection = database.collection('questionAnswer');
         const success = await questionAnswerCollection.findOne({_id: o_id});
-
         if (success) {
             ConsolePrintOK("SignUpAuthentication API RESPONSE: status 200")
             return new Response(JSON.stringify(success), {status: 200})
