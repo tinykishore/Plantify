@@ -52,12 +52,9 @@
 
 
 </script>
-
 <main>
     <Navbar/>
-
     <div class="container mx-auto px-8 md:px-32 pt-12">
-
         <div class="flex gap-2">
             <img class='w-12 h-12 mr-2 rounded-full'
                  src='https://api.dicebear.com/6.x/avataaars/svg?seed={generateRandomNumber()}%20Hill&backgroundColor=b6e3f4,c0aede,d1d4f9'

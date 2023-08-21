@@ -15,7 +15,7 @@
     };
 
     // let session: UserSession | undefined = undefined;
-    let isAuthenticated:boolean = false;
+    let isAuthenticated: boolean = false;
 
     onMount(() => {
         const token = Session.getToken();
@@ -26,7 +26,7 @@
 
     const logoutButtonAction = async () => {
         // if already logged out, do nothing
-        if(!isAuthenticated) return;
+        if (!isAuthenticated) return;
 
         // remove database token
         const response = await fetch('/api/authentication/SignOut', {
@@ -76,5 +76,4 @@ to-emerald-100 from-green-50">
             <a class="px-4 py-2 text-white bg-teal-700 rounded-full" href="/sign-up">Get Started</a>
         </div>
     {/if}
-
 </nav>
