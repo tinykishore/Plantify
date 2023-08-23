@@ -16,8 +16,6 @@
 
     onMount(async () => {
         console.log(fetchedReply)
-
-
         if (await fetchedReply) {
             status = 200;
         } else status = 404;

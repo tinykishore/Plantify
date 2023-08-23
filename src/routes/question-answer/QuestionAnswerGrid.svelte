@@ -19,7 +19,7 @@
             body: answer
         }
 
-        const res = await fetch('/api/QuestionAnswer/ReplyQuestion', {
+        await fetch('/api/QuestionAnswer/ReplyQuestion', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

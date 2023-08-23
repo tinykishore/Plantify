@@ -4,6 +4,4 @@
 
 <main>
     <Navbar/>
-
-
 </main>

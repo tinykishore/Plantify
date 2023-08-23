@@ -58,7 +58,7 @@ to-emerald-100 from-green-50">
 
     <form class="place-self-center">
         <input type="text" placeholder="Search Anything"
-               class="px-4 py-2 border border-gray-300 rounded-full
+               class="px-4 py-2 border border-gray-300 rounded-full w-[400px]
                focus:outline-none focus:ring-2 focus:ring-teal-600 text-center
                focus:border-transparent hover:shadow-md duration-300 transition-all focus:placeholder-white"
                bind:value={searchKey} on:input={handleSearchKeyChange}
