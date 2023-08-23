@@ -6,13 +6,13 @@
 
 <main class="bg-gradient-to-b from-green-100 via-green-50 to-white">
     <div class="container mx-auto px-12 md:px-36 pt-12">
-        <div class="flex justify-center mt-4">
+        <div class="flex justify-center mt-4 w-full">
             <div class="flex flex-col w-full justify-end">
-                <h1 class="text-6xl font-black text-[#453c30] w-fit">
+                <h1 class="text-6xl font-black text-[#453c30]">
                     Hi there!
                 </h1>
-                <svg class="w-fit h-fit">
-                    <text x="0%" y="60%" dy="0rem" text-anchor="start">
+                <svg class="w-full h-fit">
+                    <text x="0%" y="60%" class="w-full">
                         {Session.getName()}
                     </text>
                 </svg>
@@ -30,11 +30,9 @@
             <h1 class="animate-fadeIn transition-all duration-700 text-center
                 text-3xl bg-clip-text mt-16 font-black
                 text-green-600/60">
-                Swipe down to get started
+                Swipe or Scroll down to get started
             </h1>
-
             <img class="h-8 animate-pulse mt-4" src="{down_arrow}" alt="">
-
         </div>
     </div>
 </main>
@@ -47,11 +45,12 @@
     }
 
     svg text {
+        position: absolute;
         font-family: 'Gochi Hand', cursive;
         animation: stroke 3s forwards;
         stroke-width: 2;
         stroke: #54A262;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         font-weight: bold;
     }
 

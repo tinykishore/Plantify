@@ -8,7 +8,7 @@
     <Navbar/>
     <Greetings/>
 
-    <div class="g-green-800 container mx-auto px-12 md:px-36">
+    <div class="container mx-auto px-12 md:px-36">
         <div class="grid grid-cols-4 place-items-center">
             <a class="bg-amber-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-amber-950" href="/sell">
                 Buy plant

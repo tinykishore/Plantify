@@ -18,8 +18,7 @@
     let isAuthenticated: boolean = false;
 
     onMount(() => {
-        const token = Session.getToken();
-        if (token !== undefined) {
+        if (Session.getToken() !== undefined) {
             isAuthenticated = true;
         }
     });
