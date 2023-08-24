@@ -54,7 +54,7 @@
             {#each questions as question}
 
                 <a class="flex flex-col gap-4 rounded-xl bg-zinc-100 p-6 hover:drop-shadow-xl group w-96 transition-all duration-300 ease-in-out"
-                   href="/question-answer/{question._id}/">
+                   href="/community/question-answer/{question._id}/">
                     <div class="flex flex-col gap-4">
                         <h1 class="font-bold text-2xl">{clipText(question.body)}</h1>
 
