@@ -17,6 +17,7 @@
 
             <a href="/community/share-experience">Share Experiences</a>
             <a href="/community/question-answer">Question Answer</a>
+            <a href="/plantation-journey">Plantation Journey</a>
             <a href="/competitions">Competitions</a>
         </div>
     </div>

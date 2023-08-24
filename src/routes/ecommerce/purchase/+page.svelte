@@ -8,31 +8,30 @@
     import SellGrid from "./SellGrid.svelte";
     import {cartArray} from "../../../stores";
 
-
-
     let count = 0;
-    let cartList = [];
+    let cartList: any = [];
     let key = "";
     let category = "";
-    let localCartArray = [];
+    let localCartArray:any = [];
 
-    let plantList;
-    let filteredPlantList;
+    let plantList: any;
+    let filteredPlantList: any;
     let status = 401;
 
     cartArray.subscribe((value) => {
         localCartArray = value;
     });
+
     const handleSearch = () => {
         console.log(key);
-        filteredPlantList = plantList.filter((i) => {
+        filteredPlantList = plantList.filter((i: any) => {
             return i.product_name.toLowerCase().startsWith(key.toLowerCase()) || i.category.toLowerCase().includes(key.toLowerCase())
         });
     }
 
     const handleCategory = () => {
         if (category !== "") {
-            filteredPlantList = plantList.filter((flower) => {
+            filteredPlantList = plantList.filter((flower: any) => {
                 // FIXME: Previously: flower.category.toLowerCase().startsWith(category.toLowerCase());
                 return flower["category"].toLowerCase().startsWith(category.toLowerCase());
             });
@@ -42,18 +41,31 @@
     };
 
     const incrementCount = () => {
-        //add cartList into cartArray
-        cartArray.update((value) => {
-            value.push(cartList);
-            return value;
-        });
-        // console.log(localCartArray);
+        // dispatched cartList from SellGrid.svelte, if localCartArray contains the cartlist then increment the count
+        if (localCartArray.some((i: any) => i.name === cartList.name)) {
+            cartArray.update((value) => {
+                value.forEach((i: any) => {
+                    if (i.name === cartList.name) {
+                        i.quantity++;
+                    }
+                });
+                return value;
+            });
+        } else {
+            // else add item to cart
+            cartArray.update((value) => {
+                value.push(cartList);
+                return value;
+            });
+        }
         count++;
     }
 
+    $: console.log(localCartArray);
+
     onMount(async () => {
         document.title = "Plantify";
-        plantList = await fetch('/api/SellCollection').then((response) => {
+        plantList = await fetch('/api/ecommerce/SellCollection').then((response) => {
             if (response.ok) return response.json();
 
         }).catch(() => {
@@ -71,7 +83,7 @@
 <main>
     <Navbar bind:searchKey={key} on:searchKeyChange={handleSearch}/>
 
-    <SellCatagory count = {count} bind:selectedValue = {category} on:categoryKeyChange={handleCategory}/>
+    <SellCatagory bind:selectedValue={category} on:categoryKeyChange={handleCategory}/>
 
     {#if status === 401}
         <Loader/>

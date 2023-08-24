@@ -107,3 +107,13 @@ type Competitors = {
     contact_info: ContactInfo;
 };
 
+type Journey = {
+    email: string | undefined | null,
+    title: string,
+    location: string,
+    duration: string,
+    custom_duration: string | null,
+    tree_goal: number,
+    tree_species: string,
+    planting_sites: string
+}

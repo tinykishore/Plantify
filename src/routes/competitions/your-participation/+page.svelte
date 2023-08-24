@@ -1,6 +1,7 @@
 <script lang="ts">
     import {Session} from "../../Session";
     import {onMount} from "svelte";
+    import Navbar from "$lib/components/Navbar.svelte";
 
     const authorizedExtensions = ['.jpg', '.jpeg', '.png', '.webp', 'heic'];
 
@@ -47,11 +48,7 @@
             } else {
                 alert('Error uploading image');
             }
-
-
         };
-
-
     }
 
     onMount(async () => {
@@ -67,7 +64,8 @@
 
 </script>
 
-
+<Navbar/>
+<main class="container mx-auto px-8 md:px-32 pt-12">
 <form on:submit={onSubmitClick}>
     <div class="group">
         <label for="file">Upload your profile picture</label>
@@ -77,9 +75,12 @@
 </form>
 
 
-<div>
+<div class="mt-12 grid grid-cols-3 gap-6">
     {#each images as image}
-        <img src={image.data} alt="demo"/>
-        <h1 class="text-sm">{image.description}</h1>
+        <div class="drop-shadow border border-zinc-100 rounded-2xl">
+            <img class="h-full w-full rounded-2xl" src={image.data} alt="demo"/>
+            <h1 class="text-sm">{image.description}</h1>
+        </div>
     {/each}
 </div>
+</main>

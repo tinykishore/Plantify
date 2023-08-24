@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {createEventDispatcher} from "svelte";
+    import {createEventDispatcher, onMount} from "svelte";
     import category_flower from "$lib/assets/icons/category_flower.svg";
     import category_fruit from "$lib/assets/icons/category_fruit.svg";
     import category_vegetable from "$lib/assets/icons/category_vegetable.svg";
@@ -7,16 +7,28 @@
     import category_filter from "$lib/assets/icons/category_filter.svg";
 
     import logo_sm from "$lib/assets/plantify-sm.svg";
-    export let count = 0;
+    import {cartArray} from "../../../stores";
 
     export let selectedValue = "";
 
     const dispatch = createEventDispatcher();
 
-    const handleCategoryKeyChange = (event) => {
+    const handleCategoryKeyChange = (event: any) => {
         selectedValue = event.target.value;
         dispatch('categoryKeyChange', selectedValue);
     };
+
+    let itemNumber: number = 0;
+
+    onMount(() => {
+        cartArray.subscribe(value => {
+            let sum = 0;
+            value.forEach((i: any) => {
+                sum += i.quantity;
+                itemNumber = sum;
+            });
+        });
+    });
 
 </script>
 
@@ -88,17 +100,11 @@ bg-gradient-to-tr from-teal-50 to bg-green-50">
         </div>
     </label>
 
-    <button class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
+    <a href="/ecommerce/purchase/cart"
+       class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
         <div class="flex justify-center items-center gap-x-2">
             <img class="w-4" alt="The project logo" src={category_filter}/>
-            <div class="hidden lg:block text-xs font-semibold">More Filter</div>
-        </div>
-    </button>
-
-    <a href="/sell/viewCart" class=" transition-all duration-300 ease-in-out rounded-full py-2 px-4 bg-white shadow-md">
-        <div class="flex justify-center items-center gap-x-2">
-            <img class="w-4" alt="The project logo" src={category_filter}/>
-            <div class="hidden lg:block text-xs font-semibold">View Cart {count}</div>
+            <div class="hidden lg:block text-xs font-semibold">View Cart {itemNumber}</div>
         </div>
     </a>
 
