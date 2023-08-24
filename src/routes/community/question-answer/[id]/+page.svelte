@@ -1,8 +1,8 @@
 <script lang="ts">
     import {onMount} from "svelte";
-    import {Session} from "../../Session";
+    import {Session} from "../../../Session";
     import Navbar from "$lib/components/Navbar.svelte";
-    import Loader from "../../Loader.svelte";
+    import Loader from "../../../Loader.svelte";
     import ReplyGrid from "./ReplyGrid.svelte";
     import GatewayTimeout from "$lib/components/GatewayTimeout.svelte";
     import Footer from "$lib/components/Footer.svelte";

@@ -1,5 +1,11 @@
 declare namespace App {
-
+    type ContactInfo = {
+        phone: string;
+        address: string;
+        facebook: string;
+        twitter: string;
+        instagram: string;
+    };
 }
 
 interface Credentials {
@@ -88,3 +94,16 @@ interface Plant {
     imageURL: string;
     category: string;
 }
+
+
+type Competitors = {
+    email: string;
+    name: string;
+    likes: number;
+    joined: string;
+    age: number;
+    location: string;
+    trees_planted: number;
+    contact_info: ContactInfo;
+};
+

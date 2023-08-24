@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {Session} from "../Session.js";
+    import {Session} from "../../Session.js";
     import {onMount} from "svelte";
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";

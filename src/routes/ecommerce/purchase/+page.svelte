@@ -2,11 +2,11 @@
     import {onMount} from "svelte";
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
-    import Loader from "../share-experience/Loader.svelte";
+    import Loader from "../../community/share-experience/Loader.svelte";
     import GatewayTimeout from "$lib/components/GatewayTimeout.svelte";
     import SellCatagory from "./SellCatagory.svelte";
     import SellGrid from "./SellGrid.svelte";
-    import {cartArray} from "../../stores";
+    import {cartArray} from "../../../stores";
 
 
 

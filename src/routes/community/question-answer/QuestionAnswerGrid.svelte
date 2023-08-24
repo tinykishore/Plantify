@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {Session} from "../Session";
+    import {Session} from "../../Session";
 
     export let questions: Array<Question>;
 

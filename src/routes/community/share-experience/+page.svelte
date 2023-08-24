@@ -1,6 +1,6 @@
 <script lang="ts">
     import Navbar from "$lib/components/Navbar.svelte";
-    import {Session} from "../Session";
+    import {Session} from "../../Session";
     import {onMount} from "svelte";
     import Loader from "./Loader.svelte";
     import GatewayTimeout from "$lib/components/GatewayTimeout.svelte";
