@@ -66,12 +66,12 @@ to-emerald-100 from-green-50">
 
     {#if (isAuthenticated)}
         <div class="flex gap-4 place-self-end">
-            <a class="mx-4 my-2" href="/dashboard">{Session.getName()}</a>
-            <button class="mx-4 my-2" on:click={logoutButtonAction}>Logout</button>
+            <a class="px-4 py-2 hover:bg-green-950 rounded-full hover:text-white transition-all duration-300" href="/dashboard">Dashboard</a>
+            <button class="px-4 text-red-800 py-2 hover:bg-red-800 rounded-full hover:text-white transition-all duration-300" on:click={logoutButtonAction}>Logout</button>
         </div>
     {:else}
         <div class="flex gap-4 place-self-end">
-            <a class="mx-4 my-2" href="/sign-in">Sign In</a>
+            <a class="px-4 my-2" href="/sign-in">Sign In</a>
             <a class="px-4 py-2 text-white bg-teal-700 rounded-full" href="/sign-up">Get Started</a>
         </div>
     {/if}

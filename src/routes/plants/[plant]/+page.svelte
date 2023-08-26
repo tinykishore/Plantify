@@ -1,8 +1,9 @@
-<script lang="ts">
+<script lang="ts" xmlns="http://www.w3.org/1999/html">
     import {onMount} from "svelte";
     import Navbar from "$lib/components/Navbar.svelte";
     import {Session} from "../../Session";
     import Footer from "$lib/components/Footer.svelte";
+    import Review from "./Review.svelte";
 
     export let data;
     let flower = JSON.parse(data.plant);
@@ -13,8 +14,8 @@
 
 </script>
 
+<Navbar/>
 <main>
-    <Navbar/>
     <div class="container mx-auto px-12 md:px-36 mb-24">
         <div class="grid grid-cols-3 gap-x-12">
             <div class="flex flex-col gap-2 justify-center col-span-2">
@@ -134,6 +135,10 @@
         {/if}
 
     </div>
+
+    <Review bind:plant_id={flower._id}/>
+
+    <section class="my-20"> </section>
 </main>
 <Footer/>
 

@@ -1,29 +1,31 @@
 import {closeMongoConnection, connectToMongo} from "$lib/server/mongoDatabase/database";
 import {ConsolePrintError, ConsolePrintOK} from "$lib/server/ConsolePrint";
+import {ObjectId} from "mongodb";
 
-export const POST = async ({request}:any) => {
-    const data = await request.json();
+export const POST = async ({request}: any) => {
+    const {review, email, plant_id} = await request.json();
+    const o_id = new ObjectId(plant_id);
     try {
         const database = await connectToMongo();
-        const documentCollection = database.collection('competition');
-        const query = {email: data.email};
+        const flowersCollection = database.collection('plants');
         const updateQuery = {
-            $inc: {trees_planted: 1},
             $push:
-                {competition_images: {
-                        data: data.image,
-                        description: data.description,
-                        date: new Date().toISOString()
-                }}
+                {
+                    review: {
+                        email: email,
+                        review: review,
+                    }
+                }
         };
-        const success = await documentCollection.updateOne(query, updateQuery, {upsert: false});
 
-        if (success) {
+        const flowerExists = await flowersCollection.updateOne({_id: o_id}, updateQuery, {upsert: false});
+
+        if (flowerExists) {
             ConsolePrintOK("PlantsCollection API RESPONSE: status 200")
-            return new Response(null, {status: 200})
+            return new Response(JSON.stringify({}), {status: 200})
         } else {
             ConsolePrintError("PlantsCollection API RESPONSE: status 401")
-            return new Response(null, {status: 401})
+            return new Response(JSON.stringify({}), {status: 401})
         }
     } catch (error) {
         ConsolePrintError("DATABASE LOG: Error connecting to MongoDB: " + error);
