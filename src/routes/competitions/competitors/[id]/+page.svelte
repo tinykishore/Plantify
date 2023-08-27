@@ -42,36 +42,32 @@
 <Navbar/>
 <main class="container mx-auto px-12 md:px-52">
 
-        {#if images.data === null}
-            <h1 class="text-2xl text-center">No images found</h1>
-        {/if}
-        <div class="mt-12 grid grid-cols-3 gap-6">
-            {#each images as image}
+    {#if images.data === null}
+        <h1 class="text-2xl text-center">No images found</h1>
+    {/if}
+    <div class="mt-12 grid grid-cols-3 gap-6">
+        {#each images as image}
+            {#if image.data !== null}
                 <div class="drop-shadow border border-zinc-100 rounded-2xl">
                     <img class="h-full w-full rounded-2xl" src={image.data} alt="demo"/>
                     <h1 class="text-sm">{image.description}</h1>
                     <p class="text-gray-600 text-xs mb-4">Posted by: {image.author}</p>
                     <button on:click={clickedLike}
-                            class="flex items-center text-blue-500 hover:text-blue-600 transition duration-300">
+                            class="flex items-center text-blue-500 hover:text-blue-600 transition duration-300 focus:outline-none">
+                        Like
+                    </button>
+                    <div class="flex items-center text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12"/>
+                                  d="M5 15l7-7 7 7"/>
                         </svg>
-                        Like
-                    </button>
-
-                    <div class="flex items-center text-gray-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
-                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M5 15l7-7 7 7"/>
-                            </svg>
-                            {image.likes}
-                        </div>
+                        {image.likes}
+                    </div>
                 </div>
-            {/each}
-        </div>
+            {/if}
+        {/each}
+    </div>
 
 </main>
 <Footer/>
