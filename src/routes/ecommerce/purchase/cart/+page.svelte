@@ -33,7 +33,7 @@
             body: JSON.stringify(localCartArray)
         }).then((res) => res.json())
             .then((data) => {
-                console.log(data);
+                alert("Purchased Successfully")
                 cartArray.set([]);
             }).catch((err) => console.log(err));
     }
@@ -63,8 +63,12 @@
     }
 
     beforeUpdate(() => {
-       console.log(localCartArray);
+        console.log(selectedOption);
     });
+
+    const onchange = (event: any) => {
+        selectedOption = event.currentTarget.value;
+    }
 
 </script>
 
@@ -92,15 +96,24 @@
                     </div>
                 {/each}
             </div>
+
+            <hr class="mt-6 border-2 rounded-full border-green-950">
+
+            <h1 class="text-end mr-4 text-2xl font-black my-2 text-zinc-700">
+                Total: <span class="font-mono text-green-700">{total}</span>
+            </h1>
         </div>
 
+
         <div>
+            <h1 class="font-bold text-3xl pb-6 text-gray-700 text-center">Payment Method</h1>
             <ul class="flex flex-col w-full gap-6">
                 <li>
-                    <input bind:value={selectedOption} name="payment" type="radio" id="card"  class="hidden peer"
+                    <input checked={selectedOption === "card"} on:change={onchange} name="payment" type="radio"
+                           id="card" class="hidden peer" value="card"
                            required>
                     <label for="card"
-                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100">
                         <div class="block">
                             <div class="w-full">Card Payment</div>
                         </div>
@@ -112,9 +125,10 @@
                     </label>
                 </li>
                 <li>
-                    <input type="radio" id="bkash" name="payment" value="hosting-big" class="hidden peer">
+                    <input checked={selectedOption === "bkash"} on:change={onchange} type="radio" id="bkash"
+                           name="payment" value="bkash" class="hidden peer">
                     <label for="bkash"
-                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer  peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100">
                         <div class="block">
                             <div class="w-full">Bkash</div>
                         </div>
@@ -127,10 +141,11 @@
                 </li>
 
                 <li>
-                    <input type="radio" id="cod" name="payment" value="hosting-small" class="hidden peer"
+                    <input checked={selectedOption === "cod"} on:change={onchange} type="radio" id="cod" name="payment"
+                           value="cod" class="hidden peer"
                            required>
                     <label for="cod"
-                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100">
                         <div class="block">
                             <div class="w-full">Cash on Delivery (COD)</div>
                         </div>
@@ -142,50 +157,54 @@
                     </label>
                 </li>
             </ul>
+
+            {#if selectedOption === 'card'}
+                <div class="mt-4 p-2 flex flex-col gap-3">
+                    <div class="flex gap-2">
+                        <label for="cardNumber">Card Number</label>
+                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardNumber"
+                               bind:value={cardInfo.cardNumber}/>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <label for="cardName">Card Name</label>
+                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardName"
+                               bind:value={cardInfo.cardName}/>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <label for="cardExpiry">Card Expiry</label>
+                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardExpiry"
+                               bind:value={cardInfo.cardExpiry}/>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <label for="cardCvv">Card CVV</label>
+                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardCvv"
+                               bind:value={cardInfo.cardCvv}/>
+                    </div>
+                </div>
+
+                <button class="bg-green-950 text-white font-black px-4 py-2 rounded-xl" on:click={confirmOrder}>
+                    Confirm Order
+                </button>
+            {/if}
+
+            {#if selectedOption === 'bkash'}
+                <div>
+                    <label for="trxId">Transaction ID</label>
+                    <input type="text" id="trxId" bind:value={bkashInfo.trxId}/>
+                </div>
+
+                <button class="bg-green-950 text-white font-black px-4 py-2 rounded-xl" on:click={confirmOrder}>
+                    Confirm Order
+                </button>
+            {/if}
+
+
         </div>
 
 
-        <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">How much do you expect to use each
-            month?
-        </h3>
-
-
-        <h1 class=" text-2xl font-black my-12">
-            Total: {total}
-        </h1>
-
-
-        <select bind:value={selectedOption}>
-            {#each options as option (option.value)}
-                <option value={option.value}>{option.label}</option>
-            {/each}
-        </select>
-
-        {#if selectedOption === 'card'}
-            <div>
-                <label for="cardNumber">Card Number</label>
-                <input type="text" id="cardNumber" bind:value={cardInfo.cardNumber}/>
-                <label for="cardName">Card Name</label>
-                <input type="text" id="cardName" bind:value={cardInfo.cardName}/>
-                <label for="cardExpiry">Card Expiry</label>
-                <input type="text" id="cardExpiry" bind:value={cardInfo.cardExpiry}/>
-                <label for="cardCvv">Card CVV</label>
-                <input type="text" id="cardCvv" bind:value={cardInfo.cardCvv}/>
-
-                <!-- Add more input fields for card info if needed -->
-            </div>
-        {/if}
-
-        {#if selectedOption === 'bkash'}
-            <div>
-                <label for="trxId">Transaction ID</label>
-                <input type="text" id="trxId" bind:value={bkashInfo.trxId}/>
-            </div>
-        {/if}
-
-        <button class="mt-12 " on:click={confirmOrder}>
-            Confirm Order
-        </button>
     </div>
 </main>
 <Footer/>

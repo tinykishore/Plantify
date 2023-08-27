@@ -55,8 +55,8 @@
             </div>
         {:else}
             {#each sellList as item}
-                <div class="rounded-xl border hover:drop-shadow-xl group transition-all duration-300 ease-in-out flex flex-col items-center align-middle justify-between">
-                    <img class="rounded-t-xl h-[25rem]" alt="" src="{item.imageURL}"/>
+                <div class="rounded-xl border hover:shadow-xl group transition-all duration-300 ease-in-out flex flex-col items-center align-middle justify-between">
+                    <img class="rounded-t-xl h-[17rem] w-full" alt="" src="{item.imageURL}"/>
                     <div class="px-4 py-4">
                         <h1 class="custom-transition font-black text-2xl group-hover:text-teal-700">{item.product_name}</h1>
                         <h1 class=" text-sm font-semibold text-zinc-400 transition-all duration-300 group-hover:text-zinc-900">{item.description}</h1>

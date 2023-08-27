@@ -12,7 +12,7 @@
     let cartList: any = [];
     let key = "";
     let category = "";
-    let localCartArray:any = [];
+    let localCartArray: any = [];
 
     let plantList: any;
     let filteredPlantList: any;
@@ -74,7 +74,12 @@
         if (plantList) {
             status = 200;
             filteredPlantList = plantList;
+            // sort the plantList by name
+            filteredPlantList.sort((a: any, b: any) => {
+                return a.product_name.localeCompare(b.product_name);
+            });
         } else status = 404;
+
 
     });
 

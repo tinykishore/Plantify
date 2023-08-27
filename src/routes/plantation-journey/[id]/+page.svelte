@@ -15,6 +15,7 @@
         const goal = document.getElementById("goal").value;
         console.log(goal, id)
         if(goal === "") return;
+
         const response = await fetch(`/api/journey/CreateGoal`, {
             method: "POST",
             headers: {
@@ -28,7 +29,6 @@
     }
 
     const deleteGoal = async (e:any) => {
-
         // @ts-ignore
         const goal = e.target.name;
 
