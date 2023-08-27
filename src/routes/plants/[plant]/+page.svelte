@@ -16,11 +16,20 @@
 
 <Navbar/>
 <main>
-    <div class="container mx-auto px-12 md:px-36 mb-24">
-        <div class="mt-12  w-full grid grid-cols-3 gap-x-2">
-            <img src="{flower.img1}" alt="">
-            <img src="{flower.img2}" alt="">
-            <img src="{flower.img3}" alt="">
+    <div class="container mx-auto px-12 md:px-36 mb-24 mt-12">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div>
+                <img class="h-56 max-w-full rounded-lg"
+                     src={flower.img1} alt="">
+            </div>
+            <div>
+                <img class="h-56 max-w-full rounded-lg"
+                     src="{flower.img2}" alt="">
+            </div>
+            <div>
+                <img class="h-56 max-w-full rounded-lg"
+                     src="{flower.img3}" alt="">
+            </div>
         </div>
 
 
