@@ -77,7 +77,7 @@
                             d="M9 5l7 7-7 7"/>
                     </svg>
                 </span>
-                Let Me Share My Experience
+                Get Expert Advice
             </a>
 
             <div class="col-span-2 group">
@@ -94,7 +94,7 @@
             bg-amber-200 h-fit py-6 w-full px-6 rounded-2xl  text-xl font-bold text-amber-950
             hover:bg-amber-300 hover:text-amber-900 hover:shadow-lg transition duration-300 ease-in-out
             translate-y-5"
-               href="/community/share-experience">
+               href="/community/question-answer">
                 <span class="-translate-y-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none"
                          viewBox="0 0 24 24"
@@ -103,7 +103,7 @@
                             d="M9 5l7 7-7 7"/>
                     </svg>
                 </span>
-                Let Me Share My Experience
+                Ask Your Questions Here
             </a>
 
             <div class="col-span-2 group">
@@ -121,7 +121,7 @@
             bg-amber-200 h-fit py-6 w-full px-6 rounded-2xl  text-xl font-bold text-amber-950
             hover:bg-amber-300 hover:text-amber-900 hover:shadow-lg transition duration-300 ease-in-out
             translate-y-5"
-               href="/community/share-experience">
+               href="/plantation-journey">
                 <span class="-translate-y-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none"
                          viewBox="0 0 24 24"
@@ -130,7 +130,7 @@
                             d="M9 5l7 7-7 7"/>
                     </svg>
                 </span>
-                Let Me Share My Experience
+                Start Your Plantation Journey with us
             </a>
 
 
@@ -149,7 +149,7 @@
             bg-amber-200 h-fit py-6 w-full px-6 rounded-2xl  text-xl font-bold text-amber-950
             hover:bg-amber-300 hover:text-amber-900 hover:shadow-lg transition duration-300 ease-in-out
             translate-y-5"
-               href="/community/share-experience">
+               href="/competitions">
                 <span class="-translate-y-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none"
                          viewBox="0 0 24 24"
@@ -158,7 +158,7 @@
                             d="M9 5l7 7-7 7"/>
                     </svg>
                 </span>
-                Let Me Share My Experience
+                Take Part in Competitions
             </a>
 
 
@@ -177,7 +177,7 @@
             bg-amber-200 h-fit py-6 w-full px-6 rounded-2xl  text-xl font-bold text-amber-950
             hover:bg-amber-300 hover:text-amber-900 hover:shadow-lg transition duration-300 ease-in-out
             translate-y-5"
-               href="/community/share-experience">
+               href="/prediction">
                 <span class="-translate-y-0.5">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" fill="none"
                          viewBox="0 0 24 24"
@@ -186,30 +186,9 @@
                             d="M9 5l7 7-7 7"/>
                     </svg>
                 </span>
-                Let Me Share My Experience
+                Recognize a Plant with Plantify
             </a>
 
-
-            <a class="bg-blue-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-blue-900"
-               href="/community/share-experience">
-
-            </a>
-            <a class="bg-green-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-green-900"
-               href="/community/question-answer">
-                Question & Answer
-            </a>
-            <a class="bg-purple-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-purple-900"
-               href="/plantation-journey">
-                Plantation Journey
-            </a>
-            <a class="bg-yellow-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-yellow-900"
-               href="/competitions">
-                Competitions
-            </a>
-            <a class="bg-pink-200 w-full py-10 rounded-2xl text-center text-xl font-bold text-pink-900"
-               href="/prediction">
-                Predictions
-            </a>
         </div>
     </div>
 
