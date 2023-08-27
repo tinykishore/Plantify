@@ -1,6 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/Navbar.svelte";
     import image from "$lib/assets/identification.svg";
+    import disease from "$lib/assets/disease.svg";
     import Footer from "$lib/components/Footer.svelte";
 
     const authorizedExtensions = ['.jpg', '.jpeg', '.png', '.webp', 'heic'];
@@ -56,11 +57,11 @@
 
 <Navbar/>
 <main class="container mx-auto px-52">
-    <h1 class="text-4xl font-black text-green-600 mt-24 my-6 flex items-center">
-        Now we can recognize plants for you!
-        <span class="inline-block ml-4 px-2 py-1 text-white text-sm font-semibold bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl">
+    <h1 class="text-4xl font-black text-green-600 mt-24 flex items-center">
+        <span class="inline-block mr-4 px-2 py-1 text-white text-sm font-semibold bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl">
             Beta
         </span>
+        Now we can recognize plants for you!
     </h1>
     <div class="grid grid-cols-2 gap-12 place-items-start w-full">
         <form class="w-full flex flex-col justify-around pt-10" on:submit={onSubmitClick}>
@@ -70,9 +71,13 @@
                 the picture
             </h1>
             <div class="mb-4">
-                <label for="file" class="block text-gray-700 font-bold mb-2">Upload your profile picture</label>
+                <label for="file" class="block text-gray-700 font-bold mb-2">Upload an image <br>
+                    <span class="text-zinc-400">
+                        Supported Formats are jpg, jpeg, png, webp and heic
+                    </span>
+                </label>
                 <input accept={authorizedExtensions.join(',')} id="file" name="fileToUpload" required type="file"
-                       class="w-full border rounded py-2 px-3 bg-gray-100">
+                       class="w-full border rounded-xl py-2 px-3 bg-gray-100">
             </div>
             <button type="submit" class="bg-green-900 rounded-xl font-black text-white py-2 px-4 ">
                 <svg class="inline-block w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -120,8 +125,42 @@
 
         <div class="w-full place-self-start">
             <img src="{image}" alt="Identification" class="w-[34rem]">
-
         </div>
     </div>
+
+    <h1 class="text-4xl gap-4 font-black text-zinc-700/60 mt-10 items-center">
+        <span class="inline-block -translate-y-1.5 px-2 py-1 text-white text-sm font-semibold bg-gradient-to-r from-violet-500 to-purple-500 rounded-xl">
+            Upcomming
+        </span>
+        Identify diseases on plants!
+    </h1>
+    <div class="grid grid-cols-2 gap-12 place-items-start w-full">
+        <div class="w-full place-self-start">
+            <img src="{disease}" alt="Identification" class="w-[34rem]">
+        </div>
+        <form class="w-full flex flex-col justify-around pt-10 opacity-50 select-none" on:submit={onSubmitClick}>
+            <h1 class="mt-4 text-xl font-semibold text-zinc-500 pb-8 select-none">
+                Soon we will be able to tell you if your plant is sick or not! <span class="text-green-900"> Stay tuned for updates!</span>
+            </h1>
+            <div class="mb-4">
+                <label for="file" class="block text-gray-700 font-bold mb-2">Upload an image <br>
+                    <span class="text-zinc-400">
+                        Supported Formats are jpg, jpeg, png, webp and heic
+                    </span>
+                </label>
+                <input disabled name="fileToUpload" required type="file"
+                       class="w-full border rounded-xl py-2 px-3 bg-gray-100">
+            </div>
+            <button disabled type="submit" class="bg-zinc-900 rounded-xl font-black text-white py-2 px-4 ">
+                <svg class="inline-block w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+                Upload
+            </button>
+        </form>
+    </div>
 </main>
+<section class="my-24"></section>
 <Footer/>
