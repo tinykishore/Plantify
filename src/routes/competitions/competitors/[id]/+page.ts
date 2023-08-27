@@ -15,5 +15,6 @@ export const load = async ({fetch, params}: any) => {
     return {
         images: JSON.stringify(images),
         id: id
+
     }
 }

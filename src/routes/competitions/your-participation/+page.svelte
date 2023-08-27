@@ -5,6 +5,8 @@
 
     const authorizedExtensions = ['.jpg', '.jpeg', '.png', '.webp', 'heic'];
 
+    let description: string = '';
+
     export let images: any[] = [];
 
 
@@ -32,7 +34,7 @@
             const data = {
                 email: Session.getEmail(),
                 image: base64,
-                description: 'profile picture'
+                description: description
             }
 
             const response = await fetch('/api/competitions/UploadImage', {
@@ -66,17 +68,22 @@
 
 <Navbar/>
 <main class="container mx-auto px-8 md:px-32 pt-12">
-<form on:submit={onSubmitClick}>
-    <div class="group">
-        <label for="file">Upload your profile picture</label>
-        <input accept={authorizedExtensions.join(',')} id="file" name="fileToUpload" required type="file"/>
+<form class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md" on:submit={onSubmitClick}>
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="file">Upload your picture</label>
+        <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500" accept={authorizedExtensions.join(',')} id="file" name="fileToUpload" required type="file"/>
+        <textarea bind:value={description} class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500 mt-4" id="description" name="description" placeholder="Description" required></textarea>
+
     </div>
-    <button type="submit">Upload</button>
+    <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300" type="submit">Upload</button>
 </form>
 
 
 <div class="mt-12 grid grid-cols-3 gap-6">
     {#each images as image}
+        {#if image.data === null}
+            {}
+        {/if}
         <div class="drop-shadow border border-zinc-100 rounded-2xl">
             <img class="h-full w-full rounded-2xl" src={image.data} alt="demo"/>
             <h1 class="text-sm">{image.description}</h1>
