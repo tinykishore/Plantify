@@ -1,7 +1,6 @@
 <script lang="ts" xmlns="http://www.w3.org/1999/html">
     import {onMount} from "svelte";
     import Navbar from "$lib/components/Navbar.svelte";
-    import {Session} from "../../Session";
     import Footer from "$lib/components/Footer.svelte";
     import Review from "./Review.svelte";
 
@@ -125,37 +124,8 @@
                 </div>
             </div>
         </div>
-        <hr>
-
-        {#if (Session.getToken() === undefined)}
-            <h1 class="text-center text-4xl text-zinc-600 font-bold my-8">
-                Sign in for more information and reviews</h1>
-        {:else}
-            <h1 class="text-3xl font-black  mt-6">
-                Additional Information
-            </h1>
-            <div class="grid grid-cols-4 place-items-center  mt-6">
-                <div class="flex flex-col gap-2 bg-emerald-800 w-full h-full text-center
-                    px-2 py-4">
-                    <h1>{flower.averageHeight}</h1>
-                    <h1>{flower.averageHeight}</h1>
-
-                </div>
-
-                <h1>{flower.averageHeight}</h1>
-                <h1>{flower.averageHeight}</h1>
-                <h1>{flower.averageHeight}</h1>
-                <h1>{flower.averageHeight}</h1>
-                <h1>{flower.averageHeight}</h1>
-
-
-            </div>
-        {/if}
-
     </div>
-
-    <Review bind:plant_id={flower._id}/>
-
+    <Review/>
     <section class="my-20"></section>
 </main>
 <Footer/>
