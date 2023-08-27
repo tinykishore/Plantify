@@ -159,48 +159,83 @@
             </ul>
 
             {#if selectedOption === 'card'}
-                <div class="mt-4 p-2 flex flex-col gap-3">
-                    <div class="flex gap-2">
-                        <label for="cardNumber">Card Number</label>
-                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardNumber"
-                               bind:value={cardInfo.cardNumber}/>
+                <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-1">
+                            <label for="cardNumber" class="text-gray-600 font-semibold">Card Number</label>
+                            <input class="border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+                                   type="text" id="cardNumber" bind:value={cardInfo.cardNumber}
+                                   placeholder="**** **** **** ****"/>
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label for="cardName" class="text-gray-600 font-semibold">Card Name</label>
+                            <input class="border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+                                   type="text" id="cardName" bind:value={cardInfo.cardName} placeholder="John Doe"/>
+                        </div>
+
+                        <div class="flex gap-1">
+                            <div class="flex flex-col w-1/2 gap-1">
+                                <label for="cardExpiry" class="text-gray-600 font-semibold">Card Expiry</label>
+                                <input class="border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+                                       type="text" id="cardExpiry" bind:value={cardInfo.cardExpiry}
+                                       placeholder="MM/YY"/>
+                            </div>
+
+                            <div class="flex flex-col w-1/2 gap-1">
+                                <label for="cardCvv" class="text-gray-600 font-semibold">Card CVV</label>
+                                <input class="border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+                                       type="text" id="cardCvv" bind:value={cardInfo.cardCvv} placeholder="CVV"/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="flex gap-2">
-                        <label for="cardName">Card Name</label>
-                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardName"
-                               bind:value={cardInfo.cardName}/>
-                    </div>
-
-                    <div class="flex gap-2">
-                        <label for="cardExpiry">Card Expiry</label>
-                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardExpiry"
-                               bind:value={cardInfo.cardExpiry}/>
-                    </div>
-
-                    <div class="flex gap-2">
-                        <label for="cardCvv">Card CVV</label>
-                        <input class="border border-green-800 rounded py-2 px-4" type="text" id="cardCvv"
-                               bind:value={cardInfo.cardCvv}/>
-                    </div>
+                    <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-xl focus:outline-none transition duration-300"
+                            on:click={confirmOrder}>
+                        Confirm Order
+                    </button>
                 </div>
 
-                <button class="bg-green-950 text-white font-black px-4 py-2 rounded-xl" on:click={confirmOrder}>
-                    Confirm Order
-                </button>
             {/if}
 
             {#if selectedOption === 'bkash'}
-                <div>
-                    <label for="trxId">Transaction ID</label>
-                    <input type="text" id="trxId" bind:value={bkashInfo.trxId}/>
+                <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+                    <div class="mt-4">
+                        <label for="trxId" class="block text-gray-600 font-semibold mb-1">Transaction ID</label>
+                        <input type="text" id="trxId" bind:value={bkashInfo.trxId}
+                               class="border border-gray-300 rounded py-2 px-3 w-full focus:outline-none focus:border-blue-500"/>
+                    </div>
+
+                    <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-xl focus:outline-none transition duration-300"
+                            on:click={confirmOrder}>
+                        Confirm Order
+                    </button>
                 </div>
 
-                <button class="bg-green-950 text-white font-black px-4 py-2 rounded-xl" on:click={confirmOrder}>
-                    Confirm Order
-                </button>
             {/if}
 
+            {#if selectedOption === 'cod'}
+                <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+                    <div class="mt-4">
+                        <label for="address" class="block text-gray-600 font-semibold mb-1">Delivery Address</label>
+                        <input type="text" id="address"
+                               class="border border-gray-300 rounded py-2 px-3 w-full focus:outline-none focus:border-blue-500"/>
+                    </div>
+
+                    <div class="mt-4">
+                        <label for="phoneNumber" class="block text-gray-600 font-semibold mb-1">Phone Number</label>
+                        <input type="tel" id="phoneNumber"
+                               class="border border-gray-300 rounded py-2 px-3 w-full focus:outline-none focus:border-blue-500"/>
+                    </div>
+
+                    <button class="mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-xl focus:outline-none transition duration-300"
+                            on:click={confirmOrder}>
+                        Confirm Order
+                    </button>
+
+                </div>
+
+            {/if}
 
         </div>
 

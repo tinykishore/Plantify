@@ -76,11 +76,11 @@
             <textarea bind:value={description}
                       class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-500 mt-4"
                       id="description" name="description" placeholder="Description" required></textarea>
-
         </div>
-        <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
-                type="submit">Upload
-        </button>
+
+        <button class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition duration-300"
+                type="submit">Upload</button>
+
     </form>
 
 
