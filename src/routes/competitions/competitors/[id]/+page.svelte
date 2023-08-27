@@ -3,6 +3,8 @@
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
 
+    let imageExist = 0;
+
     export let data;
     let images = JSON.parse(data.images);
     let id = data.id;
@@ -48,6 +50,7 @@
     <div class="mt-12 grid grid-cols-3 gap-6">
         {#each images as image}
             {#if image.data !== null}
+                {imageExist = imageExist + 1}
                 <div class="drop-shadow border border-zinc-100 rounded-2xl">
                     <img class="h-full w-full rounded-2xl" src={image.data} alt="demo"/>
                     <h1 class="text-sm">{image.description}</h1>
@@ -67,6 +70,11 @@
                 </div>
             {/if}
         {/each}
+
+        {#if imageExist === 1}
+            <h1 class="text-2xl text-center">No images found</h1>
+        {/if}
+
     </div>
 
 </main>

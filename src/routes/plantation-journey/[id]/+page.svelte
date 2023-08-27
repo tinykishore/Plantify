@@ -1,6 +1,7 @@
 <script lang="ts">
     import Navbar from "$lib/components/Navbar.svelte";
     import {onMount} from "svelte";
+    import Footer from "$lib/components/Footer.svelte";
 
     export let data;
     let parsedData = JSON.parse(data.journey);
@@ -53,9 +54,12 @@
 <main class="container mx-auto px-12 md:px-36">
     <h1 class="mt-20 text-4xl font-black">Create goal</h1>
 
+   <div class="max-w-md p-6 bg-white rounded-lg shadow-md">
     <input type="text" id="goal" placeholder="Create a goal"
-           class="my-8 border-2 border-gray-300 rounded-md p-2 w-full mb-4">
-    <button class="bg-blue-500 text-white rounded-md p-2" on:click={createGoal}>Create</button>
+           class="border-2 border-gray-300 rounded-md p-3 w-full focus:outline-none focus:border-blue-500 mb-4">
+    <button class="bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-4 focus:outline-none transition duration-300" on:click={createGoal}>Create</button>
+</div>
+
 
     <div class="grid grid-cols-2 gap-x-8">
         <div >
@@ -79,3 +83,8 @@
 
     </div>
 </main>
+<section class="my-20">
+
+</section>
+
+<Footer/>
