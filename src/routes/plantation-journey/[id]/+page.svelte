@@ -26,6 +26,7 @@
                 id: id,
             }),
         });
+        if (response.ok) location.reload();
     }
 
     const deleteGoal = async (e:any) => {
@@ -43,20 +44,21 @@
                 id,
             }),
         });
+        if (response.ok) location.reload();
     }
 
 </script>
 
 <Navbar/>
 <main class="container mx-auto px-12 md:px-36">
-    <h1>Create goal</h1>
+    <h1 class="mt-20 text-4xl font-black">Create goal</h1>
 
     <input type="text" id="goal" placeholder="Create a goal"
-           class="border-2 border-gray-300 rounded-md p-2 w-full mb-4">
+           class="my-8 border-2 border-gray-300 rounded-md p-2 w-full mb-4">
     <button class="bg-blue-500 text-white rounded-md p-2" on:click={createGoal}>Create</button>
 
     <div class="grid grid-cols-2 gap-x-8">
-        <div>
+        <div >
             <h2 class="w-full text-center text-2xl font-bold my-6">Current goal</h2>
             <div class="w-full flex flex-col gap-4">
                 {#each parsedData.goals as item}
@@ -70,9 +72,8 @@
         </div>
 
         <div>
-            <h2 class="w-full text-center text-2xl font-bold">Completed goal</h2>
+            <h2 class="my-6 w-full text-center text-2xl font-bold">Completed goal</h2>
             <div>
-                // list
             </div>
         </div>
 

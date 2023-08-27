@@ -57,8 +57,6 @@
                     <div>
                         <h1 class="select-none">{experience.body}</h1>
                     </div>
-
-
                 </div>
             {/each}
         {/if}

@@ -14,7 +14,7 @@ export const POST = async ({request}: any) => {
         const documentCollection = database.collection('plantationJourney');
 
         const documentFindOneResult = await documentCollection.updateOne({_id: o_id},
-            {$pull: {"goals": goal}}
+            {$push: {"goals": goal}}
         )
 
 

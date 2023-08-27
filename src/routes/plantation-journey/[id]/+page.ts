@@ -11,6 +11,8 @@ export const load = async ({fetch, params}: any) => {
 
     const data = await response.json();
 
+    console.log(data);
+
     return {
         journey: JSON.stringify(data),
         id: id

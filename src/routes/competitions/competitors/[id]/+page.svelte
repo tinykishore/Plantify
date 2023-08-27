@@ -42,7 +42,6 @@
         <div>
             <img src={image.data} alt="demo"/>
             <h1 class="text-sm">{image.description}</h1>
-            <h1>c</h1>
             <button on:click={clickedLike}>
                 Like
             </button>

@@ -13,7 +13,7 @@ export const POST = async ({request}: any) => {
     try {
         const database = await connectToMongo();
         const documentCollection = database.collection('plantationJourney');
-        const updateQuery = {$pop: {goals: goal}};
+        const updateQuery = {$pull: {goals: goal}};
 
         const documentFindOneResult = await documentCollection.updateOne({_id: o_id}, updateQuery)
 
