@@ -5,7 +5,7 @@
 </script>
 
 <main class="bg-gradient-to-b from-green-100 via-green-50 to-white">
-    <div class="container mx-auto px-12 md:px-36 pt-12">
+    <div class="container mx-auto px-12 md:px-36 pt-4">
         <div class="flex justify-center mt-4 w-full">
             <div class="flex flex-col w-full justify-end">
                 <h1 class="text-6xl font-black text-[#453c30]">
