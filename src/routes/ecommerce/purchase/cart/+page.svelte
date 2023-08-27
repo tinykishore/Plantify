@@ -2,6 +2,7 @@
     import {cartArray} from "../../../../stores.js";
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
+    import {beforeUpdate} from "svelte";
 
     let localCartArray: any = [];
 
@@ -37,7 +38,7 @@
             }).catch((err) => console.log(err));
     }
 
-    let selectedOption = "card";
+    let selectedOption = "";
 
     const options = [
         {value: "card", label: "Card"},
@@ -58,7 +59,12 @@
     $: {
         total = localCartArray.reduce((acc: any, curr: any) => acc + (curr.price * curr.quantity), 0);
         total = Math.round(total * 100) / 100;
+
     }
+
+    beforeUpdate(() => {
+       console.log(localCartArray);
+    });
 
 </script>
 
@@ -88,66 +94,63 @@
             </div>
         </div>
 
-        <div class="place-items-center">
-            <h1 class="font-bold text-3xl pb-6 text-gray-700 text-center">Payment Method</h1>
-            <div class="bg-white p-6 rounded-md shadow-md max-w-md w-full">
-                <h1 class="text-xl font-semibold mb-4">Select Payment Method</h1>
-
-                <div class="space-y-4">
-                    <!-- Card Payment Method -->
-                    <label class="flex items-center cursor-pointer">
-                        <input type="radio" name="paymentMethod" class="hidden">
-                        <div class="flex items-center p-2 rounded-md border hover:bg-gray-100">
-                            <div class="bg-blue-100 text-blue-600 rounded-md p-2 mr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M3 4h18a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V6a2 2 0 012-2z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M3 10h18M3 16h9"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M15 6h2a2 2 0 012 2v8a2 2 0 01-2 2h-2M15 6a2 2 0 00-2-2a2 2 0 00-2 2M15 6a2 2 0 00-2-2a2 2 0 00-2 2"/>
-                                </svg>
-                            </div>
-                            <span>Card Payment</span>
+        <div>
+            <ul class="flex flex-col w-full gap-6">
+                <li>
+                    <input bind:value={selectedOption} name="payment" type="radio" id="card"  class="hidden peer"
+                           required>
+                    <label for="card"
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <div class="block">
+                            <div class="w-full">Card Payment</div>
                         </div>
+                        <svg class="w-5 h-5 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
                     </label>
-
-                    <!-- bKash Payment Method -->
-                    <label class="flex items-center cursor-pointer">
-                        <input type="radio" name="paymentMethod" class="hidden">
-                        <div class="flex items-center p-2 rounded-md border hover:bg-gray-100">
-                            <div class="bg-green-100 text-green-600 rounded-md p-2 mr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-                                </svg>
-                            </div>
-                            <span>bKash</span>
+                </li>
+                <li>
+                    <input type="radio" id="bkash" name="payment" value="hosting-big" class="hidden peer">
+                    <label for="bkash"
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <div class="block">
+                            <div class="w-full">Bkash</div>
                         </div>
+                        <svg class="w-5 h-5 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
                     </label>
+                </li>
 
-                    <!-- Cash on Delivery Payment Method -->
-                    <label class="flex items-center cursor-pointer">
-                        <input type="radio" name="paymentMethod" class="hidden">
-                        <div class="flex items-center p-2 rounded-md border hover:bg-gray-100">
-                            <div class="bg-red-100 text-red-600 rounded-md p-2 mr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                                </svg>
-                            </div>
-                            <span>Cash on Delivery</span>
+                <li>
+                    <input type="radio" id="cod" name="payment" value="hosting-small" class="hidden peer"
+                           required>
+                    <label for="cod"
+                           class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <div class="block">
+                            <div class="w-full">Cash on Delivery (COD)</div>
                         </div>
+                        <svg class="w-5 h-5 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
                     </label>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
-        <h1 class=" text-2xl font-black my-12
-                                ">
+
+        <h3 class="mb-5 text-lg font-medium text-gray-900 dark:text-white">How much do you expect to use each
+            month?
+        </h3>
+
+
+        <h1 class=" text-2xl font-black my-12">
             Total: {total}
         </h1>
 

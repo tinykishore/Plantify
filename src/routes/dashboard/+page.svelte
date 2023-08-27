@@ -5,6 +5,7 @@
 </script>
 
 <main>
+
     <Navbar/>
     <Greetings/>
 
@@ -19,6 +20,7 @@
             <a href="/community/question-answer">Question Answer</a>
             <a href="/plantation-journey">Plantation Journey</a>
             <a href="/competitions">Competitions</a>
+            <a href="/prediction">Competitions</a>
         </div>
     </div>
 
