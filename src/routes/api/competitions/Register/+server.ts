@@ -13,7 +13,14 @@ export const POST = async ({request}:any) => {
             joined: new Date().toISOString(),
             age: competitor.age,
             location: competitor.location,
-            trees_planted: 0
+            trees_planted: 0,
+            competition_images : [
+                {
+                    data: null,
+                    description: null,
+                    date: null
+                }
+            ]
         };
         const success = await competitorCollection.insertOne(query);
 

@@ -3,6 +3,7 @@
     import logo from "$lib/assets/plantify.svg"
     import logo_sm from "$lib/assets/plantify-sm.svg"
     import {Session} from "../../routes/Session";
+    import {page} from "$app/stores";
 
     // Variable `searchKey` is exported to be used in other components
     export let searchKey = "";
@@ -55,19 +56,27 @@ to-emerald-100 from-green-50">
         <img class="h-8 hidden md:flex" alt="The project logo" src={logo}/>
     </a>
 
-    <form class="place-self-center">
-        <input type="text" placeholder="Search Anything"
-               class="px-4 py-2 border border-gray-300 rounded-full w-[400px]
+    {#if $page.url.pathname === "/" || $page.url.pathname === "/ecommerce/purchase"}
+        <form class="place-self-center">
+            <input type="text" placeholder="Search Anything"
+                   class="px-4 py-2 border border-gray-300 rounded-full w-[400px]
                focus:outline-none focus:ring-2 focus:ring-teal-600 text-center
                focus:border-transparent hover:shadow-md duration-300 transition-all focus:placeholder-white"
-               bind:value={searchKey} on:input={handleSearchKeyChange}
-        />
-    </form>
+                   bind:value={searchKey} on:input={handleSearchKeyChange}
+            />
+        </form>
+    {:else }
+        <div></div>
+    {/if}
+
 
     {#if (isAuthenticated)}
         <div class="flex gap-4 place-self-end">
-            <a class="px-4 py-2 hover:bg-green-950 rounded-full hover:text-white transition-all duration-300" href="/dashboard">Dashboard</a>
-            <button class="px-4 text-red-800 py-2 hover:bg-red-800 rounded-full hover:text-white transition-all duration-300" on:click={logoutButtonAction}>Logout</button>
+            <a class="px-4 py-2 hover:bg-green-950 rounded-full hover:text-white transition-all duration-300"
+               href="/dashboard">Dashboard</a>
+            <button class="px-4 text-red-800 py-2 hover:bg-red-800 rounded-full hover:text-white transition-all duration-300"
+                    on:click={logoutButtonAction}>Logout
+            </button>
         </div>
     {:else}
         <div class="flex gap-4 place-self-end">
