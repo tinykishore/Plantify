@@ -1,5 +1,7 @@
 # Plantify 🌱
 
+:star: **Awarded *Runner Up* in CSE Project Show 231 at United International University** :star:
+
 Plantify is a powerful web application designed to inspire, educate, and encourage users to adopt tree-planting habits, contributing to a greener and more sustainable environment. This platform aims to make the process of planting and caring for trees enjoyable and informative, while also fostering a sense of community among users.
 
 ## 🌿 Installation
