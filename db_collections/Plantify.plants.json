@@ -1,0 +1,3395 @@
+[{
+  "_id": {
+    "$oid": "64baeafc4e0e3c040980d78a"
+  },
+  "name": "Grape",
+  "species": "Vitis vinifera",
+  "family": "Vitaceae",
+  "origin": [
+    "Western Asia",
+    "Europe"
+  ],
+  "description": "Grapes are fruits used to produce wine and known for their sweet and juicy flavor.",
+  "careInstructions": "Grapevines require full sunlight, regular watering, and well-drained soil. They need support for their climbing habit.",
+  "averageHeight": "6-12 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Climbing",
+  "fruitColor": [
+    "Green",
+    "Purple",
+    "Red"
+  ],
+  "fruitShape": "Round",
+  "fruitTaste": "Sweet",
+  "fruitSeason": "Late summer to early autumn",
+  "pollinationMethod": "Self-pollination",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Mild",
+  "temperatureTolerance": "Zone 6 to Zone 9",
+  "hardinessZone": "6-9",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Cuttings",
+    "Grafting"
+  ],
+  "pestsAndDiseases": [
+    "Grapevine moth",
+    "Downy mildew"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in late winter or early spring",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Birds"
+  ],
+  "companionPlantingRecommendations": [
+    "Rosemary",
+    "Marigold"
+  ],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Not suitable for containers",
+  "fallColor": "Red, Yellow, Purple",
+  "specialFeatures": [
+    "Edible fruit",
+    "Used for winemaking"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Cabernet_Sauvignon_Gaillac.jpg",
+  "category": "Fruits"
+},
+{
+  "_id": {
+    "$oid": "64baf4354e0e3c040980d7b8"
+  },
+  "name": "Duckweed",
+  "species": "Lemna minor",
+  "family": "Araceae",
+  "origin": [
+    "Various regions worldwide"
+  ],
+  "description": "Duckweed is a small, free-floating aquatic plant that reproduces rapidly and forms dense mats on the water's surface.",
+  "careInstructions": "Duckweed requires still or slow-moving freshwater with plenty of sunlight. It is an essential food source for various aquatic organisms.",
+  "averageHeight": "1-10 mm",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Floating on water",
+  "soilTypePreferences": "Not applicable",
+  "growthHabit": "Floating",
+  "flowerColor": [
+    "Not applicable"
+  ],
+  "leafShape": "Oval",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer",
+    "Autumn",
+    "Winter"
+  ],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [
+    "Leaves",
+    "Roots"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 4 to Zone 10",
+  "hardinessZone": "4-10",
+  "growthRate": "Rapid",
+  "propagationMethods": [
+    "Division",
+    "Runners"
+  ],
+  "pestsAndDiseases": [
+    "Algae",
+    "Duckweed beetles"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Not applicable",
+  "pruningNeeds": "Remove excess growth regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Fish",
+    "Waterfowl"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Not cold-hardy",
+  "rootSystemType": "Rootlets",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers or ponds",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Rapid growth",
+    "Provides food and shelter for aquatic life"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/61/Eendekroos_dicht_bijeen.JPG",
+  "category": "Aquatic Plants"
+},
+{
+  "_id": {
+    "$oid": "64baea454e0e3c040980d782"
+  },
+  "name": "Apple",
+  "species": "Malus domestica",
+  "family": "Rosaceae",
+  "origin": [
+    "Central Asia"
+  ],
+  "description": "Apples are popular fruits known for their sweet and crunchy taste.",
+  "careInstructions": "Apple trees require full sunlight, regular watering, well-drained soil, and pruning in late winter. They are susceptible to pests like apple maggots and diseases like apple scab.",
+  "averageHeight": "10-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "fruitColor": [
+    "Red",
+    "Green",
+    "Yellow"
+  ],
+  "fruitShape": "Round",
+  "fruitTaste": "Sweet",
+  "fruitSeason": "Late summer to early autumn",
+  "pollinationMethod": "Cross-pollination",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Mild",
+  "temperatureTolerance": "Zone 3 to Zone 9",
+  "hardinessZone": "3-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Grafting",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Apple maggots",
+    "Apple scab"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in late winter",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees"
+  ],
+  "companionPlantingRecommendations": [
+    "Chives",
+    "Marigold"
+  ],
+  "winterHardiness": "Some varieties may require protection in colder regions",
+  "rootSystemType": "Taproot",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Not suitable for containers",
+  "fallColor": "Yellow",
+  "specialFeatures": [
+    "Edible fruit"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/360px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg",
+  "category": "Fruits",
+  "img1": "https://images.pexels.com/photos/6035/healthy-apple-summer-garden.jpg?cs=srgb&dl=pexels-kaboompics-com-6035.jpg&fm=jpg",
+  "img2": "https://media.istockphoto.com/id/1247741393/photo/ripe-and-juicy-apples-on-a-tree-in-the-garden.jpg?s=612x612&w=0&k=20&c=XM0Dyklg5TpD06x7khfh0QkWw4SnoC7MM_1gIEpBGdg=",
+  "img3": "https://www.grasshoppergardens.com/wp-content/uploads/2022/10/shutterstock_1508722937-scaled.jpg"
+},
+{
+  "_id": {
+    "$oid": "649c8fbd953e5f4e4ae9b867"
+  },
+  "name": "Thyme",
+  "species": "Thymus vulgaris",
+  "family": "Lamiaceae",
+  "origin": [
+    "Mediterranean region",
+    "Southern Europe"
+  ],
+  "description": "Thyme is a small perennial herb with fragrant leaves used as a culinary seasoning.",
+  "careInstructions": "Thyme prefers full sunlight and well-drained soil. It is drought-tolerant and doesn't require much water.",
+  "averageHeight": "6-12 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Low water requirements",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Low-spreading",
+  "leafShape": "Linear",
+  "foliageTexture": "Fine",
+  "bloomSeason": "Summer",
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Nutlet",
+  "edibleParts": [
+    "Leaves"
+  ],
+  "medicinalProperties": [
+    "Antiseptic",
+    "Digestive aid"
+  ],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Hardy in USDA zones 4-9",
+  "hardinessZone": "4-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Low",
+  "pruningNeeds": "Prune regularly to maintain shape",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Tomatoes",
+    "Eggplants"
+  ],
+  "winterHardiness": "Hardy in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small to medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Culinary uses",
+    "Fragrant leaves"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Thymus_vulgaris_001.JPG",
+  "category": "Herbs"
+},
+{
+  "_id": {
+    "$oid": "64baf1fe4e0e3c040980d7ac"
+  },
+  "name": "Japanese Painted Fern",
+  "species": "Athyrium niponicum",
+  "family": "Athyriaceae",
+  "origin": [
+    "Japan",
+    "Korea",
+    "China",
+    "Taiwan"
+  ],
+  "description": "Japanese Painted Ferns are deciduous ferns with unique silver-gray fronds and purple veins, creating a striking and colorful foliage display.",
+  "careInstructions": "Japanese Painted Ferns thrive in partial to full shade and well-draining, moist soil. They require regular watering to keep the soil consistently moist.",
+  "averageHeight": "12-24 inches",
+  "sunlightRequirements": "Partial to full shade",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Clumping",
+  "leafShape": "Lacy",
+  "foliageTexture": "Silvery",
+  "bloomSeason": [],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 4 to Zone 8",
+  "hardinessZone": "4-8",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Division",
+    "Spores"
+  ],
+  "pestsAndDiseases": [
+    "Slugs",
+    "Snails"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove dead fronds in spring",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from severe frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium-sized containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Colorful foliage",
+    "Textured fronds"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Athyrium_niponicum_pictum_1.jpg/1200px-Athyrium_niponicum_pictum_1.jpg",
+  "category": "Ferns"
+},
+{
+  "_id": {
+    "$oid": "64baf31f4e0e3c040980d7af"
+  },
+  "name": "Hops",
+  "species": "Humulus lupulus",
+  "family": "Cannabaceae",
+  "origin": [
+    "Northern Hemisphere"
+  ],
+  "description": "Hops are climbing vines widely cultivated for their use in beer production as a flavoring and stability agent.",
+  "careInstructions": "Hops prefer full sunlight, rich and well-draining soil, and regular watering. They require support structures for climbing.",
+  "averageHeight": "15-25 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Rich, well-draining soil",
+  "growthHabit": "Climbing",
+  "flowerColor": [
+    "Green"
+  ],
+  "leafShape": "Lobed",
+  "foliageTexture": "Rough",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Wind-pollinated",
+  "fruitType": "Cone",
+  "edibleParts": [
+    "Flowers"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 3 to Zone 8",
+  "hardinessZone": "3-8",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Rhizome division",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Spider mites"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in spring to remove old growth",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Grapes",
+    "Fruit trees"
+  ],
+  "winterHardiness": "Hardy in colder regions",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Used in beer production"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Hopfen1.jpg/1200px-Hopfen1.jpg",
+  "category": "Vines"
+},
+{
+  "_id": {
+    "$oid": "64baf4354e0e3c040980d7b5"
+  },
+  "name": "Water Lily",
+  "species": "Nymphaea",
+  "family": "Nymphaeaceae",
+  "origin": [
+    "Various regions worldwide"
+  ],
+  "description": "Water lilies are aquatic plants known for their beautiful floating leaves and fragrant flowers that bloom on the water's surface.",
+  "careInstructions": "Water lilies require still or slow-moving freshwater with plenty of sunlight. They are best planted in pots or containers submerged in the water.",
+  "averageHeight": "3-6 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Submerged in water",
+  "soilTypePreferences": "Muddy or loamy soil",
+  "growthHabit": "Floating",
+  "flowerColor": [
+    "White",
+    "Pink",
+    "Yellow",
+    "Red"
+  ],
+  "leafShape": "Circular",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer",
+    "Autumn"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Berry-like",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 10",
+  "hardinessZone": "4-10",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Rhizome division",
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Leaf beetles"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove old and yellow leaves regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Dragonflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers or pots",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Floating leaves",
+    "Fragrant flowers"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/11/Nymphaea_nouchali5.JPG",
+  "category": "Aquatic Plants"
+},
+{
+  "_id": {
+    "$oid": "64baf1fe4e0e3c040980d7aa"
+  },
+  "name": "Bird's Nest Fern",
+  "species": "Asplenium nidus",
+  "family": "Aspleniaceae",
+  "origin": [
+    "Southeast Asia",
+    "East Africa",
+    "Hawaii",
+    "Australia"
+  ],
+  "description": "Bird's Nest Ferns are tropical ferns known for their wide, nest-like appearance and glossy green fronds.",
+  "careInstructions": "Bird's Nest Ferns prefer bright, indirect light and high humidity. Keep the soil evenly moist but not waterlogged.",
+  "averageHeight": "2-3 feet",
+  "sunlightRequirements": "Bright, indirect light",
+  "wateringNeeds": "Consistently moist",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Rosette",
+  "leafShape": "Sword-shaped",
+  "foliageTexture": "Glossy",
+  "bloomSeason": [],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 10 to Zone 12",
+  "hardinessZone": "10-12",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Division",
+    "Spores"
+  ],
+  "pestsAndDiseases": [
+    "Scale insects",
+    "Mealybugs"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Trim dead fronds regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Nest-like appearance",
+    "Attractive glossy fronds"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/84/Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg",
+  "category": "Ferns"
+},
+{
+  "_id": {
+    "$oid": "64bae7384e0e3c040980d77d"
+  },
+  "name": "Tulip",
+  "species": "Tulipa",
+  "family": "Liliaceae",
+  "origin": [
+    "Central Asia",
+    "Middle East"
+  ],
+  "description": "Tulips are herbaceous perennial plants known for their cup-shaped, vibrant-colored flowers.",
+  "careInstructions": "Tulips require full sunlight, well-drained soil, and moderate watering. Plant the bulbs in the fall for spring blooms.",
+  "averageHeight": "8-24 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Moderate watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "Red",
+    "Yellow",
+    "Pink",
+    "Purple",
+    "White",
+    "Orange"
+  ],
+  "leafShape": "Linear",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Slight",
+  "temperatureTolerance": "Zone 3 to Zone 8",
+  "hardinessZone": "3-8",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Bulbs",
+    "Seed"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Slugs",
+    "Tulip fire"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove spent flowers",
+  "toxicity": "Mildly toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Hardy",
+  "rootSystemType": "Bulbous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Vibrant colored blooms",
+    "Popular spring flower"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Liriodendron_tulipifera.jpg/640px-Liriodendron_tulipifera.jpg",
+  "category": "Flowers"
+},
+{
+  "_id": {
+    "$oid": "649c8fbd953e5f4e4ae9b865"
+  },
+  "name": "Basil",
+  "species": "Ocimum basilicum",
+  "family": "Lamiaceae",
+  "origin": [
+    "India",
+    "Southeast Asia"
+  ],
+  "description": "Basil is a fragrant herb widely used in culinary dishes and has various medicinal properties.",
+  "careInstructions": "Basil prefers full sunlight and well-draining soil. Keep the soil consistently moist but not waterlogged. Pinch off flowers to encourage leaf growth.",
+  "averageHeight": "1-2 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Consistently moist soil",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "leafShape": "Ovate",
+  "foliageTexture": "Soft",
+  "bloomSeason": "Summer",
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Nutlet",
+  "edibleParts": [
+    "Leaves",
+    "Flowers"
+  ],
+  "medicinalProperties": [
+    "Antioxidant",
+    "Anti-inflammatory"
+  ],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Hardy in USDA zones 3-11",
+  "hardinessZone": "3-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Fusarium wilt"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Moderate",
+  "pruningNeeds": "Pinch off flowers to encourage leaf growth",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Tomatoes",
+    "Peppers"
+  ],
+  "winterHardiness": "Not cold-tolerant, grown as an annual in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Aromatic leaves",
+    "Culinary uses"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/BasilikumGenovesergroßblättriger.jpg/800px-BasilikumGenovesergroßblättriger.jpg",
+  "category": "Herbs"
+},
+{
+  "_id": {
+    "$oid": "64bae7384e0e3c040980d780"
+  },
+  "name": "Daisy",
+  "species": "Bellis perennis",
+  "family": "Asteraceae",
+  "origin": [
+    "Europe",
+    "North America"
+  ],
+  "description": "Daisies are small, herbaceous perennial plants with white or pinkish flowers and a yellow center.",
+  "careInstructions": "Daisies prefer full sunlight and well-drained soil. They require regular watering, especially during dry spells.",
+  "averageHeight": "4-12 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Low-growing",
+  "flowerColor": [
+    "White",
+    "Pink"
+  ],
+  "leafShape": "Spoon-shaped",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Achene",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 4 to Zone 8",
+  "hardinessZone": "4-8",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Division"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Slugs",
+    "Powdery mildew"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Deadhead spent flowers",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small to medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Delicate and cheerful blooms",
+    "Ground cover plant"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Belis_peremnis_-_panoramio.jpg/1200px-Belis_peremnis_-_panoramio.jpg",
+  "category": "Flowers"
+},
+{
+  "_id": {
+    "$oid": "64baecb64e0e3c040980d78c"
+  },
+  "name": "Tomato",
+  "species": "Solanum lycopersicum",
+  "family": "Solanaceae",
+  "origin": [
+    "South America"
+  ],
+  "description": "Tomatoes are popular fruiting vegetables known for their juicy and versatile culinary uses.",
+  "careInstructions": "Tomatoes require full sunlight, regular watering, well-drained soil, and support for their growth. They are susceptible to diseases like blight and pests like aphids.",
+  "averageHeight": "3-6 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Indeterminate",
+  "fruitColor": [
+    "Red",
+    "Yellow",
+    "Green",
+    "Orange"
+  ],
+  "leafShape": "Compound",
+  "foliageTexture": "Hairy",
+  "harvestSeason": [
+    "Summer",
+    "Fall"
+  ],
+  "pollinationMethod": "Self-pollinating",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "temperatureTolerance": "Zone 2 to Zone 11",
+  "hardinessZone": "2-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Blight",
+    "Aphids"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune for shape and airflow",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Basil",
+    "Marigold"
+  ],
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Versatile culinary use",
+    "Indeterminate growth"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Solanum_lycopersicum_%27Cronos%27%2C_tomaat_%27Cronos%27.jpg",
+  "category": "Vegetables"
+},
+{
+  "_id": {
+    "$oid": "64baf13a4e0e3c040980d7a4"
+  },
+  "name": "Haworthia",
+  "species": "Haworthia spp.",
+  "family": "Asphodelaceae",
+  "origin": [
+    "Southern Africa"
+  ],
+  "description": "Haworthia is a diverse genus of small succulent plants known for their rosette-forming growth habit and distinctive patterns on their leaves.",
+  "careInstructions": "Haworthias prefer bright but indirect sunlight and well-draining soil. Water sparingly as they are adapted to arid conditions.",
+  "averageHeight": "2-8 inches",
+  "sunlightRequirements": "Indirect sunlight",
+  "wateringNeeds": "Low water requirements",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Rosette",
+  "flowerColor": [
+    "White",
+    "Pink",
+    "Green"
+  ],
+  "leafShape": "Rosette",
+  "foliageTexture": "Bumpy",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Offsets",
+    "Leaf cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Mealybugs",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Minimal fertilization",
+  "pruningNeeds": "Remove dead leaves as needed",
+  "toxicity": "Mildly toxic to pets",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Distinctive leaf patterns",
+    "Low maintenance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/7/76/Ab_plant_846.jpg",
+  "category": "Succulents"
+},
+{
+  "_id": {
+    "$oid": "64baf13a4e0e3c040980d7a6"
+  },
+  "name": "Hens and Chicks",
+  "species": "Sempervivum spp.",
+  "family": "Crassulaceae",
+  "origin": [
+    "Europe",
+    "Northern Africa",
+    "Asia"
+  ],
+  "description": "Hens and Chicks, also known as Houseleeks, are mat-forming succulents with rosettes that produce numerous 'chick' offsets.",
+  "careInstructions": "Hens and Chicks prefer full sunlight and well-draining soil. They are extremely drought-tolerant and should be watered sparingly.",
+  "averageHeight": "2-6 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Low water requirements",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Rosette",
+  "flowerColor": [
+    "Pink",
+    "Red",
+    "White",
+    "Yellow"
+  ],
+  "leafShape": "Rosette",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 3 to Zone 8",
+  "hardinessZone": "3-8",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Offsets",
+    "Leaf cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Mealybugs",
+    "Aphids",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Minimal fertilization",
+  "pruningNeeds": "Remove spent rosettes and offset 'chicks' as needed",
+  "toxicity": "Mildly toxic to pets",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Prolific offset production",
+    "Low maintenance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sempervivum_tectorum1Jerzy_Opioła.jpg/640px-Sempervivum_tectorum1Jerzy_Opioła.jpg",
+  "category": "Succulents"
+},
+{
+  "_id": {
+    "$oid": "64baf31f4e0e3c040980d7b0"
+  },
+  "name": "Wisteria",
+  "species": "Wisteria",
+  "family": "Fabaceae",
+  "origin": [
+    "North America",
+    "East Asia"
+  ],
+  "description": "Wisterias are stunning climbing vines adored for their cascading clusters of fragrant and colorful flowers.",
+  "careInstructions": "Wisterias require full sunlight, regular watering, and well-draining soil. They need sturdy support structures for climbing and pruning to control growth.",
+  "averageHeight": "10-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Climbing",
+  "flowerColor": [
+    "Purple",
+    "Blue",
+    "White"
+  ],
+  "leafShape": "Pinnate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Pod",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 9",
+  "hardinessZone": "4-9",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings",
+    "Layering"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Leafminers"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Toxic to humans and pets",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Clematis",
+    "Roses"
+  ],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Woody",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Large containers",
+  "fallColor": "Yellow",
+  "specialFeatures": [
+    "Dramatic floral display"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Chinese_Wisteria_Blütentrauben.JPG/1200px-Chinese_Wisteria_Blütentrauben.JPG",
+  "category": "Vines"
+},
+{
+  "_id": {
+    "$oid": "64baf01e4e0e3c040980d79e"
+  },
+  "name": "Forsythia",
+  "species": "Forsythia intermedia",
+  "family": "Oleaceae",
+  "origin": [
+    "Eastern Asia"
+  ],
+  "description": "Forsythia is a deciduous shrub known for its early-blooming bright yellow flowers.",
+  "careInstructions": "Forsythias prefer full sunlight, well-drained soil, and moderate watering. Pruning should be done after flowering to promote new growth and maintain shape.",
+  "averageHeight": "6-10 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Moderate watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright, arching",
+  "flowerColor": [
+    "Yellow"
+  ],
+  "leafShape": "Ovate",
+  "foliageTexture": "Coarse",
+  "bloomSeason": [
+    "Early spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 5 to Zone 8",
+  "hardinessZone": "5-8",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Phomopsis twig blight",
+    "Scale insects"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Varies based on shrub size",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Early-blooming flowers",
+    "Bright yellow blooms"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Forsythia_intermedia_a1.jpg",
+  "category": "Shrubs"
+},
+{
+  "_id": {
+    "$oid": "64baf01e4e0e3c040980d7a0"
+  },
+  "name": "Azalea",
+  "species": "Rhododendron",
+  "family": "Ericaceae",
+  "origin": [
+    "Asia",
+    "North America"
+  ],
+  "description": "Azaleas are deciduous or evergreen shrubs with colorful flowers and are a popular choice in gardens and landscapes.",
+  "careInstructions": "Azaleas prefer partial shade to full sunlight, well-drained, acidic soil, and regular watering. Mulching helps retain moisture and maintain soil acidity.",
+  "averageHeight": "3-8 feet",
+  "sunlightRequirements": "Partial shade to full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained, acidic soil",
+  "growthHabit": "Bushy",
+  "flowerColor": [
+    "Pink",
+    "Red",
+    "White",
+    "Purple",
+    "Orange"
+  ],
+  "leafShape": "Ovate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 9",
+  "hardinessZone": "4-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Cuttings",
+    "Layering"
+  ],
+  "pestsAndDiseases": [
+    "Azalea lace bug",
+    "Powdery mildew"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Strongly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Toxic to pets if ingested",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees",
+    "Hummingbirds"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Varies based on shrub size",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Colorful flowers",
+    "Attracts pollinators"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alpenroos.jpg",
+  "category": "Shrubs",
+  "img1": "https://media.istockphoto.com/id/1263880232/photo/many-vivid-red-flowers-of-azalea-or-rhododendron-plant-in-a-garden-pot-in-a-sunny-spring.jpg?s=612x612&w=0&k=20&c=wD3aUilgEv0u8xjtCtioRHdDvgL7ioXUGAnkaR_KGbc=",
+  "img2": "https://www.oneclickplants.co.uk/cdn/shop/files/image_9937e0d0-a7cb-49cc-ac28-18ea1a143285_1200x.jpg?v=1689409877",
+  "img3": "https://w0.peakpx.com/wallpaper/381/969/HD-wallpaper-azalea-pink-flower-branch-flowers.jpg"
+},
+{
+  "_id": {
+    "$oid": "64baf1fe4e0e3c040980d7a8"
+  },
+  "name": "Maidenhair Fern",
+  "species": "Adiantum",
+  "family": "Pteridaceae",
+  "origin": [
+    "North America",
+    "South America",
+    "Asia"
+  ],
+  "description": "Maidenhair ferns are delicate and lacy ferns known for their distinctive fan-shaped fronds and elegant appearance.",
+  "careInstructions": "Maidenhair ferns prefer partial shade, high humidity, and well-draining soil. They need regular watering, but avoid waterlogging the soil.",
+  "averageHeight": "6-12 inches",
+  "sunlightRequirements": "Partial shade",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Clumping",
+  "leafShape": "Fan-shaped",
+  "foliageTexture": "Delicate",
+  "bloomSeason": [],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Spores",
+    "Division"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Scale insects"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove dead fronds regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Medium-sized containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Graceful appearance",
+    "Air-purifying"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/12/Adiantum_pedatum_09905.JPG",
+  "category": "Ferns"
+},
+{
+  "_id": {
+    "$oid": "64baf4354e0e3c040980d7b9"
+  },
+  "name": "Water Sprite",
+  "species": "Ceratopteris thalictroides",
+  "family": "Parkeriaceae",
+  "origin": [
+    "Tropical regions worldwide"
+  ],
+  "description": "Water sprite is a popular aquarium plant with delicate, feathery leaves that can grow partially or fully submerged.",
+  "careInstructions": "Water sprite requires a well-lit aquarium with stable water conditions. It benefits from the addition of nutrients and CO2.",
+  "averageHeight": "6-12 inches",
+  "sunlightRequirements": "Moderate to high light",
+  "wateringNeeds": "Submerged in water",
+  "soilTypePreferences": "Not applicable",
+  "growthHabit": "Submerged or floating",
+  "flowerColor": [
+    "Not applicable"
+  ],
+  "leafShape": "Feathery",
+  "foliageTexture": "Feathery",
+  "bloomSeason": [
+    "Not applicable"
+  ],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 7 to Zone 11",
+  "hardinessZone": "7-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Division",
+    "Plantlets"
+  ],
+  "pestsAndDiseases": [
+    "Algae",
+    "Snails"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization and CO2 supplementation",
+  "pruningNeeds": "Trim to control growth and remove dead leaves",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Fish fry",
+    "Shrimp"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Not cold-hardy",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Aquariums",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Delicate feathery leaves",
+    "Suitable for aquariums"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ceratopteris_cornuta_in_aquarium_alone.jpg",
+  "category": "Aquatic Plants"
+},
+{
+  "_id": {
+    "$oid": "64bae7384e0e3c040980d77c"
+  },
+  "name": "Rose",
+  "species": "Rosa",
+  "family": "Rosaceae",
+  "origin": [
+    "Asia",
+    "Europe",
+    "North America"
+  ],
+  "description": "Roses are woody perennial flowering plants known for their beautiful and fragrant blooms.",
+  "careInstructions": "Roses require full sunlight, regular watering, well-drained soil, and pruning in early spring. They are susceptible to common rose diseases like blackspot and powdery mildew.",
+  "averageHeight": "1-8 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "Red",
+    "Pink",
+    "Yellow",
+    "White",
+    "Orange"
+  ],
+  "leafShape": "Pinnate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Hip",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 10",
+  "hardinessZone": "4-10",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Blackspot",
+    "Powdery mildew"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in early spring",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Some varieties may require protection in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Larger containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Fragrant blooms",
+    "Thorny stems"
+  ],
+  "imageURL": "https://gardenerspath.com/wp-content/uploads/2021/06/Tree-Rose-Growing-in-the-Garden.jpg",
+  "category": "Flowers"
+},
+{
+  "_id": {
+    "$oid": "64bae7384e0e3c040980d77f"
+  },
+  "name": "Sunflower",
+  "species": "Helianthus annuus",
+  "family": "Asteraceae",
+  "origin": [
+    "North America"
+  ],
+  "description": "Sunflowers are tall, annual flowering plants known for their large, vibrant yellow flower heads.",
+  "careInstructions": "Sunflowers require full sunlight and well-drained soil. They are drought-tolerant but need regular watering during dry periods.",
+  "averageHeight": "5-12 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "Yellow"
+  ],
+  "leafShape": "Broad",
+  "foliageTexture": "Rough",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Achene",
+  "edibleParts": [
+    "Seeds"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 2 to Zone 11",
+  "hardinessZone": "2-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Downy mildew"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low to moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Not applicable",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies",
+    "Birds"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Not applicable (annual)",
+  "rootSystemType": "Taproot",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Large vibrant flower heads",
+    "Edible seeds"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/1200px-Sunflower_sky_backdrop.jpg",
+  "category": "Flowers"
+},
+{
+  "_id": {
+    "$oid": "64baecb64e0e3c040980d790"
+  },
+  "name": "Bell Pepper",
+  "species": "Capsicum annuum",
+  "family": "Solanaceae",
+  "origin": [
+    "Central and South America"
+  ],
+  "description": "Bell peppers are colorful and sweet-tasting fruits often used in various culinary dishes.",
+  "careInstructions": "Bell peppers require full sunlight, regular watering, and well-drained soil. They are susceptible to pests like aphids and diseases like bacterial spot.",
+  "averageHeight": "2-4 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Annual",
+  "fruitColor": [
+    "Green",
+    "Red",
+    "Yellow",
+    "Orange",
+    "Purple"
+  ],
+  "fruitShape": "Bell-shaped",
+  "foliageTexture": "Smooth",
+  "harvestSeason": [
+    "Summer",
+    "Fall"
+  ],
+  "pollinationMethod": "Self-pollinating",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "temperatureTolerance": "Zone 4 to Zone 11",
+  "hardinessZone": "4-11",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Bacterial spot"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Not applicable",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Basil",
+    "Marigold"
+  ],
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Sweet-tasting fruit",
+    "Colorful varieties"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/06/Capsicum_annuum1.jpg?20050913122600",
+  "category": "Vegetables"
+},
+{
+  "_id": {
+    "$oid": "64baeefa4e0e3c040980d798"
+  },
+  "name": "Ginkgo",
+  "species": "Ginkgo biloba",
+  "family": "Ginkgoaceae",
+  "origin": [
+    "China"
+  ],
+  "description": "Ginkgos are unique and ancient trees with distinctive fan-shaped leaves that turn vibrant yellow in the fall.",
+  "careInstructions": "Ginkgos prefer full sunlight or partial shade and can tolerate a wide range of soil types. They are drought-tolerant and low-maintenance trees.",
+  "averageHeight": "50-80 feet",
+  "sunlightRequirements": "Full sunlight, partial shade",
+  "wateringNeeds": "Low to moderate watering",
+  "soilTypePreferences": "Adaptable",
+  "growthHabit": "Upright, spreading",
+  "leafShape": "Fan-shaped",
+  "foliageTexture": "Leathery",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Wind-pollinated",
+  "fruitType": "Seed",
+  "edibleParts": [
+    "Edible seeds (Ginkgo nuts)"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 3 to Zone 8",
+  "hardinessZone": "3-8",
+  "growthRate": "Slow to moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Grafting"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Leaf spot"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Low fertilization needed",
+  "pruningNeeds": "Minimal pruning required",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Deep, spreading",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers",
+  "fallColor": "Yes",
+  "specialFeatures": [
+    "Distinctive fan-shaped leaves",
+    "Edible seeds"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e0/GINKGOBAUM-2.jpg",
+  "category": "Trees"
+},
+{
+  "_id": {
+    "$oid": "64baf01e4e0e3c040980d79d"
+  },
+  "name": "Lilac",
+  "species": "Syringa vulgaris",
+  "family": "Oleaceae",
+  "origin": [
+    "Southeastern Europe"
+  ],
+  "description": "Lilac is a deciduous shrub highly valued for its stunning and fragrant flower clusters.",
+  "careInstructions": "Lilacs prefer full sunlight, well-drained soil, and moderate watering. They require minimal pruning, and deadheading spent blooms can promote more flowers.",
+  "averageHeight": "8-15 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Moderate watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "Purple",
+    "White",
+    "Pink",
+    "Blue"
+  ],
+  "leafShape": "Oval",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 3 to Zone 7",
+  "hardinessZone": "3-7",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Lilac borers",
+    "Powdery mildew"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Minimal pruning",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees",
+    "Hummingbirds"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Varies based on shrub size",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Fragrant flower clusters",
+    "Attracts pollinators"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Syringa.vulgaris%2801%29.jpg/240px-Syringa.vulgaris%2801%29.jpg",
+  "category": "Shrubs"
+},
+{
+  "_id": {
+    "$oid": "64baf1fe4e0e3c040980d7a9"
+  },
+  "name": "Boston Fern",
+  "species": "Nephrolepis exaltata",
+  "family": "Nephrolepidaceae",
+  "origin": [
+    "Florida",
+    "Mexico",
+    "West Indies",
+    "Central America",
+    "South America",
+    "Africa"
+  ],
+  "description": "Boston ferns are popular houseplants appreciated for their arching fronds and lush green foliage, making them an excellent addition to indoor spaces.",
+  "careInstructions": "Boston ferns prefer bright, indirect light and high humidity. Keep the soil consistently moist but not waterlogged.",
+  "averageHeight": "1-3 feet",
+  "sunlightRequirements": "Bright, indirect light",
+  "wateringNeeds": "Consistently moist",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Arching",
+  "leafShape": "Feathery",
+  "foliageTexture": "Lush",
+  "bloomSeason": [],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Division",
+    "Spores"
+  ],
+  "pestsAndDiseases": [
+    "Scale insects",
+    "Mealybugs"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Trim dead fronds regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Air-purifying",
+    "Attractive fronds"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/30/Boston_Fern_%282873392811%29.png",
+  "category": "Ferns"
+},
+{
+  "_id": {
+    "$oid": "64baead64e0e3c040980d788"
+  },
+  "name": "Mango",
+  "species": "Mangifera indica",
+  "family": "Anacardiaceae",
+  "origin": [
+    "South Asia"
+  ],
+  "description": "Mangoes are tropical fruits known for their juicy and sweet taste.",
+  "careInstructions": "Mango trees require full sunlight, regular watering, and well-drained soil. They prefer warm temperatures and high humidity.",
+  "averageHeight": "30-45 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "fruitColor": [
+    "Yellow",
+    "Green",
+    "Red"
+  ],
+  "fruitShape": "Oval",
+  "fruitTaste": "Sweet",
+  "fruitSeason": "Late spring to early summer",
+  "pollinationMethod": "Cross-pollination",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Tropical",
+  "temperatureTolerance": "Zone 10 to Zone 11",
+  "hardinessZone": "10-11",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Grafting",
+    "Seed"
+  ],
+  "pestsAndDiseases": [
+    "Mango fruit flies",
+    "Anthracnose"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune to remove dead or diseased branches",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Basil",
+    "Marigold"
+  ],
+  "winterHardiness": "Not cold-hardy, protect from frost",
+  "rootSystemType": "Taproot",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Not suitable for containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Edible fruit",
+    "Tropical fragrance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg/1200px-Mangoes_%28Magnifera_indica%29_from_India.jpg",
+  "category": "Fruits"
+},
+{
+  "_id": {
+    "$oid": "649c8fbd953e5f4e4ae9b868"
+  },
+  "name": "Lemon Balm",
+  "species": "Melissa officinalis",
+  "family": "Lamiaceae",
+  "origin": [
+    "Europe",
+    "Central Asia"
+  ],
+  "description": "Lemon Balm is a lemon-scented herb used in teas and culinary dishes, known for its calming effects.",
+  "careInstructions": "Lemon Balm thrives in partial shade to full sunlight and well-drained soil. Keep the soil consistently moist.",
+  "averageHeight": "1-3 feet",
+  "sunlightRequirements": "Partial shade to full sunlight",
+  "wateringNeeds": "Consistently moist soil",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "leafShape": "Ovate",
+  "foliageTexture": "Soft",
+  "bloomSeason": "Summer",
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Nutlet",
+  "edibleParts": [
+    "Leaves"
+  ],
+  "medicinalProperties": [
+    "Calming",
+    "Antiviral"
+  ],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Hardy in USDA zones 4-9",
+  "hardinessZone": "4-9",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Powdery mildew"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Low",
+  "pruningNeeds": "Prune regularly to prevent legginess",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Cabbage",
+    "Tomatoes"
+  ],
+  "winterHardiness": "Hardy in colder regions",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Lemon-scented leaves",
+    "Calming effects"
+  ],
+  "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKNfxsGbOtH6dUx2ZDIfzqGk2e8g43aF97A&usqp=CAU",
+  "category": "Herbs"
+},
+{
+  "_id": {
+    "$oid": "64baf01e4e0e3c040980d79c"
+  },
+  "name": "Boxwood",
+  "species": "Buxus",
+  "family": "Buxaceae",
+  "origin": [
+    "Europe",
+    "Asia",
+    "Africa",
+    "South America"
+  ],
+  "description": "Boxwood is a popular evergreen shrub known for its dense foliage and versatility in landscaping.",
+  "careInstructions": "Boxwoods prefer partial shade to full sunlight, well-drained soil, and regular watering. They are generally low-maintenance and can be pruned to maintain shape and size.",
+  "averageHeight": "2-15 feet",
+  "sunlightRequirements": "Partial shade to full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Compact, dense",
+  "leafColor": [
+    "Green"
+  ],
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 5 to Zone 8",
+  "hardinessZone": "5-8",
+  "growthRate": "Slow to moderate",
+  "propagationMethods": [
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Boxwood leafminer",
+    "Boxwood blight"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune as needed",
+  "toxicity": "Toxic to pets if ingested",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Varies based on shrub size",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Versatile in landscaping",
+    "Evergreen foliage"
+  ],
+  "imageURL": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgct8Nk1El_5P4xfKkwxRdyO3ne_9WbMbC6OcWLc8ZFWVcyMwHN6pTVEuLdO5YkGlOLCkT3Mv36EnkGED6-iz_BuflrCDIlEfW_NCZXqu8aMmR3IBfkucToV4_Rv0BVAU44SV4fTxHWRQAG-iQoJidrt2QbmToTEQUlwoZKCpohgnWRw9P8MvDZcAgt9Q/w1200-h675-p-k-no-nu/buxinho-buxus-sempervirens-Buxus%20sempervirens%20-%20Wikipedia.jpg",
+  "category": "Shrubs"
+},
+{
+  "_id": {
+    "$oid": "64baf13a4e0e3c040980d7a2"
+  },
+  "name": "Echeveria",
+  "species": "Echeveria spp.",
+  "family": "Crassulaceae",
+  "origin": [
+    "Mexico",
+    "Central America",
+    "South America"
+  ],
+  "description": "Echeveria is a popular genus of succulent plants with rosette-shaped, fleshy leaves and striking colors.",
+  "careInstructions": "Echeverias prefer bright sunlight, well-draining soil, and infrequent watering. They are drought-tolerant but should not be overwatered to prevent root rot.",
+  "averageHeight": "2-12 inches",
+  "sunlightRequirements": "Bright sunlight",
+  "wateringNeeds": "Infrequent watering",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Rosette",
+  "flowerColor": [
+    "Pink",
+    "Orange",
+    "Yellow",
+    "Red",
+    "White"
+  ],
+  "leafShape": "Rosette",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Offsets",
+    "Leaf cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Mealybugs",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Minimal fertilization",
+  "pruningNeeds": "Remove dead leaves as needed",
+  "toxicity": "Mildly toxic to pets",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small to medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Colorful rosettes",
+    "Low maintenance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/%28MHNT%29_Echeveria_secunda.jpg/1200px-%28MHNT%29_Echeveria_secunda.jpg",
+  "category": "Succulents"
+},
+{
+  "_id": {
+    "$oid": "64baf1fe4e0e3c040980d7ab"
+  },
+  "name": "Staghorn Fern",
+  "species": "Platycerium",
+  "family": "Polypodiaceae",
+  "origin": [
+    "Australia",
+    "Southeast Asia",
+    "Africa",
+    "America"
+  ],
+  "description": "Staghorn ferns are epiphytic ferns that grow on trees or rocks, known for their unique antler-like fronds and distinctive appearance.",
+  "careInstructions": "Staghorn ferns prefer bright, indirect light and high humidity. They are epiphytic and typically grow on a mounting board or in a hanging basket with a well-draining substrate.",
+  "averageHeight": "1-3 feet",
+  "sunlightRequirements": "Bright, indirect light",
+  "wateringNeeds": "Regular misting or soaking",
+  "soilTypePreferences": "Well-draining substrate",
+  "growthHabit": "Epiphytic",
+  "leafShape": "Antler-like",
+  "foliageTexture": "Textured",
+  "bloomSeason": [],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 12",
+  "hardinessZone": "9-12",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Division",
+    "Spores"
+  ],
+  "pestsAndDiseases": [
+    "Scale insects",
+    "Mealybugs"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Trim brown fronds regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Epiphytic",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Mounted or hanging baskets",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Antler-like fronds",
+    "Epiphytic growth habit"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/12/Platycerium_bifurcatum.jpg",
+  "category": "Ferns"
+},
+{
+  "_id": {
+    "$oid": "64baf31f4e0e3c040980d7ae"
+  },
+  "name": "Passionflower",
+  "species": "Passiflora",
+  "family": "Passifloraceae",
+  "origin": [
+    "South America",
+    "North America"
+  ],
+  "description": "Passionflowers are beautiful and exotic climbing vines known for their intricate and colorful flowers.",
+  "careInstructions": "Passionflowers thrive in full sunlight, require regular watering, and well-draining soil. They are vigorous growers and may need support for climbing.",
+  "averageHeight": "10-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Climbing",
+  "flowerColor": [
+    "Purple",
+    "Blue",
+    "White",
+    "Pink",
+    "Red"
+  ],
+  "leafShape": "Lobed",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Berry",
+  "edibleParts": [
+    "Fruits"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 6 to Zone 10",
+  "hardinessZone": "6-10",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Whiteflies"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune to shape and control growth",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Clematis"
+  ],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Colorful and unique flowers"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Passion_Vine_NBG_LR.jpg",
+  "category": "Vines"
+},
+{
+  "_id": {
+    "$oid": "64baf4354e0e3c040980d7b7"
+  },
+  "name": "Java Fern",
+  "species": "Microsorum pteropus",
+  "family": "Polypodiaceae",
+  "origin": [
+    "Southeast Asia"
+  ],
+  "description": "Java ferns are popular aquatic plants in aquariums, known for their unique and attractive frilly leaves.",
+  "careInstructions": "Java ferns prefer to be attached to driftwood or rocks in aquariums. They thrive in low to moderate light conditions.",
+  "averageHeight": "6-13 inches",
+  "sunlightRequirements": "Low to moderate light",
+  "wateringNeeds": "Submerged in water",
+  "soilTypePreferences": "Not applicable",
+  "growthHabit": "Rhizomatous",
+  "flowerColor": [
+    "Not applicable"
+  ],
+  "leafShape": "Frilly",
+  "foliageTexture": "Frilly",
+  "bloomSeason": [
+    "Not applicable"
+  ],
+  "pollinationMethod": "Not applicable",
+  "fruitType": "Not applicable",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 8 to Zone 10",
+  "hardinessZone": "8-10",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Rhizome division",
+    "Plantlets"
+  ],
+  "pestsAndDiseases": [
+    "Algae",
+    "Snails"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Not applicable",
+  "pruningNeeds": "Remove dead or decaying leaves regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Fish fry",
+    "Shrimp"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Not cold-hardy",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Aquariums",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Attractive frilly leaves",
+    "Suitable for aquariums"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/89/Microsorum_pteropus.jpg",
+  "category": "Aquatic Plants"
+},
+{
+  "_id": {
+    "$oid": "64baedef4e0e3c040980d792"
+  },
+  "name": "Magnolia",
+  "species": "Magnolia",
+  "family": "Magnoliaceae",
+  "origin": [
+    "North America",
+    "Central America",
+    "Asia"
+  ],
+  "description": "Magnolias are elegant trees known for their large, fragrant flowers and glossy green leaves.",
+  "careInstructions": "Magnolias prefer full sunlight or partial shade, well-drained soil, and regular watering. Prune them after flowering to shape the tree and remove dead branches.",
+  "averageHeight": "20-40 feet",
+  "sunlightRequirements": "Full sunlight, partial shade",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "White",
+    "Pink",
+    "Purple"
+  ],
+  "leafShape": "Elliptic",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Beetle pollination",
+  "fruitType": "Aggregate",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 9",
+  "hardinessZone": "4-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Scale insects",
+    "Leaf spots"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Winter protection needed in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Larger containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Fragrant flowers",
+    "Glossy leaves"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Magnolia_x_soulangeana.jpg/220px-Magnolia_x_soulangeana.jpg",
+  "category": "Trees"
+},
+{
+  "_id": {
+    "$oid": "64baeed94e0e3c040980d796"
+  },
+  "name": "Crape Myrtle",
+  "species": "Lagerstroemia",
+  "family": "Lythraceae",
+  "origin": [
+    "Southeast Asia",
+    "Indian Subcontinent"
+  ],
+  "description": "Crape Myrtles are small to medium-sized trees appreciated for their vibrant, long-lasting flowers and attractive bark.",
+  "careInstructions": "Plant Crape Myrtles in full sunlight, use well-drained soil, and provide regular watering during dry periods. Prune them in late winter or early spring to promote flowering.",
+  "averageHeight": "10-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering during dry periods",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright, spreading",
+  "flowerColor": [
+    "Red",
+    "Pink",
+    "White",
+    "Purple"
+  ],
+  "leafShape": "Ovate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Summer",
+    "Fall"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 7 to Zone 10",
+  "hardinessZone": "7-10",
+  "growthRate": "Moderate to fast",
+  "propagationMethods": [
+    "Seeds",
+    "Softwood cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Powdery mildew"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in late winter or early spring",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Some varieties may need winter protection",
+  "rootSystemType": "Shallow, spreading",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium-sized containers",
+  "fallColor": "Yes",
+  "specialFeatures": [
+    "Vibrant flowers",
+    "Ornamental bark"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Jarul.jpg",
+  "category": "Trees"
+},
+{
+  "_id": {
+    "$oid": "64baecb64e0e3c040980d78d"
+  },
+  "name": "Carrot",
+  "species": "Daucus carota",
+  "family": "Apiaceae",
+  "origin": [
+    "Afghanistan"
+  ],
+  "description": "Carrots are root vegetables known for their sweet, crunchy, and vibrant orange-colored roots.",
+  "careInstructions": "Carrots require full sunlight, regular watering, loose and well-drained soil to avoid root deformation. They are generally pest-resistant but can be affected by carrot rust flies.",
+  "averageHeight": "1-2 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Loose, well-drained soil",
+  "growthHabit": "Biennial",
+  "rootColor": [
+    "Orange",
+    "Purple",
+    "White",
+    "Red",
+    "Yellow"
+  ],
+  "leafShape": "Pinnate",
+  "foliageTexture": "Furry",
+  "harvestSeason": [
+    "Late summer",
+    "Fall"
+  ],
+  "pollinationMethod": "Cross-pollinated",
+  "edibleParts": [
+    "Root",
+    "Leaves"
+  ],
+  "medicinalProperties": [],
+  "temperatureTolerance": "Zone 3 to Zone 10",
+  "hardinessZone": "3-10",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Carrot rust flies"
+  ],
+  "lifespan": "Biennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Not applicable",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Lettuce",
+    "Onions"
+  ],
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Sweet and crunchy roots",
+    "Vibrant orange color"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Daucus_carota_001.JPG/1200px-Daucus_carota_001.JPG",
+  "category": "Vegetables"
+},
+{
+  "_id": {
+    "$oid": "64baef124e0e3c040980d79a"
+  },
+  "name": "Dogwood",
+  "species": "Cornus",
+  "family": "Cornaceae",
+  "origin": [
+    "North America",
+    "East Asia",
+    "Europe"
+  ],
+  "description": "Dogwoods are elegant trees or shrubs known for their showy flowers and colorful berries.",
+  "careInstructions": "Plant Dogwoods in partial shade to full sunlight and provide regular watering. Prune them in late winter to remove dead wood and shape the tree.",
+  "averageHeight": "15-40 feet",
+  "sunlightRequirements": "Partial shade to full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Moist, well-drained soil",
+  "growthHabit": "Upright, spreading",
+  "flowerColor": [
+    "White",
+    "Pink",
+    "Red"
+  ],
+  "leafShape": "Opposite, elliptic",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Drupe",
+  "edibleParts": [
+    "Edible berries"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 3 to Zone 9",
+  "hardinessZone": "3-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Softwood cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Dogwood anthracnose",
+    "Powdery mildew"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune in late winter",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Birds",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium-sized containers",
+  "fallColor": "Yes",
+  "specialFeatures": [
+    "Showy flowers",
+    "Colorful berries"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cornus_florida_Arkansas.jpg",
+  "category": "Trees"
+},
+{
+  "_id": {
+    "$oid": "64baecb64e0e3c040980d78f"
+  },
+  "name": "Cucumber",
+  "species": "Cucumis sativus",
+  "family": "Cucurbitaceae",
+  "origin": [
+    "India"
+  ],
+  "description": "Cucumbers are refreshing and hydrating vegetables commonly used in salads and pickles.",
+  "careInstructions": "Cucumbers require full sunlight, regular watering, and well-drained soil. They are susceptible to pests like cucumber beetles and diseases like powdery mildew.",
+  "averageHeight": "1-2 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Annual",
+  "fruitColor": [
+    "Green",
+    "Yellow",
+    "White"
+  ],
+  "fruitShape": "Cylindrical",
+  "foliageTexture": "Rough",
+  "harvestSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Bee-pollinated",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "temperatureTolerance": "Zone 4 to Zone 12",
+  "hardinessZone": "4-12",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Cucumber beetles",
+    "Powdery mildew"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune for better air circulation",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Radishes",
+    "Beans"
+  ],
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Hydrating and refreshing fruit",
+    "Versatile culinary use"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Cucumis_sativus20090812_497.jpg/800px-Cucumis_sativus20090812_497.jpg",
+  "category": "Vegetables"
+},
+{
+  "_id": {
+    "$oid": "64baf31f4e0e3c040980d7b1"
+  },
+  "name": "Morning Glory",
+  "species": "Ipomoea",
+  "family": "Convolvulaceae",
+  "origin": [
+    "Central and South America"
+  ],
+  "description": "Morning glories are beautiful and fast-growing climbing vines with showy trumpet-shaped flowers that open in the morning.",
+  "careInstructions": "Morning glories thrive in full sunlight, prefer well-drained soil, and require moderate watering. Provide support structures for climbing.",
+  "averageHeight": "6-10 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Climbing",
+  "flowerColor": [
+    "Blue",
+    "Purple",
+    "Pink",
+    "White"
+  ],
+  "leafShape": "Heart-shaped",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [
+    "Seeds"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 2 to Zone 11",
+  "hardinessZone": "2-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Spider mites"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune to control growth",
+  "toxicity": "Toxic if ingested",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies",
+    "Hummingbirds"
+  ],
+  "companionPlantingRecommendations": [
+    "Moonflower"
+  ],
+  "winterHardiness": "Not frost-tolerant",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Colorful and showy flowers"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/HeavenlyBlueMorningGlory12Aug2004h12pm30.jpg/640px-HeavenlyBlueMorningGlory12Aug2004h12pm30.jpg",
+  "category": "Vines"
+},
+{
+  "_id": {
+    "$oid": "64baecb64e0e3c040980d78e"
+  },
+  "name": "Spinach",
+  "species": "Spinacia oleracea",
+  "family": "Amaranthaceae",
+  "origin": [
+    "Central Asia"
+  ],
+  "description": "Spinach is a leafy green vegetable known for its nutritional value and versatility in cooking.",
+  "careInstructions": "Spinach prefers cool weather and partial shade. It requires consistent watering and fertile, well-draining soil. It can be prone to pests like leaf miners.",
+  "averageHeight": "1-2 feet",
+  "sunlightRequirements": "Partial shade",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Fertile, well-drained soil",
+  "growthHabit": "Annual",
+  "leafColor": [
+    "Green",
+    "Red",
+    "Purple"
+  ],
+  "leafShape": "Simple",
+  "foliageTexture": "Smooth",
+  "harvestSeason": [
+    "Spring",
+    "Fall"
+  ],
+  "pollinationMethod": "Wind-pollinated",
+  "edibleParts": [
+    "Leaves"
+  ],
+  "medicinalProperties": [],
+  "temperatureTolerance": "Zone 2 to Zone 11",
+  "hardinessZone": "2-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Leaf miners"
+  ],
+  "lifespan": "Annual",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "High",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Not applicable",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Strawberries",
+    "Beans"
+  ],
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Nutritious leafy greens",
+    "Cool-weather crop"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Spinazie_vrouwelijke_plant_%28Spinacia_oleracea_female_plant%29.jpg",
+  "category": "Vegetables"
+},
+{
+  "_id": {
+    "$oid": "649c8fbd953e5f4e4ae9b864"
+  },
+  "name": "Peppermint",
+  "species": "Mentha × piperita",
+  "family": "Lamiaceae",
+  "origin": [
+    "Europe",
+    "Middle East"
+  ],
+  "description": "Peppermint is a perennial herb known for its refreshing aroma and cooling taste.",
+  "careInstructions": "Peppermint thrives in partial shade and requires consistently moist soil. It spreads vigorously, so it's best to plant it in containers to prevent it from taking over the garden.",
+  "averageHeight": "1-3 feet",
+  "sunlightRequirements": "Partial shade",
+  "wateringNeeds": "Consistently moist soil",
+  "soilTypePreferences": "Rich and well-drained soil",
+  "growthHabit": "Creeping",
+  "leafShape": "Ovate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": "Summer",
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Nutlet",
+  "edibleParts": [
+    "Leaves",
+    "Stems"
+  ],
+  "medicinalProperties": [
+    "Digestive aid",
+    "Relieves headaches"
+  ],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Hardy in USDA zones 3-11",
+  "hardinessZone": "3-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Division",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Rust"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Moderate",
+  "pruningNeeds": "Prune regularly to encourage bushiness",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Cabbage",
+    "Tomatoes"
+  ],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Refreshing aroma",
+    "Culinary and medicinal uses"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Mint-leaves-2007.jpg/1200px-Mint-leaves-2007.jpg",
+  "category": "Herbs"
+},
+{
+  "_id": {
+    "$oid": "64baeab54e0e3c040980d786"
+  },
+  "name": "Orange",
+  "species": "Citrus sinensis",
+  "family": "Rutaceae",
+  "origin": [
+    "Southeast Asia"
+  ],
+  "description": "Oranges are citrus fruits known for their juicy and tangy flavor.",
+  "careInstructions": "Orange trees require full sunlight, regular watering, and well-drained soil. They are susceptible to pests like citrus leafminer and diseases like citrus greening.",
+  "averageHeight": "20-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "fruitColor": [
+    "Orange",
+    "Green"
+  ],
+  "fruitShape": "Round",
+  "fruitTaste": "Sweet and tangy",
+  "fruitSeason": "Winter to early spring",
+  "pollinationMethod": "Self-pollination",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Citrusy",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Grafting",
+    "Air layering"
+  ],
+  "pestsAndDiseases": [
+    "Citrus leafminer",
+    "Citrus greening"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune to shape and remove dead wood",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Marigold",
+    "Chives"
+  ],
+  "winterHardiness": "Not cold-hardy, protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Not suitable for containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Edible fruit",
+    "Citrusy fragrance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Apfelsinenbaum--Orange_tree.jpg/338px-Apfelsinenbaum--Orange_tree.jpg",
+  "category": "Fruits"
+},
+{
+  "_id": {
+    "$oid": "64bae7384e0e3c040980d77e"
+  },
+  "name": "Lily",
+  "species": "Lilium",
+  "family": "Liliaceae",
+  "origin": [
+    "Asia",
+    "Europe",
+    "North America"
+  ],
+  "description": "Lilies are tall, elegant flowering plants with large, showy blooms and a delightful fragrance.",
+  "careInstructions": "Lilies prefer full sunlight, well-drained soil, and regular watering. Mulching around the plants can help retain moisture.",
+  "averageHeight": "2-6 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright",
+  "flowerColor": [
+    "White",
+    "Yellow",
+    "Pink",
+    "Orange",
+    "Red",
+    "Purple"
+  ],
+  "leafShape": "Linear",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 3 to Zone 9",
+  "hardinessZone": "3-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Bulbs",
+    "Seeds",
+    "Division"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Slugs",
+    "Red lily beetles"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove spent flowers and yellowing leaves",
+  "toxicity": "Toxic to cats",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies",
+    "Hummingbirds"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Some varieties may require protection in colder regions",
+  "rootSystemType": "Bulbous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Large showy blooms",
+    "Fragrant"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/30/Lilium_candidum_1.jpg",
+  "category": "Flowers"
+},
+{
+  "_id": {
+    "$oid": "64baf13a4e0e3c040980d7a5"
+  },
+  "name": "Jade Plant",
+  "species": "Crassula ovata",
+  "family": "Crassulaceae",
+  "origin": [
+    "South Africa",
+    "Mozambique"
+  ],
+  "description": "The Jade Plant is a popular succulent with thick, glossy, green leaves and a tree-like growth habit.",
+  "careInstructions": "Jade Plants prefer bright light but can tolerate some shade. Allow the soil to dry between waterings, as they are susceptible to root rot.",
+  "averageHeight": "2-6 feet",
+  "sunlightRequirements": "Bright light",
+  "wateringNeeds": "Low water requirements",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Shrub",
+  "flowerColor": [
+    "Pink",
+    "White"
+  ],
+  "leafShape": "Ovate",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Late winter",
+    "Spring"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 10 to Zone 11",
+  "hardinessZone": "10-11",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Stem cuttings",
+    "Leaf cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Mealybugs",
+    "Aphids",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Minimal fertilization",
+  "pruningNeeds": "Prune to shape and remove dead growth",
+  "toxicity": "Mildly toxic to pets",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Tree-like appearance",
+    "Low maintenance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Crassula_portulacea_var_cristata.jpg/238px-Crassula_portulacea_var_cristata.jpg",
+  "category": "Succulents"
+},
+{
+  "_id": {
+    "$oid": "64baeeb14e0e3c040980d794"
+  },
+  "name": "Japanese Maple",
+  "species": "Acer palmatum",
+  "family": "Sapindaceae",
+  "origin": [
+    "Japan",
+    "China",
+    "Korea"
+  ],
+  "description": "Japanese Maples are stunning small trees appreciated for their delicate, colorful leaves and graceful shape.",
+  "careInstructions": "Plant Japanese Maples in a location with partial shade, well-drained soil, and protect them from strong winds. They require regular watering and pruning to maintain their shape.",
+  "averageHeight": "10-25 feet",
+  "sunlightRequirements": "Partial shade",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Upright, spreading",
+  "leafShape": "Palmate",
+  "foliageTexture": "Lacy",
+  "bloomSeason": [
+    "Spring"
+  ],
+  "pollinationMethod": "Wind-pollinated",
+  "fruitType": "Samara",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 5 to Zone 8",
+  "hardinessZone": "5-8",
+  "growthRate": "Slow to moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Grafting"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Scale insects"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune to maintain shape",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Shallow, spreading",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Medium-sized containers",
+  "fallColor": "Yes",
+  "specialFeatures": [
+    "Colorful leaves",
+    "Graceful shape"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Acer_palmatum_img.jpg/170px-Acer_palmatum_img.jpg",
+  "category": "Trees"
+},
+{
+  "_id": {
+    "$oid": "64baf35a4e0e3c040980d7b3"
+  },
+  "name": "Honeysuckle",
+  "species": "Lonicera",
+  "family": "Caprifoliaceae",
+  "origin": [
+    "Northern Hemisphere"
+  ],
+  "description": "Honeysuckles are delightful climbing vines famous for their sweetly scented, tubular flowers that attract hummingbirds and butterflies.",
+  "careInstructions": "Honeysuckles thrive in full sunlight, prefer well-drained soil, and require regular watering. Provide sturdy support for climbing and prune to maintain shape.",
+  "averageHeight": "6-15 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Climbing",
+  "flowerColor": [
+    "White",
+    "Yellow",
+    "Orange",
+    "Pink",
+    "Red"
+  ],
+  "leafShape": "Oval",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Berry",
+  "edibleParts": [
+    "Nectar"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Zone 4 to Zone 9",
+  "hardinessZone": "4-9",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Seeds",
+    "Cuttings"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Powdery mildew"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Toxic to humans and pets",
+  "wildlifeAttractant": [
+    "Hummingbirds",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Clematis",
+    "Roses"
+  ],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Medium to large containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Attractive to pollinators"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/European_honeysuckle_800.jpg/640px-European_honeysuckle_800.jpg",
+  "category": "Vines"
+},
+{
+  "_id": {
+    "$oid": "649c8fbd953e5f4e4ae9b866"
+  },
+  "name": "Chamomile",
+  "species": "Matricaria chamomilla",
+  "family": "Asteraceae",
+  "origin": [
+    "Europe",
+    "Asia"
+  ],
+  "description": "Chamomile is a small, daisy-like herb known for its calming properties and apple-like fragrance.",
+  "careInstructions": "Chamomile prefers full sunlight but can tolerate light shade. It requires well-draining soil and moderate watering.",
+  "averageHeight": "6-12 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Moderate watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Low-spreading",
+  "leafShape": "Feathery",
+  "foliageTexture": "Soft",
+  "bloomSeason": "Spring to summer",
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Achene",
+  "edibleParts": [
+    "Flowers"
+  ],
+  "medicinalProperties": [
+    "Calming",
+    "Anti-inflammatory"
+  ],
+  "fragrance": "Yes",
+  "temperatureTolerance": "Hardy in USDA zones 3-9",
+  "hardinessZone": "3-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Seeds",
+    "Division"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Fusarium wilt"
+  ],
+  "lifespan": "Annual or perennial",
+  "droughtTolerance": "Moderate",
+  "humidityRequirements": "Moderate",
+  "pHPreferences": "Neutral to slightly acidic",
+  "nutrientRequirements": "Low",
+  "pruningNeeds": "Deadhead to encourage continuous blooming",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Bees",
+    "Butterflies"
+  ],
+  "companionPlantingRecommendations": [
+    "Cabbage",
+    "Onions"
+  ],
+  "winterHardiness": "May require protection in colder regions",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small to medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Calming properties",
+    "Apple-like fragrance"
+  ],
+  "imageURL": "https://www.gardenia.net/storage/app/public/uploads/images/detail/rOtzIRLIOhvYa7tstaaqXaP1JiVgY6cIyiwdXm6O.webp",
+  "category": "Herbs",
+  "img1": "https://i.pinimg.com/originals/d2/e4/ed/d2e4ed3306b60642a22aceb4f49c6e9d.jpg",
+  "img2": "https://www.bishybarnabeescottagegarden.com/cdn/shop/products/Chamomile-Bishy-Barnabees-Cottage-Garden-450.jpg?v=1680040668&width=3840",
+  "img3": "https://www.hdwallpapers.in/download/white_chamomile_flowers_plants_green_leaves_blur_background_4k_hd_flowers-HD.jpg"
+},
+{
+  "_id": {
+    "$oid": "64baea914e0e3c040980d784"
+  },
+  "name": "Banana",
+  "species": "Musa acuminata",
+  "family": "Musaceae",
+  "origin": [
+    "Southeast Asia"
+  ],
+  "description": "Bananas are tropical fruits known for their sweet and creamy flesh.",
+  "careInstructions": "Banana plants require full sunlight, regular watering, and well-drained soil. They prefer warm temperatures and high humidity.",
+  "averageHeight": "10-30 feet",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Well-drained soil",
+  "growthHabit": "Herbaceous",
+  "fruitColor": [
+    "Yellow",
+    "Green"
+  ],
+  "fruitShape": "Curved",
+  "fruitTaste": "Sweet",
+  "fruitSeason": "Throughout the year",
+  "pollinationMethod": "Parthenocarpy (self-pollination)",
+  "edibleParts": [
+    "Fruit"
+  ],
+  "medicinalProperties": [],
+  "fragrance": "Mild",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Fast",
+  "propagationMethods": [
+    "Rhizome division",
+    "Tissue culture"
+  ],
+  "pestsAndDiseases": [
+    "Banana aphids",
+    "Panama disease"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to neutral",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Remove dead leaves",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Birds"
+  ],
+  "companionPlantingRecommendations": [
+    "Basil",
+    "Nasturtium"
+  ],
+  "winterHardiness": "Not cold-hardy, protect from frost",
+  "rootSystemType": "Rhizomatous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Not suitable for containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Edible fruit",
+    "Fast growth"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Starr_050826-4195_Musa_sp..jpg",
+  "category": "Fruits"
+},
+{
+  "_id": {
+    "$oid": "64baf13a4e0e3c040980d7a3"
+  },
+  "name": "Aloe Vera",
+  "species": "Aloe vera",
+  "family": "Asphodelaceae",
+  "origin": [
+    "Arabian Peninsula",
+    "Northern Africa"
+  ],
+  "description": "Aloe vera is a well-known succulent with thick, fleshy leaves that contain a gel-like substance with various medicinal properties.",
+  "careInstructions": "Aloe vera thrives in bright sunlight and well-drained soil. Allow the soil to dry out between waterings. It is highly drought-tolerant.",
+  "averageHeight": "1-2 feet",
+  "sunlightRequirements": "Bright sunlight",
+  "wateringNeeds": "Low water requirements",
+  "soilTypePreferences": "Well-draining soil",
+  "growthHabit": "Rosette",
+  "flowerColor": [
+    "Yellow",
+    "Orange"
+  ],
+  "leafShape": "Rosette",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [
+    "Gel"
+  ],
+  "medicinalProperties": [
+    "Soothing for burns",
+    "Skin moisturizer",
+    "Digestive aid"
+  ],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Slow",
+  "propagationMethods": [
+    "Offsets",
+    "Seeds"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Mealybugs",
+    "Root rot"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "High",
+  "humidityRequirements": "Low",
+  "pHPreferences": "Neutral to slightly alkaline",
+  "nutrientRequirements": "Minimal fertilization",
+  "pruningNeeds": "Remove dead leaves as needed",
+  "toxicity": "Mildly toxic to pets",
+  "wildlifeAttractant": [],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Protect from frost",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Small to medium containers",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Medicinal gel",
+    "Low maintenance"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Aloe_barbadensis.JPG/1200px-Aloe_barbadensis.JPG",
+  "category": "Succulents",
+  "img1": "https://images8.alphacoders.com/428/428851.jpg",
+  "img2": "https://architecturaldigest.jppadmin.com/wp-content/uploads/sites/8/2022/09/AdobeStock_314071672-scaled.jpeg",
+  "img3": "https://www.thespruce.com/thmb/bW_aNpJmmnM0a_ySCdsYanFuAEM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/_DSC58741-476b7f7ef66d44ba8ce33cbc0d7b8dd4.jpg"
+},
+{
+  "_id": {
+    "$oid": "64baf01e4e0e3c040980d79f"
+  },
+  "name": "Hydrangea",
+  "species": "Hydrangea macrophylla",
+  "family": "Hydrangeaceae",
+  "origin": [
+    "Japan",
+    "Korea",
+    "China"
+  ],
+  "description": "Hydrangea is a deciduous shrub known for its large, showy flower clusters that can change color based on soil pH.",
+  "careInstructions": "Hydrangeas prefer partial shade to full sunlight, well-drained soil, and regular watering. Pruning should be done after flowering to remove dead wood.",
+  "averageHeight": "3-6 feet",
+  "sunlightRequirements": "Partial shade to full sunlight",
+  "wateringNeeds": "Regular watering",
+  "soilTypePreferences": "Moist, well-drained soil",
+  "growthHabit": "Bushy",
+  "flowerColor": [
+    "Blue",
+    "Pink",
+    "White",
+    "Purple"
+  ],
+  "leafShape": "Large, ovate",
+  "foliageTexture": "Coarse",
+  "bloomSeason": [
+    "Summer"
+  ],
+  "pollinationMethod": "Insect-pollinated",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 6 to Zone 9",
+  "hardinessZone": "6-9",
+  "growthRate": "Moderate",
+  "propagationMethods": [
+    "Cuttings",
+    "Layering"
+  ],
+  "pestsAndDiseases": [
+    "Powdery mildew",
+    "Aphids"
+  ],
+  "lifespan": "Long-lived",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Acidic to slightly alkaline",
+  "nutrientRequirements": "Regular fertilization",
+  "pruningNeeds": "Prune after flowering",
+  "toxicity": "Mildly toxic if ingested",
+  "wildlifeAttractant": [
+    "Butterflies",
+    "Bees"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Cold-hardy",
+  "rootSystemType": "Fibrous",
+  "propagationDifficultyLevel": "Moderate",
+  "preferredContainerSize": "Varies based on shrub size",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Large flower clusters",
+    "Color-changing blooms"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Hydrangea_macrophylla_01_Crop.jpg/1200px-Hydrangea_macrophylla_01_Crop.jpg",
+  "category": "Shrubs"
+},
+{
+  "_id": {
+    "$oid": "64baf4354e0e3c040980d7b6"
+  },
+  "name": "Water Hyacinth",
+  "species": "Eichhornia crassipes",
+  "family": "Pontederiaceae",
+  "origin": [
+    "South America"
+  ],
+  "description": "Water hyacinths are free-floating aquatic plants with vibrant purple flowers and glossy green leaves that float on the water surface.",
+  "careInstructions": "Water hyacinths thrive in warm freshwater with full sunlight. They are excellent at absorbing excess nutrients from the water.",
+  "averageHeight": "4-8 inches",
+  "sunlightRequirements": "Full sunlight",
+  "wateringNeeds": "Floating on water",
+  "soilTypePreferences": "Not applicable",
+  "growthHabit": "Floating",
+  "flowerColor": [
+    "Purple"
+  ],
+  "leafShape": "Oval",
+  "foliageTexture": "Smooth",
+  "bloomSeason": [
+    "Spring",
+    "Summer"
+  ],
+  "pollinationMethod": "Self-pollinating",
+  "fruitType": "Capsule",
+  "edibleParts": [],
+  "medicinalProperties": [],
+  "fragrance": "No",
+  "temperatureTolerance": "Zone 9 to Zone 11",
+  "hardinessZone": "9-11",
+  "growthRate": "Rapid",
+  "propagationMethods": [
+    "Runners",
+    "Division"
+  ],
+  "pestsAndDiseases": [
+    "Aphids",
+    "Snails"
+  ],
+  "lifespan": "Perennial",
+  "droughtTolerance": "Low",
+  "humidityRequirements": "High",
+  "pHPreferences": "Slightly acidic to slightly alkaline",
+  "nutrientRequirements": "Not applicable",
+  "pruningNeeds": "Remove dead or decaying leaves regularly",
+  "toxicity": "Non-toxic",
+  "wildlifeAttractant": [
+    "Birds",
+    "Fish"
+  ],
+  "companionPlantingRecommendations": [],
+  "winterHardiness": "Not cold-hardy",
+  "rootSystemType": "Rootlets",
+  "propagationDifficultyLevel": "Easy",
+  "preferredContainerSize": "Large containers or ponds",
+  "fallColor": "Not applicable",
+  "specialFeatures": [
+    "Floating leaves and flowers",
+    "Water purifier"
+  ],
+  "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Eichhornia_crassipes_C.jpg",
+  "category": "Aquatic Plants"
+}]

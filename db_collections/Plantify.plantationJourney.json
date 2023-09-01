@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "64eaea097df800e9c4056842"
+  },
+  "email": "user1@example.com",
+  "title": "Community Garden Initiative",
+  "location": "Dhanmondi, Dhaka",
+  "duration": "6m",
+  "custom_duration": null,
+  "tree_goal": 20,
+  "tree_species": "local",
+  "planting_sites": "community garden",
+  "goals": [
+    "Host monthly gardening workshops",
+    "Create a composting system",
+    "Grow a variety of seasonal vegetables",
+    "Enhance the garden's aesthetic appeal"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64eaea927df800e9c4056856"
+  },
+  "email": "user3@example.com",
+  "title": "Restoring Wetland Habitats",
+  "location": "Banani, Dhaka",
+  "duration": "6m",
+  "custom_duration": null,
+  "tree_goal": 10,
+  "tree_species": "wetland",
+  "planting_sites": "wetland area",
+  "goals": [
+    "Remove invasive plant species",
+    "Create nesting areas for local bird species",
+    "Install educational signage about wetland ecosystems",
+    "Collaborate with local conservation organizations",
+    "Monitor water quality and wetland health"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64eaea097df800e9c4056840"
+  },
+  "email": "user1@example.com",
+  "title": "Backyard Biodiversity Project",
+  "location": "Mirpur, Dhaka",
+  "duration": "3m",
+  "custom_duration": null,
+  "tree_goal": 12,
+  "tree_species": "endemic",
+  "planting_sites": "backyard",
+  "goals": [
+    "Attract native pollinators to the garden",
+    "Create a habitat for local wildlife",
+    "Plant a variety of flowering and fruit-bearing plants",
+    "Implement sustainable watering practices",
+    "Educate neighbors about the importance of biodiversity"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64eaea097df800e9c4056847"
+  },
+  "email": "user1@example.com",
+  "title": "Sustainable Permaculture Design",
+  "location": "Pallabi, Dhaka",
+  "duration": "1y",
+  "custom_duration": null,
+  "tree_goal": 35,
+  "tree_species": "local",
+  "planting_sites": "permaculture site",
+  "goals": [
+    "Implement companion planting for natural pest control",
+    "Create a closed-loop composting system",
+    "Establish guilds for mutual plant support",
+    "Develop a rainwater harvesting system",
+    "Host permaculture design workshops"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64eaea097df800e9c4056844"
+  },
+  "email": "user1@example.com",
+  "title": "Restoring Urban Ecosystems",
+  "location": "Bashundhara, Dhaka",
+  "duration": "1y",
+  "custom_duration": null,
+  "tree_goal": 40,
+  "tree_species": "indigenous",
+  "planting_sites": "public parks",
+  "goals": [
+    "Remove invasive plant species from park areas",
+    "Plant a diverse range of native trees and shrubs",
+    "Enhance wildlife habitat within the park",
+    "Organize community cleanup events",
+    "Collaborate with local schools for educational programs"
+  ]
+}]

@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff844"
+  },
+  "product_id": 1,
+  "product_name": "Tomato Seeds",
+  "category": "Seeds",
+  "price": 2.99,
+  "in_stock": 1500,
+  "description": "High-quality tomato seeds for growing tasty tomatoes in your garden.",
+  "manufacturer": "GardenGreen",
+  "rating": 4.7,
+  "weight": "25g",
+  "organic": true,
+  "origin": "Italy",
+  "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGscfXzcI7ambRTTQN8JCT42Qt4ZLwHFRS6fRhuEV7RaYBFLX4YbX1OXFgYUWJ35uQDAM&usqp=CAU"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff845"
+  },
+  "product_id": 2,
+  "product_name": "Rose Seeds",
+  "category": "Seeds",
+  "price": 3.49,
+  "in_stock": 1000,
+  "description": "Beautiful rose seeds for creating a vibrant rose garden.",
+  "manufacturer": "FlowerParadise",
+  "rating": 4.9,
+  "weight": "10g",
+  "organic": false,
+  "origin": "Netherlands",
+  "imageURL": "https://cdn.bibralakesoils.com.au/wp-content/uploads/2020/07/planting-roses-in-winter.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff846"
+  },
+  "product_id": 3,
+  "product_name": "Gardening Gloves",
+  "category": "Gardening Tools",
+  "price": 12.99,
+  "in_stock": 500,
+  "description": "Comfortable and durable gloves for protecting your hands while gardening.",
+  "manufacturer": "GardenGear",
+  "rating": 4.5,
+  "size": "Medium",
+  "material": "Polyester and Latex",
+  "imageURL": "data:image/jpeg;base64,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"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff847"
+  },
+  "product_id": 4,
+  "product_name": "Pruning Shears",
+  "category": "Gardening Tools",
+  "price": 24.99,
+  "in_stock": 300,
+  "description": "Sharp and precise pruning shears for trimming plants and bushes.",
+  "manufacturer": "TrimMaster",
+  "rating": 4.8,
+  "blade_length": "6 inches",
+  "handle_material": "Steel and Rubber",
+  "imageURL": "https://www.thespruce.com/thmb/oowp3-HdQjZk08tSJm8Frzipvco=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/SPR-garden-pruner-preference-1403219-hero-e364c36e3a88465bbd4eced329e6aa8e.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff848"
+  },
+  "product_id": 5,
+  "product_name": "Lawn Fertilizer",
+  "category": "Fertilizers",
+  "price": 9.99,
+  "in_stock": 800,
+  "description": "Nutrient-rich fertilizer for maintaining a lush and green lawn.",
+  "manufacturer": "GreenGrow",
+  "rating": 4.6,
+  "weight": "1.5 kg",
+  "suitable_for": "All grass types",
+  "imageURL": "https://normansgardengallery.ca/cdn/shop/products/fall-fertilizer-bag.jpg?v=1617285685"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff849"
+  },
+  "product_id": 6,
+  "product_name": "Cucumber Seeds",
+  "category": "Seeds",
+  "price": 2.49,
+  "in_stock": 1200,
+  "description": "Delicious cucumber seeds for growing fresh cucumbers at home.",
+  "manufacturer": "GardenGreen",
+  "rating": 4.7,
+  "weight": "15g",
+  "organic": true,
+  "origin": "USA",
+  "imageURL": "https://img3.zakaz.ua/zakaz-Lenovo-ideapad-320.1556245262.ad72436478c_2019-05-02_Ivan_novus_Mari/zakaz-Lenovo-ideapad-320.1556245262.SND74023.obj.0.10.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff84a"
+  },
+  "product_id": 7,
+  "product_name": "Watering Can",
+  "category": "Gardening Tools",
+  "price": 16.99,
+  "in_stock": 400,
+  "description": "Sturdy watering can for efficiently watering your plants.",
+  "manufacturer": "AquaFlow",
+  "rating": 4.4,
+  "capacity": "2 liters",
+  "material": "Plastic",
+  "imageURL": "https://c8.alamy.com/comp/CR9GRM/small-metal-watering-can-in-garden-CR9GRM.jpg"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff84b"
+  },
+  "product_id": 8,
+  "product_name": "Pumpkin Seeds",
+  "category": "Seeds",
+  "price": 3.99,
+  "in_stock": 900,
+  "description": "Premium pumpkin seeds for growing delicious pumpkins.",
+  "manufacturer": "HarvestJoy",
+  "rating": 4.6,
+  "weight": "20g",
+  "organic": true,
+  "origin": "Canada",
+  "imageURL": "https://media.istockphoto.com/id/1203228912/photo/raw-green-organic-pumpkin-seed-pepitas.jpg?s=612x612&w=0&k=20&c=NiFvj3Rw41pA5c9ckH53GCZBfgUYa7z0K10ME3FNHRM="
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff84c"
+  },
+  "product_id": 9,
+  "product_name": "Garden Trowel",
+  "category": "Gardening Tools",
+  "price": 8.99,
+  "in_stock": 600,
+  "description": "Handy garden trowel for planting and transplanting small plants.",
+  "manufacturer": "GardenGear",
+  "rating": 4.3,
+  "size": "Small",
+  "material": "Stainless Steel",
+  "imageURL": "https://images.pexels.com/photos/210881/pexels-photo-210881.jpeg?cs=srgb&dl=pexels-pixabay-210881.jpg&fm=jpg"
+},
+{
+  "_id": {
+    "$oid": "64c8a8dd7d42e5e197bff84d"
+  },
+  "product_id": 10,
+  "product_name": "Sunflower Seeds",
+  "category": "Seeds",
+  "price": 1.99,
+  "in_stock": 2000,
+  "description": "Bright and cheerful sunflower seeds for a vibrant garden.",
+  "manufacturer": "FlowerParadise",
+  "rating": 4.8,
+  "weight": "5g",
+  "organic": true,
+  "origin": "France",
+  "imageURL": "https://us.123rf.com/450wm/photodee/photodee1701/photodee170100863/68585453-selfie-of-sunflower-seed-on-hand.jpg?ver=6"
+}]

@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "64eb8c0f2b8a5a9dfaaba7b3"
+  },
+  "name": "Alice Smith",
+  "parentQuestionID": null,
+  "email": "user1@example.com",
+  "body": "What are the challenges and strategies for ensuring the survival and growth of newly planted trees in urban environments?"
+},
+{
+  "_id": {
+    "$oid": "64eb8c612b8a5a9dfaaba7b4"
+  },
+  "parentQuestionID": "64eb8c0f2b8a5a9dfaaba7b3",
+  "name": "Bob Johnson",
+  "email": "user2@example.com",
+  "body": "Challenges include limited space, pollution, and inadequate watering. Strategies involve choosing resilient species, proper soil preparation, regular maintenance, and community engagement in care efforts."
+},
+{
+  "_id": {
+    "$oid": "64eb8c742b8a5a9dfaaba7b5"
+  },
+  "name": "Bob Johnson",
+  "parentQuestionID": null,
+  "email": "user2@example.com",
+  "body": "How can local communities be actively involved in and benefit from large-scale tree planting initiatives?"
+},
+{
+  "_id": {
+    "$oid": "64eb8db02b8a5a9dfaaba7b6"
+  },
+  "name": "Emily Davis",
+  "parentQuestionID": null,
+  "email": "user3@example.com",
+  "body": "How does tree plantation contribute to mitigating climate change and improving air quality?"
+},
+{
+  "_id": {
+    "$oid": "64eb8dd32b8a5a9dfaaba7b7"
+  },
+  "parentQuestionID": "64eb8c0f2b8a5a9dfaaba7b3",
+  "name": "Emily Davis",
+  "email": "user3@example.com",
+  "body": "In urban settings, challenges like soil quality, compacted spaces, and pollution can hinder tree growth. Implementing strategies such as using appropriate tree species, providing proper irrigation, and creating protected planting zones can enhance survival rates and promote healthy urban tree growth."
+},
+{
+  "_id": {
+    "$oid": "64eb8df02b8a5a9dfaaba7b8"
+  },
+  "parentQuestionID": "64eb8c742b8a5a9dfaaba7b5",
+  "name": "Emily Davis",
+  "email": "user3@example.com",
+  "body": "Local communities can actively participate in large-scale tree planting initiatives by organizing workshops, tree adoption programs, and community planting events. This involvement not only fosters a sense of ownership but also promotes environmental education and social cohesion, leading to improved urban aesthetics, enhanced air quality, and a stronger sense of community pride."
+}]
